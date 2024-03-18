@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="default.css">
+    <title>Quiz time!</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="sitename">Quiz time!</span>
+      <span id ="scoreText" class="sitename">Score: 0</span>
+    </header>
+    <main>
+
+      <div class="q-container">
+        <h1>Question 1</h1>
+        <h2>Who should go to the Code Club meet up?</h2>
+
+        <input type="radio" name="q1" value="option1">
+        <label for="option1">Pete (obvs)</label><br>
+        
+        <input type="radio" name="q1" value="option2">
+        <label for="option2">Mac</label><br>
+        
+        <input type="radio" name="q1" value="option3">
+        <label for="option3">Marc</label><br>
+        
+        <div class="result" id="result1"></div>
+        <button id="q1" onclick="checkAnswer('q1', 'option1', '#result1')">Check Answer</button>
+      </div>
+
+      <div class="q-container">
+        <h1>Question 2</h1>
+        <h2>How many black belts is enough?</h2>
+        
+        <input type="radio" name="q2" value="option1">
+        <label for="option1">One</label><br>
+        
+        <input type="radio" name="q2" value="option2">
+        <label for="option2">Two</label><br>
+        
+        <input type="radio" name="q2" value="option3">
+        <label for="option3">You can't have too many!</label><br>
+        
+        <div class="result" id="result2"></div>
+        <button id="q2" onclick="checkAnswer('q2', 'option3', '#result2')">Check Answer</button>
+      </div>
+
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

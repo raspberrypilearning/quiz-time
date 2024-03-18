@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-background);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: var(--background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--header-font);
+}
+
+.sitename {
+  font-size: 32px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.q-container {
+  background-color: var(--background);
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 25px;
+  color: var(--h1-colour);
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+h2 {
+  font-size: 25px;
+  color: var(--body-background);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+button {
+  background-color: var(--button-background);
+  color: var(--h1-colour);
+  width: 30%;
+  border: 0;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+  display: block;
+}
+
+.result {
+  background-color: var(--h1-colour);
+  color: var(--header-font);
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 4px;
+  align-self: center;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .header {
+      padding: 20px;
+  }
+
+}
