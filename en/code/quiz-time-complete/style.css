@@ -1,7 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic);
+
 * {
   margin: 0;
   padding: 0;
-  font-family: var(--main-font);
+  font: var(--font);
   box-sizing: border-box;
 }
 
@@ -75,6 +77,15 @@ button {
   margin: 20px 0;
   border-radius: 4px;
   align-self: center;
+  display: none;
+}
+
+.fullMarks {
+  display: none;
+}
+
+.retry {
+  text-decoration: none;
   display: none;
 }
 
@@ -178,4 +189,18 @@ button {
 .slide-right {
   opacity: 1;
   animation: slide-in-right 2s ease;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px var(--body-background);
+  }
+  to {
+    text-shadow: 0 0 50px var(--header-font), 0 0 10px var(--header-font);
+  }
+}
+
+.glowing {
+  opacity: 1;
+  animation: glow 2s ease-in-out infinite alternate;
 }

@@ -1,6 +1,9 @@
 var score = 0;
 var currentQ = 0;
 const questions = document.querySelectorAll(".q-container");
+const retry = document.querySelector(".retry");
+const fullMarks = document.querySelector(".fullMarks");
+const scoreText = document.querySelector("#scoreText");
 
 function checkAnswer(question, correctAnswer, result) {
   let answer = document.querySelector(`input[name="${question}"]:checked`);
@@ -11,7 +14,7 @@ function checkAnswer(question, correctAnswer, result) {
     if (answer.value === correctAnswer) {
       document.querySelector(result).innerText = "Correct";
       score++;
-      document.querySelector("#scoreText").innerText = `Score: ${score}`;
+      scoreText.innerText = `Score: ${score}`;
       nextQ();
     } else {
       document.querySelector(result).innerText = "Incorrect";
@@ -31,10 +34,17 @@ function nextQ() {
       questions[currentQ].classList.add("slide-left");
       questions[currentQ].style.display = "block";
     } else {
-      document.querySelector("#scoreText").innerText = `Final score: ${score}`;
+      scoreText.innerText = `Final score: ${score}/${questions.length}`;
+      scoreText.classList.add("glowing");
+      if (score === questions.length) {
+        fullMarks.style.display = "block";
+      } else {
+        retry.style.display = "block";
+      }
     }
   }, "2000");
 }
 
+scoreText.classList.remove("glowing");
 questions[0].style.display = "block";
 questions[0].style.opacity = 1;

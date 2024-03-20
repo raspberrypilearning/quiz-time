@@ -9,23 +9,23 @@
   </head>
   <body>
     <header class="header">
-      <span class="sitename">Quiz time!</span>
+      <span class="sitename">Wildlife quiz</span>
       <span id ="scoreText" class="sitename">Score: 0</span>
     </header>
     <main>
 
       <div class="q-container">
         <h1>Question 1</h1>
-        <h2>Who should go to the Code Club meet up?</h2>
+        <h2>What is the largest living cat species in the world?</h2>
 
         <input type="radio" name="q1" value="option1">
-        <label for="option1">Pete (obvs)</label><br>
+        <label for="option1">Tiger</label><br>
         
         <input type="radio" name="q1" value="option2">
-        <label for="option2">Mac</label><br>
+        <label for="option2">Cheetah</label><br>
         
         <input type="radio" name="q1" value="option3">
-        <label for="option3">Marc</label><br>
+        <label for="option3">Lion</label><br>
         
         <div class="result" id="result1"></div>
         <button id="q1" onclick="checkAnswer('q1', 'option1', '#result1')">Check Answer</button>
@@ -33,19 +33,38 @@
 
       <div class="q-container">
         <h1>Question 2</h1>
-        <h2>How many black belts is enough?</h2>
+        <h2>Which bird is known for its ability to mimic human speech?</h2>
         
         <input type="radio" name="q2" value="option1">
-        <label for="option1">One</label><br>
+        <label for="option1">Sparrow</label><br>
         
         <input type="radio" name="q2" value="option2">
-        <label for="option2">Two</label><br>
+        <label for="option2">Pigeon</label><br>
         
         <input type="radio" name="q2" value="option3">
-        <label for="option3">You can't have too many!</label><br>
+        <label for="option3">Parrot</label><br>
         
-        <div class="result" id="result2"></div>
+        <div class="result" id="result2"></div>  
         <button id="q2" onclick="checkAnswer('q2', 'option3', '#result2')">Check Answer</button>
+      </div>
+
+      <div class="q-container">
+        <h1>Question 3</h1>
+        <h2>Which animal is known for its distinctive black and white stripes?</h2>
+        
+        <input type="radio" name="q3" value="option1">
+        <label for="option1">Hippopotamus</label><br>
+        
+        <input type="radio" name="q3" value="option2">
+        <label for="option2">Giraffe</label><br>
+        
+        <input type="radio" name="q3" value="option3">
+        <label for="option3">Zebra</label><br>
+        
+        <div class="result" id="result3"></div>  
+        <a class="retry" href="index.html">Click to retry</a>
+        <a class="fullMarks">Well done! All correct!</a>
+        <button id="q3" onclick="checkAnswer('q3', 'option3', '#result3')">Check Answer</button>
       </div>
 
     </main>

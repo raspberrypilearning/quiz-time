@@ -1,7 +1,7 @@
 :root {
-  --main-font: 'Poppins', sans-serif;
-  --body-background: #e8c37f;
-  --background: #2e8b57;
+  --font: 16px/1.25 'Raleway', sans-serif;
+  --body-background: #FFFF00;
+  --background: #33B5E5;
   --header-font: #ffffff;
   --h1-colour: #001e4d;
   --button-background: #ffffff;
