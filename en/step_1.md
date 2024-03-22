@@ -1,21 +1,15 @@
 ## Introduction
 
-In this project, <mark> short project description </mark>
-
-<mark>Boxout (wherever wanted/needed) </mark>
+In this project you will create a web app that lets the user show what they know about a topic of your choosing! You could make a quiz about history, nature, world records, science, sports, fashion, TV, movies... or anything else you're an expert in! 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Term**</span> description of term or interesting phrase.
+The internet has helped us <span style="color: #0faeb0">**share knowledge**</span> and ideas to people around the globe. Sharing knowledge helps us understand other communities and cultures and reminds us we can all learn from each other.
 </p>
 
-<mark>Objectives in language that learners will understand</mark>
-
 You will:
-+ 
-+ 
-+
-
-<mark>Image of many different examples in a strip</mark>
++ Choose a topic and create questions
++ Use buttons, CSS and JavaScript to animate, show and hide questions
++ Use JavaScript to check the user's answers, keep track of their score and display a final message
 
 --- no-print ---
 
@@ -26,7 +20,7 @@ You will:
 
 ### Try it 
 
-Description of what to do or think about when looking at the example.
+Answer the questions and watch the questions animate
 
 </div>
 <div>
