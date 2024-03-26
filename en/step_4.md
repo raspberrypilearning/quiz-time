@@ -10,6 +10,12 @@ Open `index.html`.
 
 Highlight and copy (<kbd>Ctrl</kbd>+<kbd>C</kbd>/<kbd>Cmd</kbd>+<kbd>C</kbd>) the question container `<div>`.
 
+--- collapse ---
+
+---
+title: Show me the question container div
+---
+
 --- code ---
 ---
 language: html
@@ -36,11 +42,19 @@ line_numbers: false
 
 --- /code ---
 
+--- /collapse ---
+
 --- /task ---
 
 --- task ---
 
 Paste (<kbd>Ctrl</kbd>+<kbd>V</kbd>/<kbd>Cmd</kbd>+<kbd>V</kbd>) the question container underneath.
+
+--- collapse ---
+
+---
+title: What should my code look like?
+---
 
 --- code ---
 ---
@@ -86,9 +100,13 @@ line_highlights: 18-33
 
 --- /code ---
 
+--- /collapse ---
+
 --- /task ---
 
 ### Create a second question
+
+**Choose** a second question about your topic.
 
 Change the question number and question text.
 
@@ -96,11 +114,11 @@ Change the question number and question text.
 
 Change:
 + `<h1>` to Question 2
-+ `<h2>`to [Your new question]
++ `<h2>`to [Choose your new question]
 
 --- /task ---
 
-Change the answer labels to match the question.
+**Choose** answers and change the answer labels to match the question.
 
 --- task ---
 

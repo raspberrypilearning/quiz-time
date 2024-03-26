@@ -15,23 +15,17 @@ You will:
 
 --- task ---
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 175px; flex-grow: 1">  
+### Try it!
 
-### Try it 
+Answer the questions and watch the animations!
 
-Answer the questions and watch the animations
+[See inside](https://editor.raspberrypi.org/en/projects/quiz-time-animals){:target="_blank"}
 
-**TODO** Update these links
-</div>
-<div>
-**Mac's example: [See inside](https://editor.raspberrypi.org/en/projects/quiz-time-mac){:target="_blank"}
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/quiz-time-mac" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/quiz-time-animals" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
 </iframe>
 
-</div>
-
 --- /task ---
+
 
 ### Get inspiration 
 
@@ -49,15 +43,15 @@ Explore these example projects to get more ideas:
 
 **TODO** Update these links
 
-**Pick your favourite dinosaur**: [See inside](https://editor.raspberrypi.org/en/projects/pick-your-favourite-dinosaur){:target="_blank"}
-<div>
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/pick-your-favourite-dinosaur" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
-</div>
+**Mac's example**: [See inside](https://editor.raspberrypi.org/en/projects/quiz-time-mac){:target="_blank"}
 
-**Pick your favourite decade**: [See inside](https://editor.raspberrypi.org/en/projects/pick-your-favourite-decade){:target="_blank"}
-<div>
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/pick-your-favourite-decade" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
-</div>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/quiz-time-mac" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
+</iframe>
+
+**Mac's example**: [See inside](https://editor.raspberrypi.org/en/projects/quiz-time-mac){:target="_blank"}
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/quiz-time-mac" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
+</iframe>
 
 --- /task ---
 
@@ -69,13 +63,13 @@ Explore these example projects to get more ideas:
 
 **TODO** Update these images
 
-**Pick your favourite dinosaur**
+**Mac's example**
 
-![](images/dinosaurs.png)
+![](images/mac.png)
 
-**Pick your favourite decade**
+**Second example**
 
-![](images/decades.png)
+![](images/second.png)
 
 --- /print-only ---
 

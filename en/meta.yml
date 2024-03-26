@@ -14,7 +14,8 @@ steps:
 - title: Check the answer
 - title: Add more questions
 - title: Score some points
-- title: Next question please!
+- title: Show one at a time
+- title: Next question, please!
   completion:
     - internal
 - title: Reflection

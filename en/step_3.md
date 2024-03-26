@@ -201,6 +201,8 @@ Check if the selected answer is correct.
 If it **is** correct, update the result div text to show 'Correct'.
 If it **is not** correct, update the result div text to show 'Incorrect'.
 
+You can **choose** other messages for correct and incorrect answers.
+
 --- code ---
 ---
 language: javascript
@@ -256,7 +258,7 @@ Check if there is a selected answer for this question.
 
 Show a result message if there is.
 
-If there isn't, show a helpful message.
+If there isn't, **choose** a helpful message to show.
 
 --- code ---
 ---

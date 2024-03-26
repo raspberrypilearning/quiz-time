@@ -17,7 +17,6 @@ function checkAnswer(question, result) {
 
   if (answer) {
     document.querySelector("#" + question).disabled = true;
-    document.querySelector("#" + question).style.display = "none";
     if (answer.value === "correct") {
       qResult.innerText = "Correct";
       score+=1;
@@ -37,8 +36,8 @@ function nextQ() {
   questions[currentQ].classList.add("fade-out");
   setTimeout(() => {
     if (currentQ < questions.length - 1) {
+      questions[currentQ].style.display = "none";
       currentQ++;
-      questions[currentQ - 1].style.display = "none";
       questions[currentQ].classList.add("slide-left");
       questions[currentQ].style.display = "block";
     } else {

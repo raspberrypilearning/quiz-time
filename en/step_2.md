@@ -38,7 +38,7 @@ Pick something you're the expert in and test your friends or family!
 
 --- /collapse ---
 
-Choose your topic.
+**Choose** your topic.
 
 --- /task ---
 
@@ -87,6 +87,8 @@ line_highlights: 8, 12
 
 Find the question container `<div class="q-container">`
 
+**Choose** a question about your topic.
+
 Change the text in the `<h2>` tag to be your first question.
 
 --- code ---
@@ -108,7 +110,7 @@ line_highlights: 17
 
 ### Create three answers
 
-Add the correct and incorrect answers.
+**Choose** the correct and incorrect answers.
 
 --- task ---
 
@@ -267,7 +269,7 @@ Add an appropriate font for your webpage from Google Fonts.
 
 Open `default.css`. 
 
-Change the colour variables to new colours of your choice.
+**Choose** your colours and change the colour variables.
 
 --- code ---
 ---
