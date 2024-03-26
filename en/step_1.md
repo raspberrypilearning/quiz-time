@@ -20,14 +20,14 @@ You will:
 
 ### Try it 
 
-Answer the questions and watch the questions animate
+Answer the questions and watch the animations
 
+**TODO** Update these links
 </div>
 <div>
-**Gobo watching**: [See inside](https://scratch.mit.edu/projects/495141114/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/495141114/?autostart=false" frameborder="0"></iframe>
-</div>
+**Mac's example: [See inside](https://editor.raspberrypi.org/en/projects/quiz-time-mac){:target="_blank"}
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/quiz-time-mac" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
+</iframe>
 
 </div>
 
@@ -35,36 +35,47 @@ Answer the questions and watch the questions animate
 
 ### Get inspiration 
 
-You are going to make some design decisions to ...
+You are going to make some design decisions to create your quiz!
 
++ What will your quiz be about?
++ How many questions will you include?
++ How many options will you give for each question?
++ How many points will the user score for the correct answer?
++ What animations will you apply to each question?
+  
 --- task ---
 
 Explore these example projects to get more ideas:
 
-**Don't eat donut**: [See inside](https://scratch.mit.edu/projects/495865093/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/495865093/?autostart=false" frameborder="0"></iframe>
+**TODO** Update these links
+
+**Pick your favourite dinosaur**: [See inside](https://editor.raspberrypi.org/en/projects/pick-your-favourite-dinosaur){:target="_blank"}
+<div>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/pick-your-favourite-dinosaur" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 </div>
 
-**Under the sea**: [See inside](https://scratch.mit.edu/projects/495866460/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/495866460/?autostart=false" frameborder="0"></iframe>
+**Pick your favourite decade**: [See inside](https://editor.raspberrypi.org/en/projects/pick-your-favourite-decade){:target="_blank"}
+<div>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/pick-your-favourite-decade" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 </div>
 
-**Sporg**: [See inside](https://scratch.mit.edu/projects/495865892/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/495865892/?autostart=false" frameborder="0"></iframe>
-</div>
 --- /task ---
+
 --- /no-print ---
 
 --- print-only ---
 
 ### Get inspiration 
 
-You are going to make some design decisions to create your character. See inside example projects in [Scratch 1: Googly eye character - Examples](https://scratch.mit.edu/studios/29029028/){:target="_blank"} Scratch studio.
+**TODO** Update these images
 
-<mark>one image file per example</mark>
+**Pick your favourite dinosaur**
+
+![](images/dinosaurs.png)
+
+**Pick your favourite decade**
+
+![](images/decades.png)
 
 --- /print-only ---
 

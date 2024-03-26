@@ -8,15 +8,22 @@ copyedit: false
 last_tested: '2021-03-26'
 steps:
 - title: Introduction
-- title: Step title
-- title: Step title
-- title: Step title
+- title: Create a question
+  completion:
+    - engaged
+- title: Check the answer
+- title: Add more questions
+- title: Score some points
+- title: Next question please!
+  completion:
+    - internal
 - title: Reflection
   knowledge_quiz:
     path: quiz1
     version: 1
     questions: 3
     passing_score: 3
+  completion:
+    - external
 - title: Upgrade your project
-- title: Share
 - title: What next?

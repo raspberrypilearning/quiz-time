@@ -1,30 +1,38 @@
+// Variables
 var score = 0;
 var currentQ = 0;
-const questions = document.querySelectorAll(".q-container");
-const retry = document.querySelector(".retry");
-const fullMarks = document.querySelector(".fullMarks");
-const scoreText = document.querySelector("#scoreText");
 
-function checkAnswer(question, correctAnswer, result) {
+// Constants
+const scoreText = document.querySelector("#scoreText");
+const questions = document.querySelectorAll(".q-container");
+const fullMarks = document.querySelector(".fullMarks");
+const retry = document.querySelector(".retry");
+
+// Check answer function
+function checkAnswer(question, result) {
   let answer = document.querySelector(`input[name="${question}"]:checked`);
-  document.querySelector(result).style.display = "block";
+  let qResult = document.querySelector(result);
+  
+  qResult.style.display = "block";
+
   if (answer) {
     document.querySelector("#" + question).disabled = true;
     document.querySelector("#" + question).style.display = "none";
-    if (answer.value === correctAnswer) {
-      document.querySelector(result).innerText = "Correct";
-      score++;
+    if (answer.value === "correct") {
+      qResult.innerText = "Correct";
+      score+=1;
       scoreText.innerText = `Score: ${score}`;
       nextQ();
     } else {
-      document.querySelector(result).innerText = "Incorrect";
+      qResult.innerText = "Incorrect";
       nextQ();
     }
   } else {
-    document.querySelector(result).innerText = "Please select an answer";
+    qResult.innerText = "Please select an answer";
   }
 }
 
+// Next question function
 function nextQ() {
   questions[currentQ].classList.add("fade-out");
   setTimeout(() => {
@@ -45,6 +53,6 @@ function nextQ() {
   }, "2000");
 }
 
-scoreText.classList.remove("glowing");
+// Display first question
 questions[0].style.display = "block";
 questions[0].style.opacity = 1;
