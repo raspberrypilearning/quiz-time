@@ -1,28 +1,124 @@
 ## Upgrade your project
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add an introductory sentence. What will learners achieve by the end of this step?
-</div>
-<div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
-</div>
-</div>
+In this step you can upgrade your project by:
++ Adding more questions
++ Updating the text in the header to show the final score
++ Showing the user a message if they get full marks
++ Letting the user retake the quiz if they don't get full marks
++ Adding more animations
 
---- task ---
+You don't have to do all these things. Choose whichever appeals to you and fits the time you have.
 
-Another step of tasks to complete.
+--- collapse ---
 
---- /task ---
+---
+title: Add more questions
+---
 
---- task ---
+You can go through the same process you used in an earlier step to add more questions.
 
-Step content... 
-Can use:
-**Test:**
-**Choose:**
-**Tip:**
+Copy and paste the question container again and change the values to create your extra questions.
 
---- /task ---
+You need to:
++ Change the question number and question text
++ Change the answer labels to match the question
++ Change the attributes for the input elements
++ Change the attributes for the result div and button
++ Change the arguments passed to the function
 
---- save ---
+--- /collapse ---
+
+--- collapse ---
+
+---
+title: Update the final score ... and make it glow!
+---
+
+You will need to change `nextQ` function.
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: false
+line_highlights: 10-11
+---
+
+// Next question function
+function nextQ() {
+  questions[currentQ].classList.add("fade-out");
+  setTimeout(() => {
+    if (currentQ < questions.length - 1) {
+      questions[currentQ].style.display = "none";
+      currentQ++;
+      questions[currentQ].classList.add("slide-left");
+      questions[currentQ].style.display = "block";
+    } else {
+      scoreText.innerText = `Final score: ${score}`;  
+    }
+  }, "2000");
+}
+
+--- /code ---
+
+Make it glow!
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: false
+line_highlights: 12
+---
+
+// Next question function
+function nextQ() {
+  questions[currentQ].classList.add("fade-out");
+  setTimeout(() => {
+    if (currentQ < questions.length - 1) {
+      questions[currentQ].style.display = "none";
+      currentQ++;
+      questions[currentQ].classList.add("slide-left");
+      questions[currentQ].style.display = "block";
+    } else {
+      scoreText.innerText = `Final score: ${score}`;
+      scoreText.classList.add("glowing");
+    }
+  }, "2000");
+}
+
+--- /code ---
+
+--- /collapse ---
+
+--- collapse ---
+
+---
+title: Show the user a message if they get full marks
+---
+
+**TODO** Pete to finish later
+
+Update HTML
+
+Add a const to get the element
+
+Add an `if` statement to check the final score.
+
+--- /collapse ---
+
+--- collapse ---
+
+---
+title: Let the user retake the quiz if they don't get full marks
+---
+
+**TODO** Pete to finish later
+
+Update HTML
+
+Add a const to get the element
+
+Add an `else` statement to the `if` added in the last collapse.
+
+--- /collapse ---
