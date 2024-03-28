@@ -205,6 +205,6 @@ line_highlights: 2
 
 You may wish to style your button so that it has a different colour.
 
-You could also hide it, or change its text.
+You could also hide it, or change the text.
 
 In this project, you are going to hide the whole question and have the next one appear with an animation!
