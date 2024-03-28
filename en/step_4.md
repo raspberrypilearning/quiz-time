@@ -156,8 +156,6 @@ Change the arguments passed to the function.
 Change:
 + the arguments passed by the `onclick` event to the function (`q2` and `#result2`)
 
---- /task ---
-
 --- collapse ---
 
 ---
