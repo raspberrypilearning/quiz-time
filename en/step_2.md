@@ -8,7 +8,7 @@ In this step you will create the first quiz question. You will also choose some 
 
 What will your quiz be about?
 
-+ 🐻 **Nature**: Animals, plants or Habitats?
++ 🐻 **Nature**: Animals, plants or habitats?
 + 📖 **Books**: Authors, characters or genres?
 + 🏰 **History**: Kings and queens, pre-history/modern or important dates?
 + 🥇 **World records**: Biggest, fastest or longest?
@@ -242,8 +242,8 @@ line_highlights: 29
 
 --- task ---
 
-Check that the correct option is has the attribute `value="correct"`.
-In the example, the correct answer is the first answer (`Tiger`)s
+Check that the correct option has the attribute `value="correct"`.
+In the example, the correct answer is the first answer (`Tiger`)
 
 --- /task ---
 
