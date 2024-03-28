@@ -157,7 +157,7 @@ If the user selects the correct answer, they can keep clicking Check Answer and 
 
 --- task ---
 
-***Try it**
+**Try it**
 
 + Select the correct answer
 + Click the Check Answer button
