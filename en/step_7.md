@@ -6,7 +6,7 @@ In this step you will hide the answered question and show the next one with an a
 
 You need to know which is the current question from the `questions` list.
 
-Create a variable to hold a the index of the current question.
+Create a variable to hold the index of the current question.
 
 --- task ---
 
