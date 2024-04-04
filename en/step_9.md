@@ -97,7 +97,7 @@ function nextQ() {
 title: Show the user a message if they get full marks
 ---
 
-### Update the HTML
+### Update the HTML
 
 + Add a `<div>` element below the result div.
 + Include a congratulatory message.
@@ -117,7 +117,7 @@ line_highlights: 2
 
 --- /code ---
 
-### Update the JavaScript
+### Update the JavaScript
 
 Add a const to get the element.
 
@@ -180,98 +180,10 @@ function nextQ() {
 --- collapse ---
 
 ---
-title: Show the user a message if they get full marks
----
-
-### Update the HTML
-
-+ Add a `<div>` element below the result div.
-+ Include a congratulatory message.
-+ Give it a `class` attribute that can be used to show/hide the message using JavaScript. The example uses the class `fullMarks` (the CSS styling is already provided in `style.css`)
-
---- code ---
----
-language: html
-filename: 
-line_numbers: false
-line_highlights: 2
----
-
-        <div class="result" id="result3"></div>  
-        <div class="fullMarks">Well done! All correct!</div>
-        <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
-
---- /code ---
-
-### Update the JavaScript
-
-Add a const to get the element.
-
---- code ---
----
-language: js
-filename: scripts.js
-line_numbers: false
-line_highlights: 8
----
-
-// Variables
-var score = 0;
-var currentQ = 0;
-
-// Constants
-const scoreText = document.querySelector("#scoreText");
-const questions = document.querySelectorAll(".q-container");
-const fullMarks = document.querySelector(".fullMarks");
-
---- /code ---
-
-Add an `if` statement to check if the final score matches the number of questions.
-
-The example awards one point for each correct answer.
-
-If you award more than one point for each correct answer, then you need to divide the score by the number of points awarded.
-
-If the condition is met, then show the fullMarks div.
-
---- code ---
----
-language: js
-filename: scripts.js
-line_numbers: false
-line_highlights: 13-15
----
-
-// Next question function
-function nextQ() {
-  questions[currentQ].classList.add("fade-out");
-  setTimeout(() => {
-    if (currentQ < questions.length - 1) {
-      questions[currentQ].style.display = "none";
-      currentQ++;
-      questions[currentQ].classList.add("slide-left");
-      questions[currentQ].style.display = "block";
-    } else {
-      scoreText.innerText = `Final score: ${score}`;
-      scoreText.classList.add("glowing");
-      if (score === questions.length) {
-        fullMarks.style.display = "block";
-      }
-    }
-  }, "2000");
-}
-
---- /code ---
-
---- /collapse ---
-
---- collapse ---
-
----
 title: Let the user retake the quiz if they don't get full marks
 ---
 
-### Update the HTML
+### Update the HTML
 
 + Add an `<a>` element below the result div.
 + Include a link to `index.html` using the `href` attribute.
@@ -292,7 +204,8 @@ line_highlights: 3
 
 --- /code ---
 
-### Update the JavaScript
+### Update the JavaScript
+
 
 Add a const to get the element.
 
