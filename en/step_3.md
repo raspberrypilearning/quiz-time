@@ -2,7 +2,7 @@
 
 In this step you will create a function to check the user's answer and let them know if they were right!
 
-The starter project already has a `scripts.js` file that contains variables and constants for the 
+The starter project already has a `scripts.js` file that contains constants.
 
 ### Create the checkAnswer function
 
@@ -66,7 +66,7 @@ The function call contains two arguments that it passes to the `checkAnswer` fun
 
 It has two parameters `question` and `result`.
 
-When the function runs, it can use the word `question` to refer to the first value passed to it as an argument (in this case `q1`) and the word `result` to refer to the second value passed to it as an argument (in this case `#result`).
+When the function runs, it uses the word `question` to refer to the first value passed to it as an argument (in this case `q1`) and the word `result` to refer to the second value passed to it as an argument (in this case `#result`).
 
 In this way, the function can be called with different values as arguments and use them in its code.
 

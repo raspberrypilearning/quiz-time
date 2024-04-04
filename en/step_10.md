@@ -1,6 +1,6 @@
 ## What next?
 
-If you are following the [More web](https://projects.raspberrypi.org/en/raspberrypi/more-web) path, you can move on to the [Share your world](https://projects.raspberrypi.org/en/projects/share-your-world) project. In this project, you will make an interactive website!
+If you are following the [More web](https://projects.raspberrypi.org/en/raspberrypi/more-web) path, you can move on to the [Share your world](https://projects.raspberrypi.org/en/projects/share-your-world) project. In this project, you will use your HTML, CSS and Javascript skills to make an interactive website that invites the user to experience something they cannot otherwise!
 
 --- print-only ---
 
@@ -10,9 +10,9 @@ If you are following the [More web](https://projects.raspberrypi.org/en/raspberr
 
 --- no-print ---
 
-**TODO** Update link
+**Coding Journey**: 
 
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/share-your-world-example" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/share-your-world-coding" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
 </iframe>
 
 --- /no-print ---
