@@ -42,6 +42,14 @@ Pick something you're the expert in and test your friends or family!
 
 --- /task ---
 
+--- task ---
+
+Open the [Quiz time starter project](https://editor.raspberrypi.org/en/projects/quiz-time-starter){:target="_blank"}
+
+If you are logged in - save the project to your account and change the name.
+
+--- /task ---
+
 ### Update your page title and heading
 
 --- task ---
