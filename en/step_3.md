@@ -34,7 +34,7 @@ It should have two parameters `question` and `result`.
 language: javascript
 filename: scripts.js
 line_numbers: false
-line_highlights: 2
+line_highlights: 2-4
 ---
 
 // Check answer function
@@ -208,7 +208,7 @@ You can **choose** other messages for correct and incorrect answers.
 language: javascript
 filename: scripts.js
 line_numbers: false
-line_highlights: 6
+line_highlights: 8-12
 ---
 
 // Check answer function
