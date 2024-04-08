@@ -199,7 +199,7 @@ line_highlights: 3
 
         <div class="result" id="result3"></div>  
         <div class="fullMarks">Well done! All correct!</div>
-        <a class="retry" href="index.html">Click to retry</a>
+        <a class="retry" href="index.html">Have another go!</a>
         <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
 
 --- /code ---
