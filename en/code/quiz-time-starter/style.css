@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--header-font);
+  color: var(--header-font-colour);
 }
 
 .sitename {
@@ -71,7 +71,7 @@ button {
 
 .result {
   background-color: var(--h1-colour);
-  color: var(--header-font);
+  color: var(--header-font-colour);
   width: 100%;
   border: 0;
   padding: 10px;
@@ -197,7 +197,7 @@ button {
     text-shadow: 0 0 20px var(--body-background);
   }
   to {
-    text-shadow: 0 0 50px var(--header-font), 0 0 10px var(--header-font);
+    text-shadow: 0 0 50px var(--header-font-colour), 0 0 10px var(--header-font-colour);
   }
 }
 
