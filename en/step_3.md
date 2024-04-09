@@ -60,7 +60,7 @@ It contains this function call:
 
 The function call contains two arguments that it passes to the `checkAnswer` function.
 
-### Here is the checkAnswer function
+### Here is the checkAnswer function
 
 + `function checkAnswer(question, result)`
 
@@ -84,7 +84,7 @@ You can get the selected option using the `:checked` pseudo-class in a querySele
 
 Create the variable `answer` and set it to the selected radio button in the `name` group that has the same value as that passed to the `question` parameter (in this case: `q1`):
 
-`onclick="checkAnswer('`<mark>q1</mark>`', '#result1')`
+`onclick="checkAnswer('q1', '#result1')`
 
 --- code ---
 ---
@@ -110,7 +110,7 @@ You can update the text in this question's result `<div>` because it has an `id`
 
 This unique value is the second argument passed to the function by the button's `onclick` event.
 
-`onclick="checkAnswer('q1', '`<mark>#result1</mark>`')`
+`onclick="checkAnswer('q1', '#result1')`
 
 --- task ---
 
@@ -140,7 +140,7 @@ The styling for the result div means it is hidden.
 --- collapse ---
 
 ---
-title: Show me the result div styling
+title: Show me the styling of the 'result' div
 ---
 
 --- code ---
@@ -299,6 +299,9 @@ function checkAnswer(question, result) {
 + You should see the result div display 'Please select an answer'.
 
 --- /task ---
+
+**Debug**
+Make sure you have added the `if (answer) {` on line 8 and updated lines 13-15 with the `else` statement (and indented the code to include these additions).
 
 Awesome work! You have created an interactive question!
 

@@ -123,7 +123,7 @@ line_highlights: 17
 --- task ---
 
 Add text to the three answer labels.
-+ One correct answer
++ One correct answer (and give it the attribute `value="correct"`)
 + Two incorrect answers
 
 --- code ---
