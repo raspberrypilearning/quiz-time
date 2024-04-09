@@ -153,7 +153,7 @@ line_highlights: 10
 
 .result {
   background-color: var(--h1-colour);
-  color: var(--header-font);
+  color: var(--header-font-colour);
   width: 100%;
   border: 0;
   padding: 10px;

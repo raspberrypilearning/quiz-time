@@ -287,7 +287,7 @@ line_highlights:
   /* Base Colours */
   --body-background: #000000;
   --background: #ffffff;
-  --header-font: #000000;
+  --header-font-colour: #000000;
   --h1-colour: #000000;
   --h2-colour: #000000;
   --button-background-colour: #000000;
