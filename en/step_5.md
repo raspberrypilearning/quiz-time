@@ -77,7 +77,7 @@ line_highlights: 4
   if (answer) {
     if (answer.value === "correct") {
       qResult.innerText = "Correct";
-      score+1;
+      score+=1;
     } else {
       qResult.innerText = "Incorrect";
     }
