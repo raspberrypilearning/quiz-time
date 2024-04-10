@@ -2,13 +2,13 @@
 
 
 // Constants
-const scoreText = document.querySelector("#scoreText");
-const questions = document.querySelectorAll(".q-container");
+
 
 // Check answer function
 
 
+// Display first question
+
+
 // Next question function
 
-
-// Display first question

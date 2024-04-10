@@ -30,8 +30,7 @@ title: Some examples...
 
 The example project uses **Wildlife** as its topic, and asks the user three questions.
 
-**TODO** 
-The **Mac** example uses **Mac** as its topic, and asks the user ...
+The **Karate** example uses **karate** as its topic
 
 There are many choices of topic, and questions about those topics. 
 Pick something you're the expert in and test your friends or family!
@@ -123,7 +122,7 @@ line_highlights: 17
 --- task ---
 
 Add text to the three answer labels.
-+ One correct answer
++ One correct answer (and give it the attribute `value="correct"`)
 + Two incorrect answers
 
 --- code ---
