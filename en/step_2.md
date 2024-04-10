@@ -30,9 +30,10 @@ title: Some examples...
 
 The example project uses **Wildlife** as its topic, and asks the user three questions.
 
-The **Karate** example uses **karate** as its topic
+The **Karate** example uses the martial art **karate** as its topic.
 
 There are many choices of topic, and questions about those topics. 
+
 Pick something you're the expert in and test your friends or family!
 
 --- /collapse ---
