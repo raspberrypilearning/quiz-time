@@ -39,18 +39,11 @@ You are going to make some design decisions to create your quiz!
   
 --- task ---
 
-Explore these example projects to get more ideas:
+Explore this example project to get more ideas:
 
-**TODO** Update these links
+**Karate quiz**: [See inside](https://editor.raspberrypi.org/en/projects/quiz-time-karate){:target="_blank"}
 
-**Mac's example**: [See inside](https://editor.raspberrypi.org/en/projects/quiz-time-mac){:target="_blank"}
-
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/quiz-time-mac" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
-</iframe>
-
-**Mac's example**: [See inside](https://editor.raspberrypi.org/en/projects/quiz-time-mac){:target="_blank"}
-
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/quiz-time-mac" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/quiz-time-karate" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
 </iframe>
 
 --- /task ---
@@ -61,15 +54,9 @@ Explore these example projects to get more ideas:
 
 ### Get inspiration 
 
-**TODO** Update these images
+**Karate quiz**
 
-**Mac's example**
-
-![](images/mac.png)
-
-**Second example**
-
-![](images/second.png)
+![](images/karate-quiz.png)
 
 --- /print-only ---
 
