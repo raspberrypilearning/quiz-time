@@ -22,7 +22,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   --- feedback ---
 
-  Correct! The `for` attribute links the label to an `<input>` element's `id` attribute
+  Correct! The `for` attribute links the label to an `<input>` element's `id` attribute.
 
   --- /feedback ---
 
