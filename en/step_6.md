@@ -1,12 +1,12 @@
 ## Show one at a time
 
-In this step you will hide all questions so that they can only be shown when they are needed.
+In this step, you will hide all questions so that they are only shown when they are needed.
 
 ### Hide all questions
 
 You need to make each question appear it is needed.
 
-First you need to hide them all.
+First, you need to hide all of them.
 
 --- task ---
 
@@ -52,7 +52,7 @@ You need to be able to access each question.
 
 --- task ---
 
-Open `scripts.js`
+Open `scripts.js`.
 
 Create a constant to hold a list of all question containers.
 
@@ -74,13 +74,13 @@ const questions = document.querySelectorAll(".q-container");
 
 ### Show the first question
 
-The first item in your list is at index `0`
+The first item in your list is at index `0`.
 
 --- task ---
 
-Find the `// Display first question` comment
+Find the `// Display first question` comment.
 
-Show the first question
+Show the first question.
 
 --- code ---
 ---
