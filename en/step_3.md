@@ -1,12 +1,12 @@
 ## Check the answer
 
-In this step you will create a function to check the user's answer and let them know if they were right!
+In this step, you will create a function to check the user's answer and let them know if they were right!
 
 The starter project already has a `scripts.js` file that contains constants.
 
 ### Create the checkAnswer function
 
-Next you need to create a function that will handle the button's `onclick` event.
+Next, you need to create a function that will handle the button's `onclick` event.
 
 --- code ---
 ---
@@ -21,11 +21,11 @@ line_numbers: false
 
 --- task ---
 
-Open `scripts.js`
+Open `scripts.js`.
 
-Find the `// Check answer function` comment
+Find the `// Check answer function` comment.
 
-Create a function called `checkAnswer`
+Create a function called `checkAnswer`.
 
 It should have two parameters `question` and `result`.
 
@@ -114,7 +114,7 @@ This unique value is the second argument passed to the function by the button's 
 
 --- task ---
 
-Set the variable qResult to be this question's result `<div>`.
+Set the variable `qResult` to be this question's result `<div>`.
 
 --- code ---
 ---
@@ -234,15 +234,15 @@ function checkAnswer(question, result) {
 
 **Click Run**
 + Select the correct answer and click the 'Check Answer' button
-+ You should see the result div display 'Correct'.
++ You should see the result div display 'Correct'
 
 **Click Run** 
 + Select a different answer and click the 'Check Answer' button
-+ You should see the result div display 'Incorrect'.
++ You should see the result div display 'Incorrect'
 
 **Click Run** 
 + Select the other incorrect answer and click the 'Check Answer' button
-+ You should see the result div display 'Incorrect'.
++ You should see the result div display 'Incorrect'
 
 --- /task ---
 
@@ -294,9 +294,9 @@ function checkAnswer(question, result) {
 --- task ---
 
 **Click Run**
-+ Do *not* select an answer
++ Do **not** select an answer
 + Click the 'Check Answer' button
-+ You should see the result div display 'Please select an answer'.
++ You should see the result div display 'Please select an answer'
 
 --- /task ---
 
@@ -305,4 +305,4 @@ Make sure you have added the `if (answer) {` on line 8 and updated lines 13-15 w
 
 Awesome work! You have created an interactive question!
 
-Next you will create some more questions!
+Next, you will create some more questions!
