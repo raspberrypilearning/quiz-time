@@ -15,7 +15,7 @@ Which one of these was used to create the list?
 
   --- feedback ---
   
-  Not quite! IntersectionObserver() checks to see if elements have entered or exited the viewport.
+  Not quite! `IntersectionObserver()` checks to see if elements have entered or exited the viewport.
 
   --- /feedback ---
 
