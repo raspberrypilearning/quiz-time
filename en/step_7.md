@@ -1,6 +1,6 @@
 ## Next question, please!
 
-In this step you will hide the answered question and show the next one with an animation!
+In this step, you will hide the answered question and show the next one with an animation!
 
 ### Which is the current question?
 
@@ -10,7 +10,7 @@ Create a variable to hold the index of the current question.
 
 --- task ---
 
-Create a variable called `currentQ` and set it to `0`
+Create a variable called `currentQ` and set it to `0`.
 
 --- code ---
 ---
@@ -34,9 +34,9 @@ You need to create a function that will hide the current question and show the n
 
 --- task ---
 
-Find the `// Check answer function` comment
+Find the `// Check answer function` comment.
 
-Create a function called `nextQ`
+Create a function called `nextQ`.
 
 --- code ---
 ---
@@ -197,8 +197,8 @@ function checkAnswer(question, result) {
 --- task ---
 
 **Click Run** 
-+ Answer the questions
-+ The current question will hide and the next question will show
++ Answer the questions.
++ The current question will hide and the next question will show.
 + You will notice that you only see the `result` div on the last question. The result div for the other questions is also showing, but too fast for you to see.
   
 --- /task ---
@@ -287,7 +287,7 @@ function nextQ() {
 
 ### Animate the questions as they appear!
 
-**Choose:** which animation you would like to use. 
+**Choose** which animation you would like to use. 
 
 There are five animations in `style.css` you could use:
 1. `fade-in`
@@ -341,9 +341,9 @@ You can smooth this out.
 
 --- task ---
 
-Open `style.css`
+Open `style.css`.
 
-Set the `opacity` property of the `q-container` selector to `0` 
+Set the `opacity` property of the `q-container` selector to `0`. 
 
 --- code ---
 ---
@@ -370,9 +370,9 @@ line_highlights: 9
 
 --- task ---
 
-Open `scripts.js`
+Open `scripts.js`.
 
-Set the `opacity` property of the the first question to `1`
+Set the `opacity` property of the the first question to `1`.
 
 --- code ---
 ---
