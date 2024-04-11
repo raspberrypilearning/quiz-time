@@ -1,6 +1,6 @@
 ## Add more questions
 
-In this step you will add two more questions. 
+In this step, you will add two more questions. 
 
 ### Copy the question container
 
@@ -8,7 +8,7 @@ In this step you will add two more questions.
 
 Open `index.html`. 
 
-Highlight and copy (<kbd>Ctrl</kbd>+<kbd>C</kbd>/<kbd>Cmd</kbd>+<kbd>C</kbd>) the question container `<div>`.
+Highlight and copy (<kbd>Ctrl</kbd>+<kbd>C</kbd> or <kbd>Cmd</kbd>+<kbd>C</kbd>) the question container `<div>`.
 
 --- collapse ---
 
@@ -48,7 +48,7 @@ line_numbers: false
 
 --- task ---
 
-Paste (<kbd>Ctrl</kbd>+<kbd>V</kbd>/<kbd>Cmd</kbd>+<kbd>V</kbd>) the question container underneath.
+Paste (<kbd>Ctrl</kbd>+<kbd>V</kbd> or <kbd>Cmd</kbd>+<kbd>V</kbd>) the question container underneath.
 
 --- collapse ---
 
@@ -123,8 +123,8 @@ Change:
 --- task ---
 
 Change:
-+ the text content of each `<label>`, so you have one correct and two incorrect answers.
-+ the `for` attribute of each label to relate to q2, rather than q1.
++ The text content of each `<label>`, so you have one correct and two incorrect answers
++ The `for` attribute of each label to relate to q2, rather than q1
 
 --- /task ---
 
@@ -133,9 +133,9 @@ Change the attributes for the input elements.
 --- task ---
 
 Change:
-+ the `name` attribute of each `<input>` element to `q2`
-+ the `value` attribute of each `<input>` element to `correct` (or leave it blank if it is an incorrect answer)
-+ the `id` attribute of each `<input>` element to match the `for` attribute of its label
++ The `name` attribute of each `<input>` element to `q2`
++ The `value` attribute of each `<input>` element to `correct` (or leave it blank if it is an incorrect answer)
++ The `id` attribute of each `<input>` element to match the `for` attribute of its label
 
 --- /task ---
 
@@ -144,8 +144,8 @@ Change the attributes for the result div and button.
 --- task ---
 
 Change:
-+ the `id` attribute of the `result` div to `result2`
-+ the `id` attribute of the button to `q2`
++ The `id` attribute of the `result` div to `result2`
++ The `id` attribute of the button to `q2`
 
 --- /task ---
 
@@ -154,7 +154,7 @@ Change the arguments passed to the function.
 --- task ---
 
 Change:
-+ the arguments passed by the `onclick` event to the function (`q2` and `#result2`)
++ The arguments passed by the `onclick` event to the function (`q2` and `#result2`)
 
 --- collapse ---
 
