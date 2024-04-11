@@ -1,6 +1,6 @@
 ## Score some points
 
-In this step you will let the user score points for a correct answer!
+In this step, you will let the user score points for a correct answer!
 
 ### Add the score to the header
 
@@ -37,9 +37,9 @@ When the user selects the correct answer, your function needs to update the scor
 
 --- task ---
 
-Open `scripts.js`
+Open `scripts.js`.
 
-Create a variable called `score` and set it to `0`
+Create a variable called `score` and set it to `0`.
 
 --- code ---
 ---
@@ -118,7 +118,7 @@ Change the text content of the span to match the new score.
 
 Update the text content of the span using a template literal.
 
-Notice: ``` `Score: ${score}` ``` uses backticks ``` ` ` ``` instead of `" "` or `' '`
+Notice: ``` `Score: ${score}` ``` uses backticks ``` ` ` ``` instead of `" "` or `' '`.
 
 --- code ---
 ---
@@ -189,9 +189,9 @@ line_highlights: 2
 
 --- /code ---
 
-**Notice** This will not disable the button if the user has not selected an answer.
+**Notice:** This will not disable the button if the user has not selected an answer.
 
-**Notice** The `querySelector` uses concatenation to join the character `#` to the value of `question` passed as an argument in the button's `onclick` event. This targets the specific button element.
+**Notice:** The `querySelector` uses concatenation to join the character `#` to the value of `question` passed as an argument in the button's `onclick` event. This targets the specific button element.
 
 --- /task ---
 
@@ -199,7 +199,7 @@ line_highlights: 2
 
 **Click Run** 
 + Select a correct answer and click the 'Check Answer' button.
-+ Click the button again - it should not work
++ Click the button again. It should not work.
 
 --- /task ---
 
