@@ -1,6 +1,6 @@
 ## Upgrade your project
 
-In this step you can upgrade your project by:
+In this step, you can upgrade your project by:
 + Adding more questions
 + Updating the text in the header to show the final score
 + Showing the user a message if they get full marks
@@ -101,7 +101,7 @@ title: Show the user a message if they get full marks
 
 + Add a `<div>` element below the result div.
 + Include a congratulatory message.
-+ Give it a `class` attribute that can be used to show/hide the message using JavaScript. The example uses the class `fullMarks`
++ Give it a `class` attribute that can be used to show/hide the message using JavaScript. The example uses the class `fullMarks`.
 
 --- code ---
 ---
@@ -140,7 +140,7 @@ const fullMarks = document.querySelector(".fullMarks");
 
 --- /code ---
 
-Add an `if` statement to check if the final score matches the number of questions 
+Add an `if` statement to check if the final score matches the number of questions. 
 
 The example awards one point for each correct answer.
 
@@ -187,7 +187,7 @@ title: Let the user retake the quiz if they don't get full marks
 
 + Add an `<a>` element below the result div.
 + Include a link to `index.html` using the `href` attribute.
-+ Give it a `class` attribute that can be used to show/hide the link using JavaScript. The example uses the class `retry` (the CSS styling is already provided in `style.css`)
++ Give it a `class` attribute that can be used to show/hide the link using JavaScript. The example uses the class `retry` (the CSS styling is already provided in `style.css`).
 
 --- code ---
 ---
