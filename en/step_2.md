@@ -25,7 +25,7 @@ You need to pick a topic, and three questions for the user to answer.
 --- collapse ---
 
 ---
-title: Some examples...
+title: Some examples
 ---
 
 The example project uses **Wildlife** as its topic, and asks the user three questions.
@@ -257,7 +257,7 @@ In the example, the correct answer is the first answer (`Tiger`).
 
 ### Make the page your own
 
-The page is looking pretty boring now, time for you to make it look awesome!
+The page is looking pretty boring at the moment. It's time for you to make it look awesome!
 
 --- task ---
 
