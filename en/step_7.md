@@ -390,4 +390,4 @@ questions[0].style.opacity = 1;
 
 --- /task ---
 
-Well done! You have made an awesome interactive quiz - it looks amazing!
+Well done! You have made an awesome interactive quiz — it looks amazing!
