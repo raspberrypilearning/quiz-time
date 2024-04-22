@@ -1,6 +1,6 @@
 ## Create a question
 
-In this step you will create the first quiz question. You will also choose some colours and a quiz title!
+In this step, you will create the first quiz question. You will also choose some colours and a quiz title!
 
 ### Choose a quiz topic
 
@@ -8,24 +8,24 @@ In this step you will create the first quiz question. You will also choose some 
 
 What will your quiz be about?
 
-+ 🐻 **Nature**: Animals, plants or habitats?
-+ 📖 **Books**: Authors, characters or genres?
-+ 🏰 **History**: Kings and queens, pre-history/modern or important dates?
-+ 🥇 **World records**: Biggest, fastest or longest?
++ 🐻 **Nature**: Animals, plants, or habitats?
++ 📖 **Books**: Authors, characters, or genres?
++ 🏰 **History**: Kings and queens, pre-history/modern, or important dates?
++ 🥇 **World records**: Biggest, fastest, or longest?
 + 👗 **Fashion**: Brands, trends, or influencers?
-+ 🔬 **Science**: Wildlife, climate or theories?
-+ 🎥 **TV & Film**: Cinematography, series, or characters?
-+ 🖥️ **Coding**: Languages, devices or software?
-+ 🕹️ **Video Games**: Characters, genres or consoles?
-+ 🎨 **Art**: Art works, artists or museums?
-+ 👥 **Culture**: Festivals, holidays or languages?
++ 🔬 **Science**: Wildlife, climate, or theories?
++ 🎥 **TV & film**: Cinematography, series, or characters?
++ 🖥️ **Coding**: Languages, devices, or software?
++ 🕹️ **Video games**: Characters, genres, or consoles?
++ 🎨 **Art**: Art works, artists, or museums?
++ 👥 **Culture**: Festivals, holidays, or languages?
 
 You need to pick a topic, and three questions for the user to answer.
 
 --- collapse ---
 
 ---
-title: Some examples...
+title: Some examples
 ---
 
 The example project uses **Wildlife** as its topic, and asks the user three questions.
@@ -44,9 +44,9 @@ Pick something you're the expert in and test your friends or family!
 
 --- task ---
 
-Open the [Quiz time starter project](https://editor.raspberrypi.org/en/projects/quiz-time-starter){:target="_blank"}
+Open the [Quiz time starter project](https://editor.raspberrypi.org/en/projects/quiz-time-starter){:target="_blank"}.
 
-If you are logged in - save the project to your account and change the name.
+If you are logged in, save the project to your account and change the name.
 
 --- /task ---
 
@@ -155,7 +155,7 @@ line_highlights: 20, 23, 26
 + Each `<input>` element is a radio button type and has three attributes:
   + `name` (q1) allows only one radio button in the name group 'q1' to be selected at a time
   + `value` is used later when the answer is checked
-  + `id` matches the label's `for` attribute.
+  + `id` matches the label's `for` attribute
 
 --- /task ---
 
@@ -168,7 +168,7 @@ line_highlights: 20, 23, 26
 
 ### Display correct / incorrect
 
-The user will need to know if they are correct / incorrect.
+The user will need to know if they are correct or incorrect.
 
 --- task ---
 
@@ -200,7 +200,7 @@ line_highlights: 28
 
 --- /code ---
 
-**Notice:** There is no text content in the div. You will add this later using JavaScript.
+**Notice:** There is no text content in the `<div>`. You will add this later using JavaScript.
 
 --- /task ---
 
@@ -213,11 +213,11 @@ The user needs to check if their answer is correct.
 Add a button to the bottom of the `q-container` `<div>`.
 
 This button:
-+ has the attribute `id="q1"`, used to show, hide and disable it later
-+ has an `onclick` event that runs the `checkAnswer` function and passes it:
-  + the question to check (`q1`)
-  + the id of the div where the result of the check will be displayed (`#result1`)
-+ shows the text `Check Answer`
++ Has the attribute `id="q1"`, which is used to show, hide, and disable it later
++ Has an `onclick` event that runs the `checkAnswer` function and passes it:
+  + The question to check (`q1`)
+  + The ID of the `<div>` where the result of the check will be displayed (`#result1`)
++ Shows the text `Check Answer`
 
 --- code ---
 ---
@@ -251,13 +251,13 @@ line_highlights: 29
 --- task ---
 
 Check that the correct option has the attribute `value="correct"`.
-In the example, the correct answer is the first answer (`Tiger`)
+In the example, the correct answer is the first answer (`Tiger`).
 
 --- /task ---
 
 ### Make the page your own
 
-The page is looking pretty boring now, time for you to make it look awesome!
+The page is looking pretty boring at the moment. It's time for you to make it look awesome!
 
 --- task ---
 
@@ -307,4 +307,4 @@ line_highlights:
 
 --- /task ---
 
-Next you will create the function to check if the user's answer is correct!
+Next, you will create the function to check if the user's answer is correct!
