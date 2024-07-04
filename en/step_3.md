@@ -8,17 +8,6 @@ The starter project already has a `scripts.js` file that contains constants.
 
 Next, you need to create a function that will handle the button's `onclick` event.
 
---- code ---
----
-language: html
-filename:
-line_numbers: false
----
-
-<button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
-
---- /code ---
-
 --- task ---
 
 Open `scripts.js`.

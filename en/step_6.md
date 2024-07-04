@@ -4,7 +4,7 @@ In this step, you will hide all questions so that they are only shown when they 
 
 ### Hide all questions
 
-You need to make each question appear it is needed.
+You need to make each question appear when it is needed.
 
 First, you need to hide all of them.
 

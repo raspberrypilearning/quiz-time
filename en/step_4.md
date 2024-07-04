@@ -8,7 +8,7 @@ In this step, you will add two more questions.
 
 Open `index.html`. 
 
-Highlight and copy (<kbd>Ctrl</kbd>+<kbd>C</kbd> or <kbd>Cmd</kbd>+<kbd>C</kbd>) the question container `<div>`.
+Highlight and copy (<kbd>Ctrl</kbd>+<kbd>C</kbd> or <kbd>Cmd</kbd>+<kbd>C</kbd>) the `<div>` with the class `q-container` .
 
 --- collapse ---
 

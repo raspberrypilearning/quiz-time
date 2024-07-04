@@ -116,7 +116,7 @@ Change the text content of the span to match the new score.
 
 --- task ---
 
-Update the text content of the span using a template literal.
+Update the text content of the span.
 
 Notice: ``` `Score: ${score}` ``` uses backticks ``` ` ` ``` instead of `" "` or `' '`.
 
@@ -169,7 +169,7 @@ If the user selects the correct answer, they can keep clicking Check Answer and 
 
 You need to stop the user from cheating by clicking the button more than once.
 
-You can disable a button using the `.disable` method.
+You can disable a button using the `.disabled` method.
 
 --- task ---
 
