@@ -257,7 +257,7 @@ In the example, the correct answer is the first answer (`Tiger`).
 
 ### Make the page your own
 
-The page is looking pretty boring at the moment. It's time for you to make it look awesome!
+The page looks very functional and basic at the moment. It's time for you to make it look awesome!
 
 --- task ---
 
