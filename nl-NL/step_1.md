@@ -1,4 +1,4 @@
-## Introduction
+## Inleiding
 
 In this project, you will create a web app that lets the user show what they know about a topic of your choosing! You could make a quiz about history, nature, world records, science, sports, fashion, TV, movies...or anything else you're an expert in!
 
@@ -6,7 +6,7 @@ In this project, you will create a web app that lets the user show what they kno
 The internet has helped us <span style="color: #0faeb0">**share knowledge**</span> and ideas with people around the globe. Sharing knowledge helps us understand other communities and cultures and reminds us that we can all learn from each other.
 </p>
 
-You will:
+Je gaat:
 
 - Choose a topic and create questions
 - Use buttons, CSS, and JavaScript to animate, show, and hide questions
@@ -16,7 +16,7 @@ You will:
 
 \--- task ---
 
-### Try it!
+### Probeer het uit!
 
 Answer the questions and watch the animations!
 
@@ -27,7 +27,7 @@ Answer the questions and watch the animations!
 
 \--- /task ---
 
-### Get inspiration
+### Doe inspiratie op
 
 You are going to make some design decisions to create your quiz!
 
@@ -52,7 +52,7 @@ Explore this example project to get more ideas:
 
 \--- print-only ---
 
-### Get inspiration
+### Doe inspiratie op
 
 **Karate quiz**
 
