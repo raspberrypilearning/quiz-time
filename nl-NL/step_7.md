@@ -142,7 +142,7 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Answer the first question
 - The question does not change!
@@ -197,7 +197,7 @@ qResult.innerText = "Please select an answer";
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Answer the questions.
 - The current question will hide and the next question will show.
@@ -238,7 +238,7 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Answer the questions
 - There should now be a delay before the current question hides and the next question shows
@@ -282,7 +282,7 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Answer the questions
 - The questions will fade out!
@@ -332,7 +332,7 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Answer the questions
 - The questions will animate as they appear!
@@ -396,4 +396,4 @@ questions[0].style.opacity = 1;
 
 \--- /task ---
 
-Well done! You have made an awesome interactive quiz — it looks amazing!
+Goed gedaan! You have made an awesome interactive quiz — it looks amazing!
