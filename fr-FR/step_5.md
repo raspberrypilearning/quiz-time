@@ -6,7 +6,7 @@ In this step, you will let the user score points for a correct answer!
 
 \--- task ---
 
-Open `index.html`.
+Ouvre `index.html`.
 
 Add a new span element to the header.
 
@@ -39,7 +39,7 @@ When the user selects the correct answer, your function needs to update the scor
 
 \--- task ---
 
-Open `scripts.js`.
+Ouvre `scripts.js`.
 
 Create a variable called `score` and set it to `0`.
 
@@ -148,7 +148,7 @@ qResult.innerText = "Please select an answer";
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Answer your questions, click the 'Check Answer' buttons and watch the score in the header update!
 
@@ -200,7 +200,7 @@ if (answer.value === "correct") {
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Select a correct answer and click the 'Check Answer' button.
 - Click the button again. It should not work.
