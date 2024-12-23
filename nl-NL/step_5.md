@@ -148,7 +148,7 @@ qResult.innerText = "Please select an answer";
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Answer your questions, click the 'Check Answer' buttons and watch the score in the header update!
 
@@ -200,7 +200,7 @@ if (answer.value === "correct") {
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Select a correct answer and click the 'Check Answer' button.
 - Click the button again. It should not work.
