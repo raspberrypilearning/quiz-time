@@ -6,7 +6,7 @@ In this step, you will add two more questions.
 
 \--- task ---
 
-Open `index.html`.
+Ouvre `index.html`.
 
 Highlight and copy (<kbd>Ctrl</kbd>+<kbd>C</kbd> or <kbd>Cmd</kbd>+<kbd>C</kbd>) the `<div>` with the class `q-container` .
 
@@ -312,7 +312,7 @@ line_highlights: 35-49
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Answer your questions, click the 'Check Answer' button and watch the result update!
 
