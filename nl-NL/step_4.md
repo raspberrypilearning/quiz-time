@@ -229,7 +229,7 @@ You can go through the same process again for the third question.
 
 Copy and paste the question container again and change the values to create your third question.
 
-You need to:
+Je moet:
 
 - Change the question number and question text
 - Change the answer labels to match the question
@@ -312,7 +312,7 @@ line_highlights: 35-49
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Answer your questions, click the 'Check Answer' button and watch the result update!
 
