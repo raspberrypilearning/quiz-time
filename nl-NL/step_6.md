@@ -39,7 +39,7 @@ opacity: 1;
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - All your questions should have vanished!
 
@@ -100,7 +100,7 @@ questions[0].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Your first question should be back!
 - Select an answer and click the Check Answer button
