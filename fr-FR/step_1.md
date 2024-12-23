@@ -6,7 +6,7 @@ In this project, you will create a web app that lets the user show what they kno
 The internet has helped us <span style="color: #0faeb0">**share knowledge**</span> and ideas with people around the globe. Sharing knowledge helps us understand other communities and cultures and reminds us that we can all learn from each other.
 </p>
 
-You will:
+Tu vas :
 
 - Choose a topic and create questions
 - Use buttons, CSS, and JavaScript to animate, show, and hide questions
@@ -16,7 +16,7 @@ You will:
 
 \--- task ---
 
-### Try it!
+### Essaye !
 
 Answer the questions and watch the animations!
 
@@ -27,7 +27,7 @@ Answer the questions and watch the animations!
 
 \--- /task ---
 
-### Get inspiration
+### Trouve l'inspiration
 
 You are going to make some design decisions to create your quiz!
 
@@ -52,7 +52,7 @@ Explore this example project to get more ideas:
 
 \--- print-only ---
 
-### Get inspiration
+### Trouve l'inspiration
 
 **Karate quiz**
 
