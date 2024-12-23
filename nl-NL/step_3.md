@@ -1,4 +1,4 @@
-## Check the answer
+## Controleer het antwoord
 
 In this step, you will create a function to check the user's answer and let them know if they were right!
 
@@ -221,17 +221,17 @@ qResult.innerText = "Incorrect";
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Select the correct answer and click the 'Check Answer' button
 - You should see the result div display 'Correct'
 
-**Click Run**
+**Klik op Run**
 
 - Select a different answer and click the 'Check Answer' button
 - You should see the result div display 'Incorrect'
 
-**Click Run**
+**Klik op Run**
 
 - Select the other incorrect answer and click the 'Check Answer' button
 - You should see the result div display 'Incorrect'
@@ -285,7 +285,7 @@ qResult.innerText = "Please select an answer";
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Do **not** select an answer
 - Click the 'Check Answer' button
@@ -296,6 +296,6 @@ qResult.innerText = "Please select an answer";
 **Debug**
 Make sure you have added the `if (answer) {` on line 8 and updated lines 13-15 with the `else` statement (and indented the code to include these additions).
 
-Awesome work! You have created an interactive question!
+Geweldig werk! You have created an interactive question!
 
 Next, you will create some more questions!
