@@ -85,7 +85,7 @@ line_highlights: 8, 12
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - You should see your the name of your quiz in the header!
 
@@ -169,7 +169,7 @@ line_highlights: 20, 23, 26
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - You should see your first question and three options.
 
@@ -316,7 +316,7 @@ line_highlights:
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
 - Change the colours if you want to.
 
