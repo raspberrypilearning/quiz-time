@@ -1,4 +1,4 @@
-## Check the answer
+## Vérifier la réponse
 
 In this step, you will create a function to check the user's answer and let them know if they were right!
 
@@ -10,7 +10,7 @@ Next, you need to create a function that will handle the button's `onclick` even
 
 \--- task ---
 
-Open `scripts.js`.
+Ouvre `scripts.js`.
 
 Find the `// Check answer function` comment.
 
@@ -221,17 +221,17 @@ qResult.innerText = "Incorrect";
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Select the correct answer and click the 'Check Answer' button
 - You should see the result div display 'Correct'
 
-**Click Run**
+**Clique sur Run**
 
 - Select a different answer and click the 'Check Answer' button
 - You should see the result div display 'Incorrect'
 
-**Click Run**
+**Clique sur Run**
 
 - Select the other incorrect answer and click the 'Check Answer' button
 - You should see the result div display 'Incorrect'
@@ -285,7 +285,7 @@ qResult.innerText = "Please select an answer";
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Do **not** select an answer
 - Click the 'Check Answer' button
