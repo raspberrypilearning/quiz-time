@@ -8,11 +8,11 @@ copyedit: false
 last_tested: '2021-03-26'
 steps:
   - 
-    title: Introduction
+    title: Inleiding
   - 
     title: Create a question
   - 
-    title: Check the answer
+    title: Controleer het antwoord
     completion:
       - engaged
   - 
@@ -26,7 +26,7 @@ steps:
     completion:
       - internal
   - 
-    title: Reflection
+    title: Reflectie
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -35,6 +35,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Verbeter je project
   - 
-    title: What next?
+    title: Wat kun je verder nog doen?
