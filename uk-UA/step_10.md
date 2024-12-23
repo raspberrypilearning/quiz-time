@@ -1,4 +1,4 @@
-## What next?
+## Що далі?
 
 If you are following the [More web](https://projects.raspberrypi.org/en/raspberrypi/more-web) path, you can move on to the [Share your world](https://projects.raspberrypi.org/en/projects/share-your-world) project. In this project, you will use your HTML, CSS, and JavaScript skills to make an interactive website that invites the user to experience something they cannot otherwise!
 
