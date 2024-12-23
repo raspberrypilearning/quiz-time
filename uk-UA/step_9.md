@@ -1,4 +1,4 @@
-## Upgrade your project
+## Вдоскональ свій проєкт
 
 In this step, you can upgrade your project by:
 
