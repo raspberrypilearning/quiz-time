@@ -10,7 +10,7 @@ First, you need to hide all of them.
 
 \--- task ---
 
-Open `style.css`.
+Ouvre `style.css`.
 
 Alter the style for the selector `.q-container` to hide all the question containers.
 
@@ -39,7 +39,7 @@ opacity: 1;
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - All your questions should have vanished!
 
@@ -53,7 +53,7 @@ You need to be able to access each question.
 
 \--- task ---
 
-Open `scripts.js`.
+Ouvre `scripts.js`.
 
 Create a constant to hold a list of all question containers.
 
@@ -100,7 +100,7 @@ questions[0].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Your first question should be back!
 - Select an answer and click the Check Answer button
