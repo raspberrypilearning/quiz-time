@@ -1,4 +1,4 @@
-## Upgrade your project
+## Verbeter je project
 
 In this step, you can upgrade your project by:
 
@@ -20,7 +20,7 @@ You can go through the same process you used in an earlier step to add more ques
 
 Copy and paste the question container again and change the values to create your extra questions.
 
-You need to:
+Je moet:
 
 - Change the question number and question text
 - Change the answer labels to match the question
