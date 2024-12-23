@@ -85,7 +85,7 @@ line_highlights: 8, 12
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - You should see your the name of your quiz in the header!
 
@@ -169,7 +169,7 @@ line_highlights: 20, 23, 26
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - You should see your first question and three options.
 
@@ -285,7 +285,7 @@ Add an appropriate font for your webpage from Google Fonts.
 
 \--- task ---
 
-Open `default.css`.
+Ouvre `default.css`.
 
 **Choose** your colours and change the colour variables.
 
@@ -316,7 +316,7 @@ line_highlights:
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Change the colours if you want to.
 
