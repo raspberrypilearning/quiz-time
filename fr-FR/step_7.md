@@ -142,7 +142,7 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Answer the first question
 - The question does not change!
@@ -197,7 +197,7 @@ qResult.innerText = "Please select an answer";
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Answer the questions.
 - The current question will hide and the next question will show.
@@ -238,7 +238,7 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Answer the questions
 - There should now be a delay before the current question hides and the next question shows
@@ -282,7 +282,7 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Answer the questions
 - The questions will fade out!
@@ -332,7 +332,7 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
 - Answer the questions
 - The questions will animate as they appear!
@@ -347,7 +347,7 @@ You can smooth this out.
 
 \--- task ---
 
-Open `style.css`.
+Ouvre `style.css`.
 
 Set the `opacity` property of the `q-container` selector to `0`.
 
@@ -376,7 +376,7 @@ opacity: 0;
 
 \--- task ---
 
-Open `scripts.js`.
+Ouvre `scripts.js`.
 
 Set the `opacity` property of the the first question to `1`.
 
@@ -396,4 +396,4 @@ questions[0].style.opacity = 1;
 
 \--- /task ---
 
-Well done! You have made an awesome interactive quiz — it looks amazing!
+Bien joué ! You have made an awesome interactive quiz — it looks amazing!
