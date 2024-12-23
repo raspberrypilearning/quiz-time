@@ -1,18 +1,18 @@
-## Reflection
+## Reflectie
 
-Well done, you have learned a lot! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
+Goed gedaan, je hebt veel geleerd! Nu is het tijd om na te denken - reflecteren is een belangrijk onderdeel van het leren omdat het helpt om nieuwe verbindingen in je hersenen te maken.
 
-Answer the three questions below to reflect on what you've learned.
+Beantwoord de drie onderstaande vragen om terug te kijken op wat je hebt geleerd.
 
-After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+Druk na elke vraag op Controleer mijn antwoord. Je wordt naar het juiste antwoord geleid. Je kunt deze activiteit zo vaak doen als je wilt.
 
-Have fun!
+Veel plezier!
 
 \--- question ---
 
 ---
 
-## legend: Question 1 of 3
+## legend: Vraag 1 van 3
 
 Which of these attributes allows the user to click on a label to select a radio option?
 
@@ -22,7 +22,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   \--- feedback ---
 
-  Correct! The `for` attribute links the label to an `<input>` element's `id` attribute.
+  Juist! The `for` attribute links the label to an `<input>` element's `id` attribute.
 
   \--- /feedback ---
 
@@ -30,7 +30,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   \--- feedback ---
 
-  Not quite! Using `name` allows only one radio button in the name group to be selected at a time.
+  Niet helemaal! Using `name` allows only one radio button in the name group to be selected at a time.
 
   \--- /feedback ---
 
