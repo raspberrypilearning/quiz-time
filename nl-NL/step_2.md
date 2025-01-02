@@ -1,4 +1,4 @@
-## Create a question
+## Maak vraag aan
 
 In this step, you will create the first quiz question. You will also choose some colours and a quiz title!
 
@@ -6,7 +6,7 @@ In this step, you will create the first quiz question. You will also choose some
 
 \--- task ---
 
-What will your quiz be about?
+Waar gaat jouw quiz over?
 
 - 🐻 **Nature**: Animals, plants, or habitats?
 - 📖 **Books**: Authors, characters, or genres?
