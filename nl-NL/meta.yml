@@ -1,7 +1,7 @@
 ---
-title: Quiz time!
+title: Tijd voor een quiz!
 hero_image: images/banner.png
-description: Create an interactive quiz app!
+description: Maak een interactieve quiz-app!
 version: 4
 listed: true
 copyedit: false
@@ -10,19 +10,19 @@ steps:
   - 
     title: Inleiding
   - 
-    title: Create a question
+    title: Maak vraag aan
   - 
     title: Controleer het antwoord
     completion:
       - engaged
   - 
-    title: Add more questions
+    title: Voeg meer vragen toe
   - 
-    title: Score some points
+    title: Scoor wat punten
   - 
-    title: Show one at a time
+    title: Toon er één tegelijk
   - 
-    title: Next question, please!
+    title: Volgende vraag, alstublieft!
     completion:
       - internal
   - 
