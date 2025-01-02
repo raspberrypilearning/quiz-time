@@ -1,60 +1,60 @@
 ## Maak vraag aan
 
-In this step, you will create the first quiz question. You will also choose some colours and a quiz title!
+In deze stap ga je de eerste quizvraag maken. Je kiest ook een aantal kleuren en een titel voor de quiz!
 
-### Choose a quiz topic
+### Kies een quizonderwerp
 
 \--- task ---
 
 Waar gaat jouw quiz over?
 
-- 🐻 **Nature**: Animals, plants, or habitats?
-- 📖 **Books**: Authors, characters, or genres?
-- 🏰 **History**: Kings and queens, pre-history/modern, or important dates?
-- 🥇 **World records**: Biggest, fastest, or longest?
-- 👗 **Fashion**: Brands, trends, or influencers?
-- 🔬 **Science**: Wildlife, climate, or theories?
-- 🎥 **TV & film**: Cinematography, series, or characters?
-- 🖥️ **Coding**: Languages, devices, or software?
-- 🕹️ **Video games**: Characters, genres, or consoles?
-- 🎨 **Art**: Art works, artists, or museums?
-- 👥 **Culture**: Festivals, holidays, or languages?
+- 🐻 **Natuur**: Dieren, planten of leefgebieden?
+- 📖 **Boeken**: auteurs, personages of genres?
+- 🏰 **Geschiedenis**: Koningen en koninginnen, prehistorie/modern of belangrijke data?
+- 🥇 **Wereldrecords**: Grootste, snelste of langste?
+- 👗 **Mode**: Merken, trends of influencers?
+- 🔬 **Wetenschap**: Wilde dieren, klimaat of theorieën?
+- 🎥 **TV & film**: Cinematografie, series of personages?
+- 🖥️ **Coderen**: Talen, apparaten of software?
+- 🕹️ **Video spellen**: Personages, genres of consoles?
+- 🎨 **Kunst**: Kunstwerken, kunstenaars of musea?
+- 👥 **Cultuur**: Festivals, feestdagen of talen?
 
-You need to pick a topic, and three questions for the user to answer.
+Je moet een onderwerp kiezen, en drie vragen voor de gebruiker die hij kan beantwoorden.
 
 \--- collapse ---
 
 ---
 
-## title: Some examples
+## title: Enkele voorbeelden
 
-The example project uses **Wildlife** as its topic, and asks the user three questions.
+Het voorbeeldproject gebruikt **Wilde Dieren** als onderwerp en stelt de gebruiker drie vragen.
 
-The **Karate** example uses the martial art **karate** as its topic.
+Het **Karate** voorbeeld gebruikt de vechtsport **karate** als onderwerp.
 
-There are many choices of topic, and questions about those topics.
+Er zijn veel mogelijkheden qua onderwerpen en vragen over die onderwerpen.
 
-Pick something you're the expert in and test your friends or family!
+Kies iets waar je de expert in bent en test je vrienden of familie!
 
 \--- /collapse ---
 
-**Choose** your topic.
+**Kies** jouw onderwerp.
 
 \--- /task ---
 
 \--- task ---
 
-Open the [Quiz time starter project](https://editor.raspberrypi.org/en/projects/quiz-time-starter){:target="_blank"}.
+Open het [Tijd voor een Quiz starter project](https://editor.raspberrypi.org/en/projects/quiz-time-starter){:target="_blank"}.
 
-If you are logged in, save the project to your account and change the name.
+Als je bent ingelogd, sla het project op jouw account op en wijzig de naam.
 
 \--- /task ---
 
-### Update your page title and heading
+### Werk de titel en koptekst van jouw pagina bij
 
 \--- task ---
 
-Change the page title and header text to match your topic.
+Wijzig de paginatitel en de koptekst zodat deze bij jouw onderwerp passen.
 
 ## --- code ---
 
@@ -77,7 +77,7 @@ line_highlights: 8, 12
   </head>
   <body>
     <header class="header">
-      <span class="sitename">Wildlife quiz</span>
+      <span class="sitename">Quiz over wilde dieren</span>
 
 \--- /code ---
 
@@ -87,19 +87,19 @@ line_highlights: 8, 12
 
 **Klik op Run**
 
-- You should see your the name of your quiz in the header!
+- Je zou de naam van je quiz in de koptekst moeten zien!
 
 \--- /task ---
 
-### Create your first question
+### Maak jouw eerste vraag
 
 \--- task ---
 
-Find the question container `<div class="q-container">`
+Zoek de vraagcontainer `<div class="q-container">`
 
-**Choose** a question about your topic.
+**Kies** een vraag over je onderwerp.
 
-Change the text in the `<h2>` tag to be your first question.
+Wijzig de tekst in de tag `<h2>` zodat dit je eerste vraag wordt.
 
 ## --- code ---
 
