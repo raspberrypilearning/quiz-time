@@ -14,7 +14,7 @@ Veel plezier!
 
 ## legend: Vraag 1 van 3
 
-Which of these attributes allows the user to click on a label to select a radio option?
+Welke van deze attributen staat de gebruiker toe om op een label te klikken om een radio-optie te selecteren?
 
 \--- choices ---
 
@@ -22,7 +22,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   \--- feedback ---
 
-  Juist! The `for` attribute links the label to an `<input>` element's `id` attribute.
+  Juist! Het `for`-kenmerk koppelt het label aan het `id`-kenmerk van een `<input>`-element.
 
   \--- /feedback ---
 
@@ -30,7 +30,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   \--- feedback ---
 
-  Niet helemaal! Using `name` allows only one radio button in the name group to be selected at a time.
+  Niet helemaal! Met `name` kan slechts één radio knop in de naam groep tegelijk worden geselecteerd.
 
   \--- /feedback ---
 
@@ -38,7 +38,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   \--- feedback ---
 
-  `label` is a type of element, not an element attribute.
+  `label` is een type element, geen element attribuut.
 
   \--- /feedback ---
 
