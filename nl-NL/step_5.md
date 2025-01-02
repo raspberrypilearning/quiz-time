@@ -1,4 +1,4 @@
-## Score some points
+## Scoor wat punten
 
 In this step, you will let the user score points for a correct answer!
 
