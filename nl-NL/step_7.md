@@ -1,4 +1,4 @@
-## Next question, please!
+## Volgende vraag, alstublieft!
 
 In this step, you will hide the answered question and show the next one with an animation!
 
