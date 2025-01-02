@@ -54,7 +54,7 @@ Bekijk dit voorbeeldproject om meer ideeën op te doen:
 
 ### Doe inspiratie op
 
-**Karate quiz**
+**Karatequiz**
 
 ![](images/karate-quiz.png)
 
