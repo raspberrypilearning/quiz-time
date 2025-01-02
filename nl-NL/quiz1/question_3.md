@@ -4,9 +4,9 @@
 
 ## legend: Vraag 3 van 3
 
-When you created the next question function, you had to check if the index of the **current** question (`currentQ`) was one fewer than the number of questions in the `questions` list.
+Toen je de volgende vraagfunctie hebt gemaakt, je moest controleren of de index van de **huidige** vraag (`currentQ`) één minder was dan het aantal vragen in de `vragen` lijst.
 
-Which one of these was used to create the list?
+Welke van deze antwoorden is gebruikt om de lijst te maken?
 
 \--- choices ---
 
@@ -14,7 +14,7 @@ Which one of these was used to create the list?
 
   \--- feedback ---
 
-  Niet helemaal! `IntersectionObserver()` checks to see if elements have entered or exited the viewport.
+  Niet helemaal! `IntersectionObserver()` controleert of elementen de viewport zijn binnengekomen of hebben verlaten.
 
   \--- /feedback ---
 
@@ -22,7 +22,7 @@ Which one of these was used to create the list?
 
   \--- feedback ---
 
-  Niet helemaal! `<ol>` is an HTML element used to create an ordered list.
+  Niet helemaal! `<ol>` is een HTML-element dat wordt gebruikt om een geordende lijst te maken.
 
   \--- /feedback ---
 
@@ -32,7 +32,7 @@ Which one of these was used to create the list?
 
   Juist!
 
-  `querySelectorAll()` returns a list of the document's elements that match a specified group of selectors. The example used `document.querySelectorAll(".q-container")` to return a list of all elements that had the class `q-container`.
+  `querySelectorAll()` retourneert een lijst van de elementen van het document die overeenkomen met een specifieke groep selectors. In het voorbeeld werd `document.querySelectorAll(".q-container")` gebruikt om een lijst te retourneren met alle elementen die de klasse `q-container` hadden.
 
   \--- /feedback ---
 
