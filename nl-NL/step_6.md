@@ -1,4 +1,4 @@
-## Show one at a time
+## Toon er één tegelijk
 
 In this step, you will hide all questions so that they are only shown when they are needed.
 
