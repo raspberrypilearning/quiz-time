@@ -4,7 +4,7 @@
 
 ## legend: Vraag 2 van 3
 
-Here is some JavaScript you used in your project.
+Hier is wat JavaScript dat je hebt gebruikt in je project.
 
 ```
 function checkAnswer(question, result) {
@@ -12,13 +12,13 @@ function checkAnswer(question, result) {
 }
 ```
 
-Here is some HTML you used with the JavaScript.
+Hier is wat HTML die je met het JavaScript hebt gebruikt.
 
 ```
-<button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+<button id="q1" onclick="checkAnswer('q1', '#result1')">Controleer antwoord</button>
 ```
 
-Which of these is an argument passed to the parameter `question`?
+Welke van deze antwoorden is een argument dat is doorgegeven aan de parameter `question`?
 
 \--- choices ---
 
@@ -26,7 +26,7 @@ Which of these is an argument passed to the parameter `question`?
 
   \--- feedback ---
 
-  Niet helemaal! The `id` attribute of the button element is used to change it later.
+  Niet helemaal! Het `id` attribuut van het knop element wordt gebruikt om het later te wijzigen.
 
   \--- /feedback ---
 
@@ -34,7 +34,7 @@ Which of these is an argument passed to the parameter `question`?
 
   \--- feedback ---
 
-  Juist! When the function runs, it uses the parameter `question` to refer to the first value passed to it as an argument (in this case `q1`). The second argument is `'#result1'`, which is passed to the parameter `result`.
+  Juist! Wanneer de functie wordt uitgevoerd, gebruikt deze de parameter `question` om te verwijzen naar de eerste waarde die als argument wordt doorgegeven (in dit geval `q1`). Het tweede argument is `#result1`, dat wordt doorgegeven aan de parameter `result`.
 
   \--- /feedback ---
 
@@ -42,7 +42,7 @@ Which of these is an argument passed to the parameter `question`?
 
   \--- feedback ---
 
-  Niet helemaal! `checkAnswer` is the name of the function that handles the button's `onclick` event.
+  Niet helemaal! `checkAnswer` is de naam van de functie die de `onclick`-gebeurtenis van de knop afhandelt.
 
   \--- /feedback ---
 
