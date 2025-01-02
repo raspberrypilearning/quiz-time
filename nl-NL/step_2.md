@@ -112,24 +112,24 @@ line_highlights: 17
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>Vraag 1</h1>
+    <h2>Wat is de grootste nog levende kattensoort?</h2>
 ```
 
 \--- /code ---
 
 \--- /task ---
 
-### Create three answers
+### Maak drie antwoorden
 
-**Choose** the correct and incorrect answers.
+**Kies** de juiste en onjuiste antwoorden.
 
 \--- task ---
 
-Add text to the three answer labels.
+Voeg tekst toe aan de drie antwoordlabels.
 
-- One correct answer (and give it the attribute `value="correct"`)
-- Two incorrect answers
+- Een juist antwoord (en geef het het attribuut `value="correct"`)
+- Twee foute antwoorden
 
 ## --- code ---
 
@@ -142,22 +142,22 @@ line_highlights: 20, 23, 26
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>Vraag 1</h1>
+    <h2>Wat is de grootste nog levende kattensoort?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tijger</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Jachtluipaard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
-    <label for="q1a3">Lion</label><br>
+    <label for="q1a3">Leeuw</label><br>
 ```
 
 \--- /code ---
 
-**Notice:**
+**Let op:**
 
 - Each `<label>` element uses a `for` attribute that links the label to an `<input>` element's `id` attribute. This makes the webpage more accessible because the user can also select the radio button by clicking on the label.
 - Each `<input>` element is a radio button type and has three attributes:
