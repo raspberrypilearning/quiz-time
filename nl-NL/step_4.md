@@ -1,20 +1,20 @@
 ## Voeg meer vragen toe
 
-In this step, you will add two more questions.
+In deze stap voeg je nog twee vragen toe.
 
-### Copy the question container
+### Kopieer de question container
 
 \--- task ---
 
 Open `index.html`.
 
-Highlight and copy (<kbd>Ctrl</kbd>+<kbd>C</kbd> or <kbd>Cmd</kbd>+<kbd>C</kbd>) the `<div>` with the class `q-container` .
+Markeer en kopieer (<kbd>Ctrl</kbd>+<kbd>C</kbd> of <kbd>Cmd</kbd>+<kbd>C</kbd>) de `<div>` met de klasse `q-container`.
 
 \--- collapse ---
 
 ---
 
-## title: Show me the question container div
+## title: Laat me de question container div zien
 
 ## --- code ---
 
@@ -25,21 +25,21 @@ line_numbers: false
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>Vraag 1</h1>
+    <h2>Wat is de grootste nog levende kattensoort?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tijger</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Jachtluipaard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
-    <label for="q1a3">Lion</label><br>
+    <label for="q1a3">Leeuw</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
-  </div>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Antwoord controleren</button>
+ </div>
 ```
 
 \--- /code ---
@@ -50,13 +50,13 @@ line_numbers: false
 
 \--- task ---
 
-Paste (<kbd>Ctrl</kbd>+<kbd>V</kbd> or <kbd>Cmd</kbd>+<kbd>V</kbd>) the question container underneath.
+Plak (<kbd>Ctrl</kbd>+<kbd>V</kbd> of <kbd>Cmd</kbd>+<kbd>V</kbd>) de question container eronder.
 
 \--- collapse ---
 
 ---
 
-## title: What should my code look like?
+## title: Hoe zou mijn code er uit moeten zien?
 
 ## --- code ---
 
@@ -68,37 +68,37 @@ line_highlights: 18-33
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>Vraag 1</h1>
+    <h2>Wat is de grootste nog levende kattensoort?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tijger</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Jachtluipaard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
-    <label for="q1a3">Lion</label><br>
+    <label for="q1a3">Leeuw</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Controleer antwoord</button>
   </div>
 
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>Vraag 1</h1>
+    <h2>Wat is de grootste nog levende kattensoort?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tijger</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Jachtluipaard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
-    <label for="q1a3">Lion</label><br>
+    <label for="q1a3">Leeuw</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Controleer antwoord</button>
   </div>
 ```
 
@@ -108,37 +108,37 @@ line_highlights: 18-33
 
 \--- /task ---
 
-### Create a second question
+### Maak een tweede vraag
 
-**Choose** a second question about your topic.
+**Kies** een tweede vraag over jouw onderwerp.
 
-Change the question number and question text.
+Wijzig het nummer en de tekst van de vraag.
 
 \--- task ---
 
-Change:
+Wijzig:
 
-- `<h1>` to Question 2
-- `<h2>`to [Choose your new question]
+- `<h1>` naar Vraag 2
+- `<h2>`naar [Kies je nieuwe vraag]
 
 \--- /task ---
 
-**Choose** answers and change the answer labels to match the question.
+**Kies** antwoorden en verander de antwoordlabels zodat ze bij de vraag passen.
 
 \--- task ---
 
-Change:
+Wijzig:
 
-- The text content of each `<label>`, so you have one correct and two incorrect answers
-- The `for` attribute of each label to relate to q2, rather than q1
+- De tekstinhoud van elk `<label>`, zodat je één juist en twee onjuiste antwoorden hebt
+- Het `for` attribuut van elk label heeft betrekking op q2, in plaats van q1
 
 \--- /task ---
 
-Change the attributes for the input elements.
+Wijzig de kenmerken van de invoerelementen.
 
 \--- task ---
 
-Change:
+Wijzig:
 
 - The `name` attribute of each `<input>` element to `q2`
 - The `value` attribute of each `<input>` element to `correct` (or leave it blank if it is an incorrect answer)
@@ -150,7 +150,7 @@ Change the attributes for the result div and button.
 
 \--- task ---
 
-Change:
+Wijzig:
 
 - The `id` attribute of the `result` div to `result2`
 - The `id` attribute of the button to `q2`
@@ -161,7 +161,7 @@ Change the arguments passed to the function.
 
 \--- task ---
 
-Change:
+Wijzig:
 
 - The arguments passed by the `onclick` event to the function (`q2` and `#result2`)
 
@@ -169,7 +169,7 @@ Change:
 
 ---
 
-## title: What should my code look like?
+## title: Hoe zou mijn code er uit moeten zien?
 
 ## --- code ---
 
@@ -241,7 +241,7 @@ Je moet:
 
 ---
 
-## title: What should my code look like?
+## title: Hoe zou mijn code er uit moeten zien?
 
 ## --- code ---
 
