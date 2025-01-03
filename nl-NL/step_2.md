@@ -194,42 +194,42 @@ line_highlights: 28
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>Vraag 1</h1>
+    <h2>Wat is de grootste nog levende kattensoort?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tijger</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Jachtluipaard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
-    <label for="q1a3">Lion</label><br>
+    <label for="q1a3">Leeuw</label><br>
 
     <div class="result" id="result1"></div>
 ```
 
 \--- /code ---
 
-**Notice:** There is no text content in the `<div>`. You will add this later using JavaScript.
+**Let op:** Er staat geen tekstinhoud in `<div>`. Je voegt dit later toe met behulp van JavaScript.
 
 \--- /task ---
 
-### Add a Check Answer button
+### Voeg een knop Antwoord controleren toe
 
-The user needs to check if their answer is correct.
+De gebruiker moet controleren of zijn antwoord juist is.
 
 \--- task ---
 
-Add a button to the bottom of the `q-container` `<div>`.
+Voeg een knop toe onderaan de `q-container` `<div>`.
 
-This button:
+Deze knop:
 
-- Has the attribute `id="q1"`, which is used to show, hide, and disable it later
-- Has an `onclick` event that runs the `checkAnswer` function and passes it:
-  - The question to check (`q1`)
-  - The ID of the `<div>` where the result of the check will be displayed (`#result1`)
-- Shows the text `Check Answer`
+- Heeft het attribuut `id="q1"`, dat wordt gebruikt om het te laten zien, verbergen en later uit te schakelen
+- Heeft een `onclick`-gebeurtenis die de `checkAnswer`-functie uitvoert en doorgeeft:
+  - De te controleren vraag (`q1`)
+  - De ID van de `<div>` waar het resultaat van de controle wordt weergegeven (`#result1`)
+- Toont de tekst 'Antwoord controleren'
 
 ## --- code ---
 
@@ -242,20 +242,20 @@ line_highlights: 29
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>Vraag 1</h1>
+    <h2>Wat is de grootste nog levende kattensoort?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tijger</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Jachtluipaard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
-    <label for="q1a3">Lion</label><br>
+    <label for="q1a3">Leeuw</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Antwoord controleren</button>
 ```
 
 \--- /code ---
@@ -264,18 +264,18 @@ line_highlights: 29
 
 \--- task ---
 
-Check that the correct option has the attribute `value="correct"`.
-In the example, the correct answer is the first answer (`Tiger`).
+Controleer of de juiste optie het attribuut `value="correct"` heeft.
+In het voorbeeld is het juiste antwoord het eerste antwoord (`Tijger`).
 
 \--- /task ---
 
-### Make the page your own
+### Maak je eigen pagina
 
-The page looks very functional and basic at the moment. It's time for you to make it look awesome!
+De pagina ziet er op dit moment heel functioneel en eenvoudig uit. Het is tijd dat jij het er geweldig uit laat zien!
 
 \--- task ---
 
-Add an appropriate font for your webpage from Google Fonts.
+Voeg een passend lettertype toe voor jouw webpagina vanuit Google Fonts.
 
 [[[google-fonts]]]
 
@@ -287,7 +287,7 @@ Add an appropriate font for your webpage from Google Fonts.
 
 Open `default.css`.
 
-**Choose** your colours and change the colour variables.
+**Kies** je kleuren en verander de kleurvariabelen.
 
 ## --- code ---
 
@@ -298,7 +298,7 @@ line_number_start:
 line_highlights:
 -----------------------------------------------------
 
-/\* Base Colours \*/
+/\* Basiskleuren \*/
 \--body-background: #000000;
 \--background: #ffffff;
 \--header-font-colour: #000000;
@@ -318,8 +318,8 @@ line_highlights:
 
 **Klik op Run**
 
-- Change the colours if you want to.
+- Verander de kleuren aan als je dat wilt.
 
 \--- /task ---
 
-Next, you will create the function to check if the user's answer is correct!
+Vervolgens maak je de functie om te controleren of het antwoord van de gebruiker juist is!
