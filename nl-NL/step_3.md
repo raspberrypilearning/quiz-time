@@ -1,22 +1,22 @@
 ## Controleer het antwoord
 
-In this step, you will create a function to check the user's answer and let them know if they were right!
+In deze stap maak je een functie om het antwoord van de gebruiker te controleren en ze te laten weten of ze het bij het rechte eind hadden!
 
-The starter project already has a `scripts.js` file that contains constants.
+Het startersproject heeft al een `scripts.js` bestand dat constanten bevat.
 
-### Create the checkAnswer function
+### Maak de checkAnswer-functie
 
-Next, you need to create a function that will handle the button's `onclick` event.
+Vervolgens moet je een functie maken die de `onclick`-gebeurtenis van de knop afhandelt.
 
 \--- task ---
 
 Open `scripts.js`.
 
-Find the `// Check answer function` comment.
+Zoek de opmerking `// Controleer antwoordfunctie`.
 
-Create a function called `checkAnswer`.
+Maak een functie met de naam `checkAnswer`.
 
-It should have two parameters `question` and `result`.
+Er moeten twee parameters zijn: `question` en `result`.
 
 ## --- code ---
 
@@ -26,7 +26,7 @@ line_numbers: false
 line_highlights: 2-4
 ---------------------------------------------------------
 
-// Check answer function
+// Controleer antwoordfunctie
 function checkAnswer(question, result) {
 
 }
@@ -37,41 +37,41 @@ function checkAnswer(question, result) {
 
 ---
 
-## title: What is a parameter?
+## title: Wat is een parameter?
 
-### Here is the HTML for the button:
+### Hier is de HTML voor de knop:
 
-- `<button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>`
+- `<button id="q1" onclick="checkAnswer('q1', '#result1')">Antwoord controleren</button>`
 
-It contains this function call:
+Het bevat deze functieaanroep:
 
 - `checkAnswer('q1', '#result1')`
 
-The function call contains two arguments that it passes to the `checkAnswer` function.
+De functie aanroep bevat twee argumenten die deze doorgeeft aan de `checkAnswer` functie.
 
-### Here is the checkAnswer function
+### Hier is de checkAnswer-functie
 
 - `function checkAnswer(question, result)`
 
-It has two parameters `question` and `result`.
+Deze heeft twee parameters: `question` en `result`.
 
-When the function runs, it uses the word `question` to refer to the first value passed to it as an argument (in this case `q1`) and the word `result` to refer to the second value passed to it as an argument (in this case `#result`).
+Wanneer de functie wordt uitgevoerd, gebruikt deze het woord `question` om te verwijzen naar de eerste waarde die als argument is doorgegeven (in dit geval `q1`) en het woord `result` om te verwijzen naar de tweede waarde die als argument is doorgegeven (in dit geval `#result`).
 
-In this way, the function can be called with different values as arguments and use them in its code.
+Op deze manier kan de functie met verschillende waarden als argumenten worden aangeroepen en in de code worden gebruikt.
 
 \---/collapse ---
 
 \--- /task ---
 
-### Find the selected option
+### De geselecteerde optie zoeken
 
-You need to know which radio button option the user has selected, to check if it is correct.
+Je moet weten welke radioknop de gebruiker heeft geselecteerd, om te controleren of deze juist is.
 
-You can get the selected option using the `:checked` pseudo-class in a querySelector.
+Je kunt de geselecteerde optie ophalen met behulp van de pseudo-klasse `:checked` in een querySelector.
 
 \--- task ---
 
-Create the variable `answer` and set it to the selected radio button in the `name` group that has the same value as that passed to the `question` parameter (in this case: `q1`):
+Maak de variabele `answer` en zet deze op de geselecteerde radio knop in de `name` groep die dezelfde waarde heeft als die is doorgegeven aan de `question` parameter (in dit geval: `q1`):
 
 `onclick="checkAnswer('q1', '#result1')`
 
@@ -93,17 +93,17 @@ let answer = document.querySelector(`input[name="${question}"]:checked`);
 
 \--- /task ---
 
-### The result div
+### De result div
 
-You can update the text in this question's result `<div>` because it has an `id` attribute that is unique to this question (in this case: `#result1`).
+Je kunt de tekst in de result `<div>` van deze vraag bijwerken, omdat het een `id` attribuut heeft dat uniek is voor deze vraag (in dit geval: `#result1`).
 
-This unique value is the second argument passed to the function by the button's `onclick` event.
+Deze unieke waarde is het tweede argument dat door de `onclick`-gebeurtenis van de knop aan de functie wordt doorgegeven.
 
 `onclick="checkAnswer('q1', '#result1')`
 
 \--- task ---
 
-Set the variable `qResult` to be this question's result `<div>`.
+Zet de variabele `qResult` als resultaat `<div>` van deze vraag.
 
 ## --- code ---
 
@@ -113,7 +113,7 @@ line_numbers: false
 line_highlights: 4
 -------------------------------------------------------
 
-// Check answer function
+// Controleer antwoordfunctie
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 let qResult = document.querySelector(result);
@@ -124,13 +124,13 @@ let qResult = document.querySelector(result);
 
 \--- /task ---
 
-The styling for the result div means it is hidden.
+De styling voor de result-div zorgt ervoor dat deze verborgen is.
 
 \--- collapse ---
 
 ---
 
-## title: Show me the styling of the 'result' div
+## title: toon me de stijl van de 'result' div
 
 ## --- code ---
 
@@ -158,7 +158,7 @@ display: none;
 
 \--- task ---
 
-Show the result `<div>`.
+Toon de result `<div>`.
 
 ## --- code ---
 
@@ -168,7 +168,7 @@ line_numbers: false
 line_highlights: 6
 -------------------------------------------------------
 
-// Check answer function
+// Controleer antwoordfunctie
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 let qResult = document.querySelector(result);
@@ -181,16 +181,16 @@ qResult.style.display = "block";
 
 \--- /task ---
 
-### Show the user if the selected answer is correct
+### Laat de gebruiker zien of het geselecteerde antwoord correct is
 
 \--- task ---
 
-Check if the selected answer is correct.
+Controleer of het geselecteerde antwoord juist is.
 
-If it **is** correct, update the result div text to show 'Correct'.
-If it **is not** correct, update the result div text to show 'Incorrect'.
+Als het **juist** is, werk dan de tekst van de result-div bij zodat 'Juist' wordt weergegeven.
+Als het **niet** juist is, update dan de result div tekst om 'Onjuist' te tonen.
 
-You can **choose** other messages for correct and incorrect answers.
+Je kunt andere berichten **kiezen** voor juiste en onjuiste antwoorden.
 
 ## --- code ---
 
@@ -200,7 +200,7 @@ line_numbers: false
 line_highlights: 8-12
 ----------------------------------------------------------
 
-// Check answer function
+// Controleer antwoordfunctie
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 let qResult = document.querySelector(result);
@@ -223,34 +223,34 @@ qResult.innerText = "Incorrect";
 
 **Klik op Run**
 
-- Select the correct answer and click the 'Check Answer' button
-- You should see the result div display 'Correct'
+- Selecteer het juiste antwoord en klik op de knop 'Antwoord controleren'
+- Je zou de result div weergave 'Juist' moeten zien
 
 **Klik op Run**
 
-- Select a different answer and click the 'Check Answer' button
-- You should see the result div display 'Incorrect'
+- Selecteer een ander antwoord en klik op de knop 'Antwoord controleren'
+- Je zou de result div weergave 'Onjuist' moeten zien
 
 **Klik op Run**
 
-- Select the other incorrect answer and click the 'Check Answer' button
-- You should see the result div display 'Incorrect'
+- Selecteer het andere onjuiste antwoord en klik op de knop 'Antwoord controleren'
+- Je zou de result div weergave 'Onjuist' moeten zien
 
 \--- /task ---
 
-### What if the user does not select an answer?
+### Wat als de gebruiker geen antwoord selecteert?
 
-You only need to run the check if the user has made a selection.
+Je hoeft de controle alleen uit te voeren als de gebruiker een selectie heeft gemaakt.
 
-If no answer is selected, you can add a helpful reminder message!
+Als er geen antwoord is geselecteerd, kun je een handige herinneringsboodschap toevoegen!
 
 \--- task ---
 
-Check if there is a selected answer for this question.
+Controleer of er een antwoord is geselecteerd voor deze vraag.
 
-Show a result message if there is.
+Geef een resultaatbericht weer als dat er is.
 
-If there isn't, **choose** a helpful message to show.
+Als dat niet zo is, **kies** dan een nuttig bericht om weer te geven.
 
 ## --- code ---
 
@@ -260,7 +260,7 @@ line_numbers: false
 line_highlights: 8, 13-15
 --------------------------------------------------------------
 
-// Check answer function
+// Controleer antwoordfunctie
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 let qResult = document.querySelector(result);
@@ -269,12 +269,12 @@ qResult.style.display = "block";
 
 if (answer) {
 if (answer.value === "correct") {
-qResult.innerText = "Correct";
+qResult.innerText = "Juist";
 } else {
-qResult.innerText = "Incorrect";
+qResult.innerText = "Onjuist";
 }
 } else {
-qResult.innerText = "Please select an answer";
+qResult.innerText = "Kies aub een antwoord";
 }
 
 }
@@ -287,9 +287,9 @@ qResult.innerText = "Please select an answer";
 
 **Klik op Run**
 
-- Do **not** select an answer
-- Click the 'Check Answer' button
-- You should see the result div display 'Please select an answer'
+- Selecteer **geen** antwoord
+- Klik op de knop 'Antwoord controleren'
+- Je zou de result-div moeten zien met de boodschap 'Kies aub een antwoord'
 
 \--- /task ---
 
