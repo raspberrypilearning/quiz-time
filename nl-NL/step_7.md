@@ -34,7 +34,7 @@ You need to create a function that will hide the current question and show the n
 
 \--- task ---
 
-Find the `// Check answer function` comment.
+Zoek de opmerking `// Controleer antwoordfunctie`.
 
 Create a function called `nextQ`.
 
@@ -167,7 +167,7 @@ line_numbers: false
 line_highlights: 14, 17
 ------------------------------------------------------------
 
-// Check answer function
+// Controleer antwoordfunctie
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 let qResult = document.querySelector(result);
