@@ -293,9 +293,9 @@ qResult.innerText = "Kies aub een antwoord";
 
 \--- /task ---
 
-**Debug**
-Make sure you have added the `if (answer) {` on line 8 and updated lines 13-15 with the `else` statement (and indented the code to include these additions).
+**Fouten opsporen**
+Zorg ervoor dat je de `if (answer) {` op regel 8 hebt toegevoegd en de regels 13-15 met het `else` statement hebt bijgewerkt (en de code hebt ingesprongen om deze aanvullingen op te nemen).
 
-Geweldig werk! You have created an interactive question!
+Geweldig werk! Je hebt een interactieve vraag gemaakt!
 
-Next, you will create some more questions!
+Nu ga je nog meer vragen bedenken!
