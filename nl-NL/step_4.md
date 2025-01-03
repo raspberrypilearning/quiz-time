@@ -81,7 +81,7 @@ line_highlights: 18-33
     <label for="q1a3">Leeuw</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Controleer antwoord</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Antwoord controleren</button>
   </div>
 
   <div class="q-container">
@@ -98,7 +98,7 @@ line_highlights: 18-33
     <label for="q1a3">Leeuw</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Controleer antwoord</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Antwoord controleren</button>
   </div>
 ```
 
@@ -140,30 +140,30 @@ Wijzig de kenmerken van de invoerelementen.
 
 Wijzig:
 
-- The `name` attribute of each `<input>` element to `q2`
-- The `value` attribute of each `<input>` element to `correct` (or leave it blank if it is an incorrect answer)
-- The `id` attribute of each `<input>` element to match the `for` attribute of its label
+- Het `name`-attribuut van elk `<input>`-element naar `q2`
+- Het `value` attribuut van elke `<input>` element naar `correct` (of laat het leeg als het een onjuist antwoord is)
+- Het `id`-kenmerk van elk `<input>`-element zodanig dat het overeenkomt met het `for`-kenmerk van het label
 
 \--- /task ---
 
-Change the attributes for the result div and button.
+Verander de kenmerken van de result div en knop.
 
 \--- task ---
 
 Wijzig:
 
-- The `id` attribute of the `result` div to `result2`
-- The `id` attribute of the button to `q2`
+- Het `id`-attribuut van de `result`-div naar `result2`
+- Het `id` attribuut van de knop naar `q2`
 
 \--- /task ---
 
-Change the arguments passed to the function.
+Wijzig de argumenten die aan de functie worden doorgegeven.
 
 \--- task ---
 
 Wijzig:
 
-- The arguments passed by the `onclick` event to the function (`q2` and `#result2`)
+- De argumenten die door de `onclick`-gebeurtenis aan de functie worden doorgegeven (`q2` en `#result2`)
 
 \--- collapse ---
 
@@ -181,37 +181,37 @@ line_highlights: 19-32
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>Vraag 1</h1>
+    <h2>Wat is de grootste nog levende kattensoort?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tijger</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Jachtluipaard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
-    <label for="q1a3">Lion</label><br>
+    <label for="q1a3">Leeuw</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Antwoord controleren</button>
   </div>
 
   <div class="q-container">
-    <h1>Question 2</h1>
-    <h2>Which bird is known for its ability to copy human speech?</h2>
+    <h1>Vraag 2</h1>
+    <h2>Welke vogel staat bekend om zijn vermogen om menselijke spraak te imiteren?</h2>
 
     <input type="radio" name="q2" value="" id="q2a1">
-    <label for="q2a1">Sparrow</label><br>
+    <label for="q2a1">Mus</label><br>
     
     <input type="radio" name="q2" value="" id="q2a2">
-    <label for="q2a2">Pigeon</label><br>
+    <label for="q2a2">Duif</label><br>
     
     <input type="radio" name="q2" value="correct" id="q2a3">
-    <label for="q2a3">Parrot</label><br>
+    <label for="q2a3">Papegaai</label><br>
 
     <div class="result" id="result2"></div>  
-    <button id="q2" onclick="checkAnswer('q2', '#result2')">Check Answer</button>
+    <button id="q2" onclick="checkAnswer('q2', '#result2')">Antwoord controleren</button>
   </div>
 ```
 
@@ -221,21 +221,21 @@ line_highlights: 19-32
 
 \--- /task ---
 
-### Create a third question
+### Maak een derde vraag
 
-You can go through the same process again for the third question.
+Voor de derde vraag kan je hetzelfde proces weer doorlopen.
 
 \--- task ---
 
-Copy and paste the question container again and change the values to create your third question.
+Kopieer en plak de question container opnieuw en wijzig de waarden om jouw derde vraag te maken.
 
 Je moet:
 
-- Change the question number and question text
-- Change the answer labels to match the question
-- Change the attributes for the input elements
-- Change the attributes for the result div and button
-- Change the arguments passed to the function
+- Het vraagnummer en de vraagtekst veranderen
+- De antwoordlabels zodanig veranderen dat ze bij de vraag passen
+- De kenmerken voor de input elementen wijzigen
+- De kenmerken van de result div en knop veranderen
+- De argumenten wijzigen die aan de functie worden doorgegeven
 
 \--- collapse ---
 
@@ -253,54 +253,54 @@ line_highlights: 35-49
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>Vraag 1</h1>
+    <h2>Wat is de grootste nog levende kattensoort?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tijger</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Jachtluipaard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
-    <label for="q1a3">Lion</label><br>
+    <label for="q1a3">Leeuw</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Antwoord controleren</button>
   </div>
 
   <div class="q-container">
-    <h1>Question 2</h1>
-    <h2>Which bird is known for its ability to copy human speech?</h2>
+    <h1>Vraag 2</h1>
+    <h2>Welke vogel staat bekend om zijn vermogen om menselijke spraak te imiteren?</h2>
 
     <input type="radio" name="q2" value="" id="q2a1">
-    <label for="q2a1">Sparrow</label><br>
+    <label for="q2a1">Mus</label><br>
     
     <input type="radio" name="q2" value="" id="q2a2">
-    <label for="q2a2">Pigeon</label><br>
+    <label for="q2a2">Duif</label><br>
     
     <input type="radio" name="q2" value="correct" id="q2a3">
-    <label for="q2a3">Parrot</label><br>
+    <label for="q2a3">Papegaai</label><br>
 
     <div class="result" id="result2"></div>  
-    <button id="q2" onclick="checkAnswer('q2', '#result2')">Check Answer</button>
+    <button id="q2" onclick="checkAnswer('q2', '#result2')">Antwoord controleren</button>
   </div>
 
   <div class="q-container">
-    <h1>Question 3</h1>
-    <h2>Which animal is known for its distinctive black and white stripes?</h2>
+    <h1>Vraag 3</h1>
+    <h2>Welk dier staat bekend om zijn kenmerkende zwart-witte strepen?</h2>
 
     <input type="radio" name="q3" value="" id="q3a1">
-    <label for="q3a1">Hippopotamus</label><br>
+    <label for="q3a1">Nijlpaard</label><br>
     
     <input type="radio" name="q3" value="" id="q3a2">
-    <label for="q3a2">Giraffe</label><br>
+    <label for="q3a2">Giraf</label><br>
     
     <input type="radio" name="q3" value="correct" id="q3a3">
     <label for="q3a3">Zebra</label><br>
 
     <div class="result" id="result3"></div>
-    <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
+    <button id="q3" onclick="checkAnswer('q3', '#result3')">Antwoord controleren</button>
   </div>
 ```
 
@@ -314,17 +314,17 @@ line_highlights: 35-49
 
 **Klik op Run**
 
-- Answer your questions, click the 'Check Answer' button and watch the result update!
+- Beantwoord je vragen, klik op de knop 'Antwoord controleren' en bekijk de bijgewerkte uitslag!
 
 \--- /task ---
 
 \--- task ---
 
-- Select a different answer and click the 'Check Answer' button.
-- The result will update if you change to a correct or incorrect answer!
+- Selecteer een ander antwoord en klik op de knop 'Antwoord controleren'.
+- Het resultaat wordt bijgewerkt als je het antwoord wijzigt in een juist of onjuist antwoord!
 
 \--- /task ---
 
-You will stop this from happening later.
+Je voorkomt dit later.
 
-Next, you will let the user score points for a correct answer!
+Vervolgens laat je de gebruiker punten scoren voor een juist antwoord!
