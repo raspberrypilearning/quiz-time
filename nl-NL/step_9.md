@@ -22,11 +22,11 @@ Copy and paste the question container again and change the values to create your
 
 Je moet:
 
-- Change the question number and question text
-- Change the answer labels to match the question
-- Change the attributes for the input elements
-- Change the attributes for the result div and button
-- Change the arguments passed to the function
+- Het vraagnummer en de vraagtekst veranderen
+- De antwoordlabels zodanig veranderen dat ze bij de vraag passen
+- De kenmerken voor de input elementen wijzigen
+- De kenmerken van de result div en knop veranderen
+- De argumenten wijzigen die aan de functie worden doorgegeven
 
 \--- /collapse ---
 
