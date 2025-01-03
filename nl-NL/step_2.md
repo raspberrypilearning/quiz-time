@@ -159,11 +159,11 @@ line_highlights: 20, 23, 26
 
 **Let op:**
 
-- Each `<label>` element uses a `for` attribute that links the label to an `<input>` element's `id` attribute. This makes the webpage more accessible because the user can also select the radio button by clicking on the label.
-- Each `<input>` element is a radio button type and has three attributes:
-  - `name` (q1) allows only one radio button in the name group 'q1' to be selected at a time
-  - `value` is used later when the answer is checked
-  - `id` matches the label's `for` attribute
+- Elk `<label>`-element gebruikt een `for`-kenmerk dat het label koppelt aan het `id`-kenmerk van een `<input>`-element. Hierdoor wordt de webpagina toegankelijker, omdat de gebruiker de keuzerondjes ook kan selecteren door op het label te klikken.
+- Elke `<input>` element is een radio knop type en heeft drie attributen:
+  - `name` (q1) staat toe dat er slechts één keuzerondje in de naamgroep 'q1' tegelijk geselecteerd kan worden
+  - `value` wordt later gebruikt wanneer het antwoord wordt gecontroleerd
+  - `id` komt overeen met het `for`-kenmerk van het label
 
 \--- /task ---
 
@@ -171,17 +171,17 @@ line_highlights: 20, 23, 26
 
 **Klik op Run**
 
-- You should see your first question and three options.
+- Je zou je eerste vraag moeten zien en drie opties.
 
 \--- /task ---
 
-### Display correct / incorrect
+### Weergave juist / onjuist
 
-The user will need to know if they are correct or incorrect.
+De gebruiker moet weten of de antwoorden juist of onjuist zijn.
 
 \--- task ---
 
-Add a `<div>` to show the result.
+Voeg een `<div>` toe om het resultaat te laten zien.
 
 ## --- code ---
 
