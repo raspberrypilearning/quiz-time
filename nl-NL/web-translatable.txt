@@ -1,9 +1,9 @@
-// Variables
+// Variabelen
 
-// Constants
+// Constanten
 
-// Check answer function
+// Antwoord controleren functie
 
-// Next question function
+// Volgende vraag functie
 
-// Display first question
+// Eerste vraag weergeven
