@@ -1,16 +1,16 @@
 ## Volgende vraag, alstublieft!
 
-In this step, you will hide the answered question and show the next one with an animation!
+In deze stap verberg je de beantwoorde vraag en toon je de volgende vraag met een animatie!
 
-### Which is the current question?
+### Wat is de huidige vraag?
 
-You need to know which is the current question from the `questions` list.
+Je moet weten wat de huidige vraag is uit de `vragen` lijst.
 
-Create a variable to hold the index of the current question.
+Maak een variabele om de index van de huidige vraag vast te leggen.
 
 \--- task ---
 
-Create a variable called `currentQ` and set it to `0`.
+Maak een variabele met de naam `currentQ` en stel deze in op `0`.
 
 ## --- code ---
 
@@ -20,7 +20,7 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Variables
+// Variabelen
 var score = 0;
 var currentQ = 0;
 
@@ -28,15 +28,15 @@ var currentQ = 0;
 
 \--- /task ---
 
-### Create the next question function
+### Maak de volgende vraagfunctie
 
-You need to create a function that will hide the current question and show the next one.
+Je moet een functie maken waarmee je de huidige vraag kunt verbergen en de volgende vraag kunt weergeven.
 
 \--- task ---
 
 Zoek de opmerking `// Controleer antwoordfunctie`.
 
-Create a function called `nextQ`.
+Maak een functie met de naam `nextQ`.
 
 ## --- code ---
 
@@ -46,8 +46,8 @@ line_numbers: false
 line_highlights: 2-4
 ---------------------------------------------------------
 
-// Next question function
-function nextQ() {
+// Volgende vraag functie
+functie nextQ() {
 
 }
 
@@ -55,11 +55,11 @@ function nextQ() {
 
 \--- /task ---
 
-You only need the function's code to run if there are still questions in the list.
+Je hoeft de code van de functie alleen uit te voeren als er nog vragen in de lijst staan.
 
 \--- task ---
 
-Create an `if` statement that checks if the index of the **current** question (`currentQ`) is one fewer than the number of questions in the `questions` list.
+Maak een `if`-instructie die controleert of de index van de **huidige** vraag (`currentQ`) één minder is dan het aantal vragen in de `vragen`-lijst.
 
 ## --- code ---
 
@@ -69,7 +69,7 @@ line_numbers: false
 line_highlights: 3-5
 ---------------------------------------------------------
 
-// Next question function
+// Volgende vraag functie
 function nextQ() {
 if (currentQ < questions.length - 1) {
 
@@ -81,13 +81,13 @@ if (currentQ < questions.length - 1) {
 
 \--- /task ---
 
-### Hide the current question
+### Verberg de huidige vraag
 
-If there are still questions left in the list, then you need to hide the current question.
+Als er nog vragen op de lijst staan, dan moet je de huidige vraag verbergen.
 
 \--- task ---
 
-Style the current question element so it is hidden.
+Zorg voor de juiste opmaak voor het huidige vraag element zodat deze wordt verborgen.
 
 ## --- code ---
 
@@ -97,7 +97,7 @@ line_numbers: false
 line_highlights: 4
 -------------------------------------------------------
 
-// Next question function
+// Volgende vraag functie
 function nextQ() {
 if (currentQ < questions.length - 1) {
 questions[currentQ].style.display = "none";
@@ -110,13 +110,13 @@ questions[currentQ].style.display = "none";
 
 \--- /task ---
 
-### Show the next question
+### Laat de volgende vraag zien
 
 \--- task ---
 
-Increase the `currentQ` variable.
+Verhoog de variabele `currentQ`.
 
-Show the (new) current question.
+Toon de (nieuwe) huidige vraag.
 
 ## --- code ---
 
@@ -126,7 +126,7 @@ line_numbers: false
 line_highlights: 5-6
 ---------------------------------------------------------
 
-// Next question function
+//Volgende vraag functie
 function nextQ() {
 if (currentQ < questions.length - 1) {
 questions[currentQ].style.display = "none";
@@ -144,20 +144,20 @@ questions[currentQ].style.display = "block";
 
 **Klik op Run**
 
-- Answer the first question
-- The question does not change!
+- Beantwoord de eerste vraag
+- De vraag verandert niet!
 
-You need to call the `nextQ` function in your code.
+Je moet de `nextQ` functie in je code aanroepen.
 
 \--- /task ---
 
-### Call the next question function
+### De volgende vraagfunctie aanroepen
 
-Call the `nextQ` function if an answer is correct or incorrect (only if an answer is selected).
+Roep de `nextQ` functie aan als een antwoord juist of onjuist is (alleen als een antwoord is geselecteerd).
 
 \--- task ---
 
-Add the `nextQ()` call to your `checkAnswer` function.
+Voeg de `nextQ()` aanroep toe aan je `checkAnswer` functie.
 
 ## --- code ---
 
@@ -177,16 +177,16 @@ qResult.style.display = "block";
 if (answer) {
 document.querySelector("#" + question).disabled = true;
 if (answer.value === "correct") {
-qResult.innerText = "Correct";
+qResult.innerText = "Juistt";
 score+=1;
 scoreText.innerText = `Score: ${score}`;
 nextQ();
 } else {
-qResult.innerText = "Incorrect";
+qResult.innerText = "Onjuist";
 nextQ();
 }
 } else {
-qResult.innerText = "Please select an answer";
+qResult.innerText = "Kies aub een antwoord";
 }
 
 }
@@ -199,19 +199,19 @@ qResult.innerText = "Please select an answer";
 
 **Klik op Run**
 
-- Answer the questions.
-- The current question will hide and the next question will show.
-- You will notice that you only see the `result` div on the last question. The result div for the other questions is also showing, but too fast for you to see.
+- Beantwoord de vragen.
+- De huidige vraag wordt verborgen en de volgende vraag wordt weergegeven.
+- Je zal zien dat je de `result` div alleen ziet bij de laatste vraag. De resultaat-div voor de andere vragen wordt ook weergegeven, maar het gaat te snel om te kunnen zien.
 
 \--- /task ---
 
-### Slow it down
+### Langzamer aan doen
 
-You need to add a time delay before the current question hides, so that the user can see the `result` div.
+Je moet een tijdsvertraging toevoegen voordat de huidige vraag wordt verborgen, zodat de gebruiker de `result` div kan zien.
 
 \--- task ---
 
-Add a `setTimeout`.
+Voeg een `setTimeout` toe.
 
 ## --- code ---
 
@@ -221,7 +221,7 @@ line_numbers: false
 line_highlights: 3, 9
 ----------------------------------------------------------
 
-// Next question function
+// Volgende vraag functie
 function nextQ() {
 setTimeout(() => {
 if (currentQ < questions.length - 1) {
@@ -240,21 +240,21 @@ questions[currentQ].style.display = "block";
 
 **Klik op Run**
 
-- Answer the questions
-- There should now be a delay before the current question hides and the next question shows
-- You will notice that you can now see the `result` div for all questions!
+- Beantwoord de vragen
+- Er zou nu een vertraging moeten zijn voordat de huidige vraag wordt verborgen en de volgende vraag wordt weergegeven
+- Je zal zien dat je nu de `result` div ziet voor alle vragen!
 
 \--- /task ---
 
-### Animate the questions before they hide!
+### Animeer de vragen voordat ze verdwijnen!
 
-You can make your quiz more interesting by animating the questions before they are hidden.
+Je kunt je quiz interessanter maken door de vragen te animeren voordat ze worden verborgen.
 
-There is a `fade-out` animation in `style.css` you can use.
+Er is een `fade-out` animatie in `style.css` die je kunt gebruiken.
 
 \--- task ---
 
-Add a fade out animation to the `nextQ` function to make the current question disappear.
+Voeg een fade out (vervaging) animatie toe aan de 'nextQ' functie om de huidige vraag te laten verdwijnen.
 
 ## --- code ---
 
@@ -264,7 +264,7 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Next question function
+// Volgende vraag functie
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -284,26 +284,26 @@ questions[currentQ].style.display = "block";
 
 **Klik op Run**
 
-- Answer the questions
-- The questions will fade out!
+- Beantwoord de vragen
+- De vragen zullen vervagen!
 
 \--- /task ---
 
-### Animate the questions as they appear!
+### Animeer de vragen zodra ze verschijnen!
 
-**Choose** which animation you would like to use.
+**Kies** welke animatie je wilt gebruiken.
 
-There are five animations in `style.css` you could use:
+Er zijn vijf animaties in `style.css` die je zou kunnen gebruiken:
 
-1. `fade-in`
-2. `grow-in`
-3. `rise-in`
-4. `slide-left`
-5. `slide-right`
+1. `fade-in` (vervagen)
+2. `grow-in` (groei in)
+3. `rise-in` (opstijgen in)
+4. `slide-left` (schuif naar links)
+5. `slide-right` (schuif naar rechts)
 
 \--- task ---
 
-Add an animation to the `nextQ` function to make the questions appear in style!
+Voeg een animatie toe aan de `nextQ`-functie om de vragen op een stijlvolle manier te laten verschijnen!
 
 ## --- code ---
 
@@ -313,7 +313,7 @@ line_numbers: false
 line_highlights: 8
 -------------------------------------------------------
 
-// Next question function
+// Volgende vraag functie
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -334,22 +334,22 @@ questions[currentQ].style.display = "block";
 
 **Klik op Run**
 
-- Answer the questions
-- The questions will animate as they appear!
+- Beantwoord de vragen
+- De vragen worden geanimeerd zodra ze verschijnen!
 
 \--- /task ---
 
-### Avoid the glitch
+### Vermijd het knipperen
 
-You might notice that a question flickers before it animates in.
+Het kan zijn dat je merkt dat een vraag knippert voordat deze verschijnt.
 
-You can smooth this out.
+Je kunt dit netjes oplossen.
 
 \--- task ---
 
 Open `style.css`.
 
-Set the `opacity` property of the `q-container` selector to `0`.
+Stel de eigenschap `opacity` van de `q-container`-selector in op `0`.
 
 ## --- code ---
 
@@ -378,7 +378,7 @@ opacity: 0;
 
 Open `scripts.js`.
 
-Set the `opacity` property of the the first question to `1`.
+Stel de eigenschap `opacity` van de eerste vraag in op `1`.
 
 ## --- code ---
 
@@ -388,7 +388,7 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Display first question
+// Eerste vraag weergeven
 questions[0].style.display = "block";
 questions[0].style.opacity = 1;
 
@@ -396,4 +396,4 @@ questions[0].style.opacity = 1;
 
 \--- /task ---
 
-Goed gedaan! You have made an awesome interactive quiz — it looks amazing!
+Goed gedaan! Je hebt een geweldige interactieve quiz gemaakt - het ziet er geweldig uit!
