@@ -1,8 +1,8 @@
 :root {
-  /* Font variable */
+  /* 字体变量 */
   --font: 16px/1.25 'Raleway', sans-serif;
   
-  /* Base Colours */
+  /* 基本颜色 */
   --body-background: #000000;
   --background: #ffffff;
   --header-font-colour: #000000;
