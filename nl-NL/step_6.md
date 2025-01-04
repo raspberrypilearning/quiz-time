@@ -1,18 +1,18 @@
 ## Toon er één tegelijk
 
-In this step, you will hide all questions so that they are only shown when they are needed.
+In deze stap verberg je alle vragen, zodat ze alleen worden weergegeven wanneer ze nodig zijn.
 
-### Hide all questions
+### Alle vragen verbergen
 
-You need to make each question appear when it is needed.
+Je moet elke vraag weergeven wanneer deze nodig is.
 
-First, you need to hide all of them.
+Eerst moet je ze allemaal verbergen.
 
 \--- task ---
 
 Open `style.css`.
 
-Alter the style for the selector `.q-container` to hide all the question containers.
+Wijzig de stijl voor de selector `.q-container` om alle question containers te verbergen.
 
 ## --- code ---
 
@@ -41,21 +41,21 @@ opacity: 1;
 
 **Klik op Run**
 
-- All your questions should have vanished!
+- Al je vragen zouden verdwenen moeten zijn!
 
-Don't worry, you're going to make them appear again!
+Maak je geen zorgen, je gaat ze weer laten verschijnen!
 
 \--- /task ---
 
-### Get a list of all questions
+### Ontvang een lijst met alle vragen
 
-You need to be able to access each question.
+Je moet toegang hebben tot elke vraag.
 
 \--- task ---
 
 Open `scripts.js`.
 
-Create a constant to hold a list of all question containers.
+Maak een constante om een lijst met alle question containers vast te leggen.
 
 ## --- code ---
 
@@ -65,7 +65,7 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Constants
+// Constanten
 const scoreText = document.querySelector("#scoreText");
 const questions = document.querySelectorAll(".q-container");
 
@@ -73,15 +73,15 @@ const questions = document.querySelectorAll(".q-container");
 
 \--- /task ---
 
-### Show the first question
+### Laat de eerste vraag zien
 
-The first item in your list is at index `0`.
+Het eerste item in je lijst staat op positie 0\`.
 
 \--- task ---
 
-Find the `// Display first question` comment.
+Zoek de opmerking `// Eerste vraag weergeven`.
 
-Show the first question.
+Laat de eerste vraag zien.
 
 ## --- code ---
 
@@ -91,7 +91,7 @@ line_numbers: false
 line_highlights: 2
 -------------------------------------------------------
 
-// Display first question
+// Eerste vraag weergeven
 questions[0].style.display = "block";
 
 \--- /code ---
@@ -102,10 +102,10 @@ questions[0].style.display = "block";
 
 **Klik op Run**
 
-- Your first question should be back!
-- Select an answer and click the Check Answer button
-- Try this a few times with other answers
+- Je eerste vraag zou weer tevoorschijn moeten komen!
+- Selecteer een antwoord en klik op de knop Antwoord controleren
+- Probeer dit een paar keer met andere antwoorden
 
 \--- /task ---
 
-Next, you need to hide this question and show the next one!
+Vervolgens moet je deze vraag verbergen en de volgende vraag weergeven!
