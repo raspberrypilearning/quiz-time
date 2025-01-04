@@ -5,61 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="default.css">
-    <title>Martial Arts quiz</title>
+    <title>武术测验</title>
   </head>
   <body>
     <header class="header">
-      <span class="sitename">KARATE QUIZ</span>
-      <span id="scoreText" class="sitename">Score: 0</span>
+      <span class="sitename">空手道测验</span>
+      <span id="scoreText" class="sitename">得分：0</span>
     </header>
     <main>
       <div class="q-container">
         <h1>问题 1</h1>
-        <h2>From which country does Karate originate</h2>
+        <h2>空手道起源于哪个国家</h2>
 
         <input type="radio" name="q1" value="" id="q1a1">
-        <label for="q1a1">Korea</label><br>
+        <br>
 
         <input type="radio" name="q1" value="" id="q1a2">
-        <label for="q1a2">China</label><br>
+        中国<br>
 
         <input type="radio" name="q1" value="correct" id="q1a3">
-        <label for="q1a3">Japan</label><br>
+        日本<br>
     
         <div class="result" id="result1"></div>
-        <button id="q1" onclick="checkAnswer('q1', '#result1')">看看解析吧！</button>
+        <button id="q1" onclick="checkAnswer('q1', '#result1')">检查答案</button>
       </div>
       <div class="q-container">
         <h1>问题2</h1>
-        <h2>What is the term used to describe a Karate school?</h2>
+        <h2>用什么词来描述一所空手道学校？</h2>
 
         <input type="radio" name="q2" value="correct" id="q2a1">
-        <label for="q2a1">Dojo</label><br>
+        道场<br>
 
         <input type="radio" name="q2" value="" id="q2a2">
-        <label for="q2a2">Gym</label><br>
+        <label for="q2a2">健身房</label><br>
 
         <input type="radio" name="q2" value="" id="q2a3">
-        <label for="q2a3">Kwan</label><br>
+        <label for="q2a3">道馆</label><br>
     
         <div class="result" id="result2"></div>
-        <button id="q2" onclick="checkAnswer('q2', '#result2')">看看解析吧！</button>
+        <button id="q2" onclick="checkAnswer('q2', '#result2')">检查答案</button>
       </div>
       <div class="q-container">
         <h1>问题 3</h1>
-        <h2>What does the word Karate mean?</h2>
+        <h2>空手道这个词是什么意思？</h2>
 
         <input type="radio" name="q3" value="" id="q3a1">
-        <label for="q3a1">Strike</label><br>
+        <label for="q3a1">打击</label><br>
 
         <input type="radio" name="q3" value="correct" id="q3a2">
-        <label for="q3a2">Open hand</label><br>
+        <label for="q3a2">掌法</label><br>
 
         <input type="radio" name="q3" value="" id="q3a3">
-        <label for="q3a3">The art of hand and foot</label><br>
+        <label for="q3a3">手脚并用的艺术</label><br>
     
         <div class="result" id="result3"></div>
-        <button id="q3" onclick="checkAnswer('q3', '#result3')">看看解析吧！</button>
+        <button id="q3" onclick="checkAnswer('q3', '#result3')">检查答案</button>
       </div>
     </main>
   </body>
