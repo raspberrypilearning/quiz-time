@@ -1,24 +1,24 @@
 ## Verbeter je project
 
-In this step, you can upgrade your project by:
+In deze stap kun je jouw project upgraden door:
 
-- Adding more questions
-- Updating the text in the header to show the final score
-- Showing the user a message if they get full marks
-- Letting the user retake the quiz if they don't get full marks
-- Adding more animations
+- Meer vragen toe te voegen
+- De tekst in de koptekst bijwerken om de eindscore weer te geven
+- Laat de gebruiker een bericht zien als de maximale score wordt behaald
+- De gebruiker de quiz opnieuw laten doen als de volledige score niet is behaald
+- Meer animaties toe te voegen
 
-You don't have to do all these things. Choose whichever appeals to you and fits the time you have.
+Je hoeft niet al deze dingen te doen. Kies wat je het meest aanspreekt en wat past bij de tijd die je hebt.
 
 \--- collapse ---
 
 ---
 
-## title: Add more questions
+## title: Meer vragen toevoegen
 
-You can go through the same process you used in an earlier step to add more questions.
+Je kunt hetzelfde proces doorlopen dat je in een eerdere stap hebt gebruikt om meer vragen toe te voegen.
 
-Copy and paste the question container again and change the values to create your extra questions.
+Kopieer en plak de question container opnieuw en wijzig de waarden om jouw extra vragen te maken.
 
 Je moet:
 
@@ -34,9 +34,9 @@ Je moet:
 
 ---
 
-## title: Update the final score ... and make it glow!
+## title: Update de eindscore ... en laat hem stralen!
 
-### Change the nextQ function.
+### Wijzig de nextQ-functie.
 
 ## --- code ---
 
@@ -46,7 +46,7 @@ line_numbers: false
 line_highlights: 10-11
 -----------------------------------------------------------
 
-// Next question function
+// Volgende vraag functie
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -56,14 +56,14 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;\
+scoreText.innerText = `Eindscore: ${score}`;\
 }
 }, "2000");
 }
 
 \--- /code ---
 
-### Make it glow!
+### Laat het stralen!
 
 ## --- code ---
 
@@ -83,7 +83,7 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;
+scoreText.innerText = `Eindscore: ${score}`;
 scoreText.classList.add("glowing");
 }
 }, "2000");
@@ -97,13 +97,13 @@ scoreText.classList.add("glowing");
 
 ---
 
-## title: Show the user a message if they get full marks
+## title: Laat de gebruiker een bericht zien als de maximale score wordt behaald
 
-### Update the HTML
+### HTML bijwerken
 
-- Add a `<div>` element below the result div.
-- Include a congratulatory message.
-- Give it a `class` attribute that can be used to show/hide the message using JavaScript. The example uses the class `fullMarks`.
+- Voeg een `<div>`-element toe onder de result-div.
+- Voeg een felicitatiebericht toe.
+- Geef het een `class` attribuut dat kan worden gebruikt om het bericht te tonen/verbergen met behulp van JavaScript. In het voorbeeld wordt de klasse `fullMarks` gebruikt.
 
 ## --- code ---
 
@@ -115,15 +115,15 @@ line_highlights: 2
 
 ```
     <div class="result" id="result3"></div>  
-    <div class="fullMarks">Well done! All correct!</div>
-    <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
+    <div class="fullMarks">Goed gedaan! Alles klopt!</div>
+    <button id="q3" onclick="checkAnswer('q3', '#result3')">Antwoord controleren</button>
 ```
 
 \--- /code ---
 
-### Update the JavaScript
+### JavaScript bijwerken
 
-Add a const to get the element.
+Voeg een const toe om het element te verkrijgen.
 
 ## --- code ---
 
@@ -133,22 +133,22 @@ line_numbers: false
 line_highlights: 8
 -------------------------------------------------------
 
-// Variables
+// Variabelen
 var score = 0;
 var currentQ = 0;
 
-// Constants
+// Constanten
 const scoreText = document.querySelector("#scoreText");
-const questions = document.querySelectorAll(".q-container");
+const vragen = document.querySelectorAll(".q-container");
 const fullMarks = document.querySelector(".fullMarks");
 
 \--- /code ---
 
-Add an `if` statement to check if the final score matches the number of questions.
+Voeg een `if` statement toe om te controleren of de eindscore overeenkomt met het aantal vragen.
 
-The example awards one point for each correct answer.
+In het voorbeeld wordt één punt toegekend voor elk juist antwoord.
 
-If you award more than one point for each correct answer, then you need to divide the score by the number of points awarded.
+Als je voor elk goed antwoord meer dan één punt toekent, moet je de score delen door het aantal toegekende punten.
 
 ## --- code ---
 
@@ -158,7 +158,7 @@ line_numbers: false
 line_highlights: 13-15
 -----------------------------------------------------------
 
-// Next question function
+// Volgende vraag functie
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -168,7 +168,7 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;
+scoreText.innerText = `Eindscore: ${score}`;
 scoreText.classList.add("glowing");
 if (score === questions.length) {
 fullMarks.style.display = "block";
@@ -185,13 +185,13 @@ fullMarks.style.display = "block";
 
 ---
 
-## title: Let the user retake the quiz if they don't get full marks
+## title: Laat de gebruiker de quiz opnieuw doen als de volledige score niet is behaald
 
-### Update the HTML
+### HTML bijwerken
 
-- Add an `<a>` element below the result div.
-- Include a link to `index.html` using the `href` attribute.
-- Give it a `class` attribute that can be used to show/hide the link using JavaScript. The example uses the class `retry` (the CSS styling is already provided in `style.css`).
+- Voeg een `<a>` element toe onder de result div.
+- Voeg een link naar `index.html` toe met behulp van het `href`-kenmerk.
+- Geef het een `class` attribuut dat kan worden gebruikt om de link te tonen/verbergen met behulp van JavaScript. Het voorbeeld gebruikt de class `retry` (de CSS styling is al beschikbaar in `style.css`).
 
 ## --- code ---
 
@@ -203,16 +203,16 @@ line_highlights: 3
 
 ```
     <div class="result" id="result3"></div>  
-    <div class="fullMarks">Well done! All correct!</div>
-    <a class="retry" href="index.html">Have another go!</a>
-    <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
+    <div class="fullMarks">Goed gedaan! Alles klopt!</div>
+    <a class="retry" href="index.html">Probeer het nog eens!</a>
+    <button id="q3" onclick="checkAnswer('q3', '#result3')">Antwoord controleren</button>
 ```
 
 \--- /code ---
 
-### Update the JavaScript
+### JavaScript bijwerken
 
-Add a const to get the element.
+Voeg een const toe om het element te verkrijgen.
 
 ## --- code ---
 
@@ -222,11 +222,11 @@ line_numbers: false
 line_highlights: 9
 -------------------------------------------------------
 
-// Variables
+// Variabelen
 var score = 0;
 var currentQ = 0;
 
-// Constants
+// Constanten
 const scoreText = document.querySelector("#scoreText");
 const questions = document.querySelectorAll(".q-container");
 const fullMarks = document.querySelector(".fullMarks");
@@ -234,7 +234,7 @@ const retry = document.querySelector(".retry");
 
 \--- /code ---
 
-Add an `else` statement to the `if` added in the last upgrade to show the retry `<a>` link if the condition is **not** met (if the user has not got full marks).
+Voeg een `else`-instructie toe aan de `if` die is toegevoegd in de laatste upgrade om de link `<a>` opnieuw te proberen weer te geven als aan de voorwaarde **niet** is voldaan (als de gebruiker niet de maximale score heeft behaald).
 
 ## --- code ---
 
@@ -244,7 +244,7 @@ line_numbers: false
 line_highlights: 15-17
 -----------------------------------------------------------
 
-// Next question function
+// Volgende vraag functie
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -254,7 +254,7 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;
+scoreText.innerText = `Eindscore: ${score}`;
 scoreText.classList.add("glowing");
 if (score === questions.length) {
 fullMarks.style.display = "block";
@@ -267,8 +267,8 @@ retry.style.display = "block";
 
 \--- /code ---
 
-**Tip:** If you have already added the fullMarks element, then add an `else` statement to the `if` added in the last upgrade as shown above.
+**Tip:** Als je het fullMarks element al hebt toegevoegd, voeg dan een `else` statement toe aan de `if` die is toegevoegd aan de laatste upgrade zoals hierboven getoond.
 
-If you haven't, then add this as an `if`, rather than an `else` statement.
+Als je dat nog niet gedaan hebt, voeg dit dan toe als een `if`-instructie in plaats van een `else`-instructie.
 
 \--- /collapse ---
