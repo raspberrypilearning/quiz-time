@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project, you will create a web app that lets the user show what they know about a topic of your choosing! You could make a quiz about history, nature, world records, science, sports, fashion, TV, movies...or anything else you're an expert in!
+You could make a quiz about history, nature, world records, science, sports, fashion, TV, movies...or anything else you're an expert in!
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 The internet has helped us <span style="color: #0faeb0">**share knowledge**</span> and ideas with people around the globe. Sharing knowledge helps us understand other communities and cultures and reminds us that we can all learn from each other.
