@@ -1,0 +1,40 @@
+---
+title: Quiz time!
+hero_image: images/banner.png
+description: Create an interactive quiz app!
+version: 4
+listed: true
+copyedit: false
+last_tested: '2021-03-26'
+steps:
+  - 
+    title: Introduction
+  - 
+    title: Create a question
+  - 
+    title: Vérifier la réponse
+    completion:
+      - engaged
+  - 
+    title: Add more questions
+  - 
+    title: Score some points
+  - 
+    title: Show one at a time
+  - 
+    title: Next question, please!
+    completion:
+      - internal
+  - 
+    title: Réflexion
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - 
+    title: Améliorer ton projet
+  - 
+    title: Et ensuite ?

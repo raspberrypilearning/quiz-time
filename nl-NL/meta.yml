@@ -1,0 +1,40 @@
+---
+title: Tijd voor een quiz!
+hero_image: images/banner.png
+description: Maak een interactieve quiz-app!
+version: 4
+listed: true
+copyedit: false
+last_tested: '2021-03-26'
+steps:
+  - 
+    title: Inleiding
+  - 
+    title: Maak vraag aan
+  - 
+    title: Controleer het antwoord
+    completion:
+      - engaged
+  - 
+    title: Voeg meer vragen toe
+  - 
+    title: Scoor wat punten
+  - 
+    title: Toon er één tegelijk
+  - 
+    title: Volgende vraag, alstublieft!
+    completion:
+      - internal
+  - 
+    title: Reflectie
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - 
+    title: Verbeter je project
+  - 
+    title: Wat kun je verder nog doen?

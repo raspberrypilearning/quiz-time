@@ -1,0 +1,9 @@
+// Variables
+
+// Constants
+
+// Check answer function
+
+// Next question function
+
+// Display first question
