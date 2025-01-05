@@ -1,12 +1,12 @@
-## Reflection
+## 接下来还有什么？
 
-做得好，你学到了很多东西！ Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
+做得好，你学到了很多东西！ 现在是反思的时候了——反思是学习的重要部分，因为它有助于在大脑中建立新的联系。
 
-Answer the three questions below to reflect on what you've learned.
+回答以下三个问题来反思您所学到的内容。
 
-After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+每问完一个问题，按提交。 您将被引导找到正确答案。 您可以根据需要多次进行此活动。
 
-Have fun!
+玩得开心！
 
 \--- question ---
 
