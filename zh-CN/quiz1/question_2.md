@@ -26,7 +26,7 @@ Which of these is an argument passed to the parameter `question`?
 
   \--- feedback ---
 
-  Not quite! The `id` attribute of the button element is used to change it later.
+  不完全对！ The `id` attribute of the button element is used to change it later.
 
   \--- /feedback ---
 
@@ -34,7 +34,7 @@ Which of these is an argument passed to the parameter `question`?
 
   \--- feedback ---
 
-  Correct! When the function runs, it uses the parameter `question` to refer to the first value passed to it as an argument (in this case `q1`). The second argument is `'#result1'`, which is passed to the parameter `result`.
+  正确！ When the function runs, it uses the parameter `question` to refer to the first value passed to it as an argument (in this case `q1`). The second argument is `'#result1'`, which is passed to the parameter `result`.
 
   \--- /feedback ---
 
@@ -42,7 +42,7 @@ Which of these is an argument passed to the parameter `question`?
 
   \--- feedback ---
 
-  Not quite! `checkAnswer` is the name of the function that handles the button's `onclick` event.
+  不完全对！ `checkAnswer` is the name of the function that handles the button's `onclick` event.
 
   \--- /feedback ---
 
