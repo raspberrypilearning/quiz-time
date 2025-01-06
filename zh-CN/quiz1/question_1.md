@@ -1,10 +1,10 @@
-## 接下来还有什么？
+## 回顾与思考
 
 做得好，你学到了很多东西！ 现在是时候静下心来想一想了——思考我们学过的东西是很重要的，因为这能帮助我们更好地理解和记住新知识。
 
 回答以下三个问题来帮助自己回顾并思考所学的内容。
 
-每问完一个问题，按提交。 您将被引导找到正确答案。 您可以根据需要多次进行此活动。
+每完成一个问题，点击提交。 我们会引导你找到正确答案。 你可以根据需要多次尝试。
 
 玩得开心！
 
@@ -12,9 +12,9 @@
 
 ---
 
-## legend: Question 1 of 3
+## 图例：第 1 题（共 3 题）
 
-Which of these attributes allows the user to click on a label to select a radio option?
+以下哪个属性允许用户通过单击标签来选择单选框？
 
 \--- choices ---
 
@@ -22,7 +22,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   \--- feedback ---
 
-  Correct! The `for` attribute links the label to an `<input>` element's `id` attribute.
+  正确！ `for` 属性将标签链接到 `<input>` 元素的 `id` 属性。
 
   \--- /feedback ---
 
@@ -30,7 +30,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   \--- feedback ---
 
-  Not quite! Using `name` allows only one radio button in the name group to be selected at a time.
+  不完全对！ 使用“name”只允许一次选择名称组中的一个单选按钮。
 
   \--- /feedback ---
 
@@ -38,7 +38,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   \--- feedback ---
 
-  `label` is a type of element, not an element attribute.
+  `label` 是一种元素类型，而不是元素属性。
 
   \--- /feedback ---
 
