@@ -1,32 +1,32 @@
 ---
-title: Quiz time!
+title: 测验时间！
 hero_image: images/banner.png
-description: Create an interactive quiz app!
+description: 创建一个交互式测验应用程序！
 version: 4
 listed: true
 copyedit: false
 last_tested: '2021-03-26'
 steps:
   - 
-    title: Introduction
+    title: 介绍
   - 
-    title: Create a question
+    title: 创建一个问题
   - 
-    title: Check the answer
+    title: 检查答案
     completion:
       - engaged
   - 
-    title: Add more questions
+    title: 添加更多问题
   - 
-    title: Score some points
+    title: 获得分数
   - 
-    title: Show one at a time
+    title: 每次显示一个
   - 
-    title: Next question, please!
+    title: 请回答下一个问题！
     completion:
       - internal
   - 
-    title: Reflection
+    title: 回顾与思考
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -35,6 +35,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: 升级你的项目
   - 
-    title: What next?
+    title: 接下来还有什么？
