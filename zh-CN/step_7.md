@@ -1,16 +1,16 @@
-## Next question, please!
+## 请回答下一个问题！
 
-In this step, you will hide the answered question and show the next one with an animation!
+在此步骤中，你将隐藏已回答的问题并通过动画显示下一个问题！
 
-### Which is the current question?
+### 当前的问题是什么？
 
-You need to know which is the current question from the `questions` list.
+你需要知道 `questions` 列表中的当前问题是什么。
 
-Create a variable to hold the index of the current question.
+创建一个变量来保存当前问题的索引。
 
 \--- task ---
 
-Create a variable called `currentQ` and set it to `0`.
+创建一个名为 `currentQ` 的变量，并将其设置为 `0`。
 
 ## --- code ---
 
@@ -20,7 +20,7 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Variables
+// 变量
 var score = 0;
 var currentQ = 0;
 
@@ -28,15 +28,15 @@ var currentQ = 0;
 
 \--- /task ---
 
-### Create the next question function
+### 创建下一个问题函数
 
-You need to create a function that will hide the current question and show the next one.
+你需要创建一个函数来隐藏当前问题并显示下一个问题。
 
 \--- task ---
 
-Find the `// Check answer function` comment.
+找到 `// 检查答案函数` 注释。
 
-Create a function called `nextQ`.
+创建一个名为 `next Q` 的函数。
 
 ## --- code ---
 
@@ -46,7 +46,7 @@ line_numbers: false
 line_highlights: 2-4
 ---------------------------------------------------------
 
-// Next question function
+// 下一个问题函数
 function nextQ() {
 
 }
@@ -55,11 +55,11 @@ function nextQ() {
 
 \--- /task ---
 
-You only need the function's code to run if there are still questions in the list.
+如果列表中仍有问题，则仅需要运行函数的代码。
 
 \--- task ---
 
-Create an `if` statement that checks if the index of the **current** question (`currentQ`) is one fewer than the number of questions in the `questions` list.
+创建一个 `if` 语句，检查 **当前** 问题（`currentQ`）的索引是否比 `questions` 列表中的问题数量少一个。
 
 ## --- code ---
 
@@ -69,7 +69,7 @@ line_numbers: false
 line_highlights: 3-5
 ---------------------------------------------------------
 
-// Next question function
+// 下一个问题函数
 function nextQ() {
 if (currentQ < questions.length - 1) {
 
@@ -81,13 +81,13 @@ if (currentQ < questions.length - 1) {
 
 \--- /task ---
 
-### Hide the current question
+### 隐藏当前问题
 
-If there are still questions left in the list, then you need to hide the current question.
+如果列表中还有剩余问题，则需要隐藏当前问题。
 
 \--- task ---
 
-Style the current question element so it is hidden.
+设置当前 question 元素的样式以使其隐藏。
 
 ## --- code ---
 
@@ -97,7 +97,7 @@ line_numbers: false
 line_highlights: 4
 -------------------------------------------------------
 
-// Next question function
+// 下一个问题函数
 function nextQ() {
 if (currentQ < questions.length - 1) {
 questions[currentQ].style.display = "none";
@@ -110,13 +110,13 @@ questions[currentQ].style.display = "none";
 
 \--- /task ---
 
-### Show the next question
+### 显示下一个问题
 
 \--- task ---
 
-Increase the `currentQ` variable.
+增加`currentQ`变量。
 
-Show the (new) current question.
+显示（新的）当前问题。
 
 ## --- code ---
 
@@ -126,7 +126,7 @@ line_numbers: false
 line_highlights: 5-6
 ---------------------------------------------------------
 
-// Next question function
+// 下一个问题函数
 function nextQ() {
 if (currentQ < questions.length - 1) {
 questions[currentQ].style.display = "none";
@@ -142,22 +142,22 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- Answer the first question
-- The question does not change!
+- 回答第一个问题
+- 这个问题没有变化！
 
-You need to call the `nextQ` function in your code.
+你需要在代码中调用 `next Q` 函数。
 
 \--- /task ---
 
-### Call the next question function
+### 调用下一个问题函数
 
-Call the `nextQ` function if an answer is correct or incorrect (only if an answer is selected).
+如果答案正确或不正确，调用`nextQ`函数(仅在选择答案时)。
 
 \--- task ---
 
-Add the `nextQ()` call to your `checkAnswer` function.
+将 `next Q()` 调用添加到您的 `checkAnswer` 函数。
 
 ## --- code ---
 
@@ -167,7 +167,7 @@ line_numbers: false
 line_highlights: 14, 17
 ------------------------------------------------------------
 
-// Check answer function
+// 检查答案函数
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 let qResult = document.querySelector(result);
@@ -177,16 +177,16 @@ qResult.style.display = "block";
 if (answer) {
 document.querySelector("#" + question).disabled = true;
 if (answer.value === "correct") {
-qResult.innerText = "Correct";
+qResult.innerText = "正确";
 score+=1;
-scoreText.innerText = `Score: ${score}`;
+scoreText.innerText = `分数: ${score}`;
 nextQ();
 } else {
-qResult.innerText = "Incorrect";
+qResult.innerText = "不正确";
 nextQ();
 }
 } else {
-qResult.innerText = "Please select an answer";
+qResult.innerText = "请选择一个答案";
 }
 
 }
@@ -197,21 +197,21 @@ qResult.innerText = "Please select an answer";
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- Answer the questions.
-- The current question will hide and the next question will show.
-- You will notice that you only see the `result` div on the last question. The result div for the other questions is also showing, but too fast for you to see.
+- 回答问题。
+- 当前问题将被隐藏，下一个问题将被显示。
+- 你会注意到，你只能看到最后一个问题的 `result` div。 其他问题的结果 div 也显示了，但是速度太快，你看不到。
 
 \--- /task ---
 
-### Slow it down
+### 放慢速度
 
-You need to add a time delay before the current question hides, so that the user can see the `result` div.
+你需要在当前问题隐藏之前添加一个时间延迟，以便用户可以看到`result` div。
 
 \--- task ---
 
-Add a `setTimeout`.
+添加一个 a `setTimeout`。
 
 ## --- code ---
 
@@ -221,7 +221,7 @@ line_numbers: false
 line_highlights: 3, 9
 ----------------------------------------------------------
 
-// Next question function
+// 下一个问题函数
 function nextQ() {
 setTimeout(() => {
 if (currentQ < questions.length - 1) {
@@ -238,23 +238,23 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- Answer the questions
-- There should now be a delay before the current question hides and the next question shows
-- You will notice that you can now see the `result` div for all questions!
+- 回答问题
+- 在当前问题和下一个问题显示之前应该有一段延迟。
+- 你会注意到你现在可以看到所有问题的 `result` div ！
 
 \--- /task ---
 
-### Animate the questions before they hide!
+### 在问题隐藏之前添加动画效果！
 
-You can make your quiz more interesting by animating the questions before they are hidden.
+你可以在问题隐藏之前为其添加动画，从而使你的测验更吸引人。
 
-There is a `fade-out` animation in `style.css` you can use.
+你可以在 `style.css` 中使用 `fade-out` 动画
 
 \--- task ---
 
-Add a fade out animation to the `nextQ` function to make the current question disappear.
+在 `next Q` 函数中添加淡出动画以使当前问题消失。
 
 ## --- code ---
 
@@ -264,7 +264,7 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Next question function
+// 下一个问题函数
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -282,18 +282,18 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- Answer the questions
-- The questions will fade out!
+- 回答问题
+- 问题将会淡出！
 
 \--- /task ---
 
-### Animate the questions as they appear!
+### 当问题出现时，为其添加动画效果！
 
-**Choose** which animation you would like to use.
+**选择** 你想要使用什么动画。
 
-There are five animations in `style.css` you could use:
+你可以在 `style.css` 中使用五个动画：
 
 1. `fade-in`
 2. `grow-in`
@@ -303,7 +303,7 @@ There are five animations in `style.css` you could use:
 
 \--- task ---
 
-Add an animation to the `nextQ` function to make the questions appear in style!
+在 `next Q` 函数中添加动画，让问题以更炫酷的方式显示出来
 
 ## --- code ---
 
@@ -313,7 +313,7 @@ line_numbers: false
 line_highlights: 8
 -------------------------------------------------------
 
-// Next question function
+// 下一个问题函数
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -332,24 +332,24 @@ questions[currentQ].style.display = "block";
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- Answer the questions
-- The questions will animate as they appear!
+- 回答问题
+- 问题出现时将会以动画形式呈现！
 
 \--- /task ---
 
-### Avoid the glitch
+### 避免故障
 
-You might notice that a question flickers before it animates in.
+你可能会注意到一个问题会在它的动画出现之前闪烁。
 
-You can smooth this out.
+你可以解决这个问题。
 
 \--- task ---
 
-Open `style.css`.
+打开`style.css`。
 
-Set the `opacity` property of the `q-container` selector to `0`.
+将 `q-container` 选择器的 `opacity` 属性设置为 `0`。
 
 ## --- code ---
 
@@ -376,9 +376,9 @@ opacity: 0;
 
 \--- task ---
 
-Open `scripts.js`.
+打开 `scripts.js`。
 
-Set the `opacity` property of the the first question to `1`.
+将第一个问题的 `opacity` 属性设置为 `1`。
 
 ## --- code ---
 
@@ -388,7 +388,7 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Display first question
+// 显示第一个问题
 questions[0].style.display = "block";
 questions[0].style.opacity = 1;
 
@@ -396,4 +396,4 @@ questions[0].style.opacity = 1;
 
 \--- /task ---
 
-太棒了！ You have made an awesome interactive quiz — it looks amazing!
+太棒了！ 你已经做了一个很棒的交互式测验 — — 它看起来棒极了！
