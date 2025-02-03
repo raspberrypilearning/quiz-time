@@ -2,11 +2,12 @@
 
 ---
 
-## legend: Question 3 of 3
+## 图例：第 3 题（共 3 题）
 
-When you created the next question function, you had to check if the index of the **current** question (`currentQ`) was one fewer than the number of questions in the `questions` list.
+在创建下一个问题函数时，您需要检查 **当前**
+问题 (`currentQ`) 的索引是否比 `questions` 列表中的问题总数要少一个。
 
-Which one of these was used to create the list?
+其中哪一个用于创建列表？
 
 \--- choices ---
 
@@ -14,7 +15,7 @@ Which one of these was used to create the list?
 
   \--- feedback ---
 
-  不完全对！ `IntersectionObserver()` checks to see if elements have entered or exited the viewport.
+  不完全对！ `IntersectionObserver()`用于检测元素是否进入或离开视口
 
   \--- /feedback ---
 
@@ -22,7 +23,7 @@ Which one of these was used to create the list?
 
   \--- feedback ---
 
-  不完全对！ `<ol>` is an HTML element used to create an ordered list.
+  不完全对！ `<ol>`是一个用于创建有序列表的 HTML 元素。
 
   \--- /feedback ---
 
@@ -32,7 +33,7 @@ Which one of these was used to create the list?
 
   正确！
 
-  `querySelectorAll()` returns a list of the document's elements that match a specified group of selectors. The example used `document.querySelectorAll(".q-container")` to return a list of all elements that had the class `q-container`.
+  `querySelectorAll()` 返回一个匹配指定选择器组的文档元素列表。 这个示例中使用了 `document.querySelectorAll(".q-container")` 来返回所有具有 q-container 类的元素列表。
 
   \--- /feedback ---
 
