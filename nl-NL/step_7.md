@@ -1,4 +1,4 @@
-## Volgende vraag, alstublieft!
+## Volgende vraag, alsjeblieft!
 
 In deze stap verberg je de beantwoorde vraag en toon je de volgende vraag met een animatie!
 
@@ -201,7 +201,7 @@ qResult.innerText = "Kies aub een antwoord";
 
 - Beantwoord de vragen.
 - De huidige vraag wordt verborgen en de volgende vraag wordt weergegeven.
-- Je zal zien dat je de `result` div alleen ziet bij de laatste vraag. De resultaat-div voor de andere vragen wordt ook weergegeven, maar het gaat te snel om te kunnen zien.
+- Je zal zien dat je de `result` div alleen ziet bij de laatste vraag. De result div voor de andere vragen wordt ook weergegeven, maar het gaat te snel om te kunnen zien.
 
 \--- /task ---
 
