@@ -1,18 +1,18 @@
-## Score some points
+## 获得分数
 
-In this step, you will let the user score points for a correct answer!
+在此步骤中，你将让用户根据正确答案获得积分！
 
-### Add the score to the header
+### 将得分添加到标题
 
 \--- task ---
 
-Open `index.html`.
+打开 `index.html`。
 
-Add a new span element to the header.
+向标题栏添加一个新的 span 元素。
 
-Give it the attributes `id="scoreText"` and `class="sitename"`.
+赋予其属性 `id="scoreText"` 和 `class="sitename"`。
 
-Include the text `Score: 0`, so the user starts on a score of 0.
+包含文本 `分数：0`，因此用户从 0 分开始。
 
 ## --- code ---
 
@@ -24,8 +24,8 @@ line_highlights: 3
 
 ```
 <header class="header">
-  <span class="sitename">Wildlife quiz</span>
-  <span id="scoreText" class="sitename">Score: 0</span>
+  <span class="sitename">野生动物测验</span>
+  <span id="scoreText" class="sitename">分数：0</span>
 </header>
 ```
 
@@ -33,15 +33,15 @@ line_highlights: 3
 
 \--- /task ---
 
-### Update the score
+### 更新分数
 
-When the user selects the correct answer, your function needs to update the score in the header.
+当用户选择正确答案时，你的函数需要更新标题中的分数。
 
 \--- task ---
 
-Open `scripts.js`.
+打开 `scripts.js`。
 
-Create a variable called `score` and set it to `0`.
+创建一个名为 `score` 的变量，并将其设置为 `0`。
 
 ## --- code ---
 
@@ -51,22 +51,22 @@ line_numbers: false
 line_highlights: 2
 -------------------------------------------------------
 
-// Variables
+// 变量
 var score = 0;
 
 \--- /code ---
 
 \--- /task ---
 
-**Choose** how many points to give for a correct answer.
+**选择**正确答案可获得多少分。
 
-Increase the score if the answer is correct.
+如果答案正确则增加分数。
 
-The example adds 1 to the score.
+该示例将分数加 1。
 
 \--- task ---
 
-Update the score variable if the answer is correct.
+如果答案正确，则更新分数变量。
 
 ## --- code ---
 
@@ -78,26 +78,26 @@ line_highlights: 4
 
 if (answer) {
 if (answer.value === "correct") {
-qResult.innerText = "Correct";
+qResult.innerText = "正确";
 score+=1;
 } else {
-qResult.innerText = "Incorrect";
+qResult.innerText = "不正确";
 }
 } else {
-qResult.innerText = "Please select an answer";
+qResult.innerText = "请选择一个答案";
 }
 
 \--- /code ---
 
 \--- /task ---
 
-### Update the score in the header
+### 更新标题中的分数
 
-You need to show the user their score.
+你需要显示用户的分数。
 
 \--- task ---
 
-Create a constant called `scoreText` and use a `querySelector` to set it to the span element in the header containing the score.
+创建一个名为 `scoreText` 的常量，并使用 `querySelector` 方法将其设置为标题中包含分数的 span 元素。
 
 ## --- code ---
 
@@ -107,20 +107,20 @@ line_numbers: false
 line_highlights: 2
 -------------------------------------------------------
 
-// Constants
+// 常量
 const scoreText = document.querySelector("#scoreText");
 
 \--- /code ---
 
 \--- /task ---
 
-Change the text content of the span to match the new score.
+更改 span 的文本内容以匹配新分数。
 
 \--- task ---
 
-Update the text content of the span.
+更新 span 的文本内容。
 
-Notice: `` `Score: ${score}` `` uses backticks `` ` ` `` instead of `" "` or `' '`.
+注意: `` `分数: ${score}` `` 使用反引号 `` ` ` `` 而不是 `" "` 或 `' '`.
 
 ## --- code ---
 
@@ -132,14 +132,14 @@ line_highlights: 5
 
 if (answer) {
 if (answer.value === "correct") {
-qResult.innerText = "Correct";
+qResult.innerText = "正确";
 score+=1;
-scoreText.innerText = `Score: ${score}`;
+scoreText.innerText = `分数: ${score}`;
 } else {
-qResult.innerText = "Incorrect";
+qResult.innerText = "不正确";
 }
 } else {
-qResult.innerText = "Please select an answer";
+qResult.innerText = "请选择一个答案";
 }
 
 \--- /code ---
@@ -148,35 +148,35 @@ qResult.innerText = "Please select an answer";
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- Answer your questions, click the 'Check Answer' buttons and watch the score in the header update!
-
-\--- /task ---
-
-There is a problem!
-
-If the user selects the correct answer, they can keep clicking Check Answer and the score will increase each time.
-
-\--- task ---
-
-**Try it**
-
-- Select the correct answer
-- Click the Check Answer button
-- Click it a few more times and watch the score increase each time!
+- 回答你的问题，单击“检查答案”按钮并查看标题中更新的分数！
 
 \--- /task ---
 
-### Stop the cheating!
+有一个问题！
 
-You need to stop the user from cheating by clicking the button more than once.
-
-You can disable a button using the `.disabled` method.
+如果用户选择了正确的答案，他们可以继续点击检查答案，每次分数都会增加。
 
 \--- task ---
 
-Add a line of code that disables the button when the user selects an option and clicks a Check Answer button.
+**尝试一下**
+
+- 选择正确的答案
+- 点击检查答案按钮
+- 再点击几次，观察每次得分的增加！
+
+\--- /task ---
+
+### 好了，不要作弊了！
+
+你需要阻止用户通过多次单击按钮来作弊。
+
+你可以使用 `.disabled` 方法禁用按钮。
+
+\--- task ---
+
+添加一行代码，当用户选择一个选项并单击“检查答案”按钮时禁用该按钮。
 
 ## --- code ---
 
@@ -192,23 +192,23 @@ if (answer.value === "correct") {
 
 \--- /code ---
 
-**Notice:** This will not disable the button if the user has not selected an answer.
+**注意：** 如果用户没有选择答案，这不会禁用按钮。
 
-**Notice:** The `querySelector` uses concatenation to join the character `#` to the value of `question` passed as an argument in the button's `onclick` event. This targets the specific button element.
+**注意：** `querySelector` 使用拼接的方式将字符 `#` 加到通过按钮的 onclick 事件作为参数传递的 question 的值上。 这针对的是特定的按钮元素。
 
 \--- /task ---
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- Select a correct answer and click the 'Check Answer' button.
-- Click the button again. It should not work.
+- 选择正确答案并点击“检查答案”按钮。
+- 再次单击该按钮。 它应该不会起作用。
 
 \--- /task ---
 
-You may wish to style your button so that it has a different colour.
+你可能希望设置按钮的样式，使其具有不同的颜色。
 
-You could also hide it, or change the text.
+你也可以隐藏它，或者更改文本。
 
-In this project, you are going to hide the whole question and have the next one appear with an animation!
+在这个项目中，您将隐藏整个问题并让下一个问题以动画形式出现！
