@@ -1,22 +1,22 @@
-## Check the answer
+## 检查答案
 
-In this step, you will create a function to check the user's answer and let them know if they were right!
+在此步骤中，你将创建一个函数来检查用户的答案，并让他们知道他们的答案是否正确！
 
-The starter project already has a `scripts.js` file that contains constants.
+在初始项目已经有一个包含常量的 `scripts.js` 文件。
 
-### Create the checkAnswer function
+### 创建 checkAnswer 函数
 
-Next, you need to create a function that will handle the button's `onclick` event.
+接下来，你需要创建一个函数来处理按钮的 `onclick` 事件。
 
 \--- task ---
 
-Open `scripts.js`.
+打开 `scripts.js`。
 
-Find the `// Check answer function` comment.
+找到 `// 检查答案函数` 注释。
 
-Create a function called `checkAnswer`.
+创建一个名为 `checkAnswer` 的函数。
 
-It should have two parameters `question` and `result`.
+它应该有两个参数 `question` 和 `result`。
 
 ## --- code ---
 
@@ -26,7 +26,7 @@ line_numbers: false
 line_highlights: 2-4
 ---------------------------------------------------------
 
-// Check answer function
+// 检查答案函数
 function checkAnswer(question, result) {
 
 }
@@ -37,41 +37,41 @@ function checkAnswer(question, result) {
 
 ---
 
-## title: What is a parameter?
+## title: 什么是参数？
 
-### Here is the HTML for the button:
+### 以下是该按钮的 HTML：
 
-- `<button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>`
+- `<button id="q1" onclick="checkAnswer('q1', '#result1')">检查答案</button>`
 
-It contains this function call:
+它包含以下函数调用：
 
 - `checkAnswer('q1', '#result1')`
 
-The function call contains two arguments that it passes to the `checkAnswer` function.
+函数调用包含两个参数，它传递到 "checkAnswer" 函数。
 
-### Here is the checkAnswer function
+### 这是 checkAnswer 函数
 
 - `function checkAnswer(question, result)`
 
-It has two parameters `question` and `result`.
+它有两个参数 `question` 和 `result` 。
 
-When the function runs, it uses the word `question` to refer to the first value passed to it as an argument (in this case `q1`) and the word `result` to refer to the second value passed to it as an argument (in this case `#result`).
+当函数执行时，会把传入的第一个参数称作 `question`（这里指的是 `q1`），而传入的第二个参数则被称作 `result`（这里指的是 `#result`）。
 
-In this way, the function can be called with different values as arguments and use them in its code.
+这样，可以使用不同的值作为参数来调用该函数，并在其代码中使用它们。
 
 \---/collapse ---
 
 \--- /task ---
 
-### Find the selected option
+### 找到所选选项
 
-You need to know which radio button option the user has selected, to check if it is correct.
+你需要知道用户选择了哪个单选按钮选项来检查它是否正确。
 
-You can get the selected option using the `:checked` pseudo-class in a querySelector.
+你可以在 querySelector 中使用 `:checed` 伪类获取选中的选项。
 
 \--- task ---
 
-Create the variable `answer` and set it to the selected radio button in the `name` group that has the same value as that passed to the `question` parameter (in this case: `q1`):
+创建变量 `answer` 并将其设置为 `name` 组中选中的单选按钮，该单选按钮具有与传递给 `question` 参数相同的值（在本例中为“q1”）：
 
 `onclick="checkAnswer('q1', '#result1')`
 
@@ -83,7 +83,7 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Check answer function
+// 检查答案函数
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 
@@ -93,17 +93,17 @@ let answer = document.querySelector(`input[name="${question}"]:checked`);
 
 \--- /task ---
 
-### The result div
+### 结果 div
 
-You can update the text in this question's result `<div>` because it has an `id` attribute that is unique to this question (in this case: `#result1`).
+你可以更新这个问题的结果 `<div>` 中的文本，因为它有一个唯一的 `id` 属性(在这种情况下：`#result1`)。
 
-This unique value is the second argument passed to the function by the button's `onclick` event.
+这个唯一值是按钮的 `onclick` 事件传递给函数的第二个参数。
 
 `onclick="checkAnswer('q1', '#result1')`
 
 \--- task ---
 
-Set the variable `qResult` to be this question's result `<div>`.
+将变量 `qResult` 设置为该问题的结果 `<div>`。
 
 ## --- code ---
 
@@ -113,7 +113,7 @@ line_numbers: false
 line_highlights: 4
 -------------------------------------------------------
 
-// Check answer function
+// 检查答案函数
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 let qResult = document.querySelector(result);
@@ -124,13 +124,13 @@ let qResult = document.querySelector(result);
 
 \--- /task ---
 
-The styling for the result div means it is hidden.
+结果 div 的样式意味着它是隐藏的。
 
 \--- collapse ---
 
 ---
 
-## title: Show me the styling of the 'result' div
+## title: 显示 `result` div 的样式
 
 ## --- code ---
 
@@ -158,7 +158,7 @@ display: none;
 
 \--- task ---
 
-Show the result `<div>`.
+显示结果`<div>`。
 
 ## --- code ---
 
@@ -168,7 +168,7 @@ line_numbers: false
 line_highlights: 6
 -------------------------------------------------------
 
-// Check answer function
+// 检查答案函数
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 let qResult = document.querySelector(result);
@@ -181,16 +181,16 @@ qResult.style.display = "block";
 
 \--- /task ---
 
-### Show the user if the selected answer is correct
+### 向用户显示所选答案是否正确
 
 \--- task ---
 
-Check if the selected answer is correct.
+检查所选的答案是否正确。
 
-If it **is** correct, update the result div text to show 'Correct'.
-If it **is not** correct, update the result div text to show 'Incorrect'.
+如果**正确**，则更新结果 div 文本以显示“正确”。
+如果**不正确**，则更新结果 div 文本以显示“不正确”。
 
-You can **choose** other messages for correct and incorrect answers.
+你可以**选择**其他消息来表示正确和错误的答案。
 
 ## --- code ---
 
@@ -200,7 +200,7 @@ line_numbers: false
 line_highlights: 8-12
 ----------------------------------------------------------
 
-// Check answer function
+// 检查答案函数
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 let qResult = document.querySelector(result);
@@ -221,36 +221,36 @@ qResult.innerText = "Incorrect";
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- Select the correct answer and click the 'Check Answer' button
-- You should see the result div display 'Correct'
+- 选择正确的答案并点击`检查答案`按钮
+- 你应该看到结果 div 显示“正确”
 
-**Click Run**
+**点击运行**
 
-- Select a different answer and click the 'Check Answer' button
-- You should see the result div display 'Incorrect'
+- 选择一个不同的答案并点击“检查答案”按钮
+- 你应该看到结果 div 显示“不正确”
 
-**Click Run**
+**点击运行**
 
-- Select the other incorrect answer and click the 'Check Answer' button
-- You should see the result div display 'Incorrect'
+- 选择其他不正确的答案，然后点击“检查答案”按钮
+- 你应该看到结果 div 显示“不正确”
 
 \--- /task ---
 
-### What if the user does not select an answer?
+### 如果用户没有选择答案怎么办？
 
-You only need to run the check if the user has made a selection.
+你只需要在用户做出选择时检查答案
 
-If no answer is selected, you can add a helpful reminder message!
+如果没有选择答案，你可以添加一个有用的提醒消息！
 
 \--- task ---
 
-Check if there is a selected answer for this question.
+检查该问题是否有选定的答案。
 
-Show a result message if there is.
+如果有的话，显示结果消息。
 
-If there isn't, **choose** a helpful message to show.
+如果没有，**选择**一个有用的消息来显示。
 
 ## --- code ---
 
@@ -260,7 +260,7 @@ line_numbers: false
 line_highlights: 8, 13-15
 --------------------------------------------------------------
 
-// Check answer function
+// 检查答案函数
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 let qResult = document.querySelector(result);
@@ -269,12 +269,12 @@ qResult.style.display = "block";
 
 if (answer) {
 if (answer.value === "correct") {
-qResult.innerText = "Correct";
+qResult.innerText = "正确";
 } else {
-qResult.innerText = "Incorrect";
+qResult.innerText = "不正确";
 }
 } else {
-qResult.innerText = "Please select an answer";
+qResult.innerText = "请选择一个答案";
 }
 
 }
@@ -285,17 +285,17 @@ qResult.innerText = "Please select an answer";
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- Do **not** select an answer
-- Click the 'Check Answer' button
-- You should see the result div display 'Please select an answer'
+- 不要选择答案
+- 点击“检查答案”按钮
+- 你应该看到结果 div 显示“请选择一个答案”
 
 \--- /task ---
 
-**Debug**
-Make sure you have added the `if (answer) {` on line 8 and updated lines 13-15 with the `else` statement (and indented the code to include these additions).
+**调试**
+确保已在第 8 行添加了 `if (answer) {`，并使用 `else` 语句更新了第 13-15 行（并缩进代码以包含这些添加内容）。
 
-Awesome work! You have created an interactive question!
+干得好！ 你已经创建了一个交互式问题！
 
-Next, you will create some more questions!
+接下来，你将创建更多问题！
