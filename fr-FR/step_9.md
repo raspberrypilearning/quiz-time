@@ -1,32 +1,32 @@
 ## Améliorer ton projet
 
-In this step, you can upgrade your project by:
+Dans cette étape, tu peux améliorer ton projet en :
 
-- Adding more questions
-- Updating the text in the header to show the final score
-- Showing the user a message if they get full marks
-- Letting the user retake the quiz if they don't get full marks
-- Adding more animations
+- Ajoutant plus de questions
+- Améliorant le texte dans l'en-tête pour afficher le score final
+- Affichant un message à l'utilisateur s'il obtient la note maximale
+- Permettant à l'utilisateur de refaire le quiz s'il n'obtient pas la note maximale
+- Ajoutant plus d'animations
 
-You don't have to do all these things. Choose whichever appeals to you and fits the time you have.
+Tu n'es pas obligé de faire toutes ces choses. Choisis ce qui te plaît et qui correspond au temps dont tu disposes.
 
 \--- collapse ---
 
 ---
 
-## title: Add more questions
+## title: Ajouter plus de questions
 
-You can go through the same process you used in an earlier step to add more questions.
+Tu peux suivre le même processus que celui utilisé à l’étape précédente pour ajouter d’autres questions.
 
-Copy and paste the question container again and change the values to create your extra questions.
+Copie et colle à nouveau le conteneur de question et modifie les valeurs pour créer tes questions supplémentaires.
 
-You need to:
+Tu dois :
 
-- Change the question number and question text
-- Change the answer labels to match the question
-- Change the attributes for the input elements
-- Change the attributes for the result div and button
-- Change the arguments passed to the function
+- Modifier le numéro et le texte de la question
+- Modifier les labels de réponse pour qu'elles correspondent à la question
+- Modifier les attributs des éléments d'entrée
+- Modifier les attributs pour le div de résultat et le bouton
+- Modifier les arguments passés à la fonction
 
 \--- /collapse ---
 
@@ -34,9 +34,9 @@ You need to:
 
 ---
 
-## title: Update the final score ... and make it glow!
+## title: Mettre à jour le score final ... et fais-le briller !
 
-### Change the nextQ function.
+### Modifie la fonction nextQ.
 
 ## --- code ---
 
@@ -46,7 +46,7 @@ line_numbers: false
 line_highlights: 10-11
 -----------------------------------------------------------
 
-// Next question function
+// Fonction de la question suivante
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -56,14 +56,14 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;\
+scoreTexte.innerText = `Score final : ${score}`;\
 }
 }, "2000");
 }
 
 \--- /code ---
 
-### Make it glow!
+### Fais-le briller !
 
 ## --- code ---
 
@@ -73,7 +73,7 @@ line_numbers: false
 line_highlights: 12
 --------------------------------------------------------
 
-// Next question function
+// Fonction de la question suivante
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -83,8 +83,8 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;
-scoreText.classList.add("glowing");
+scoreTexte.innerText = `Score final : ${score}`;
+scoreTexte.classList.add("glowing");
 }
 }, "2000");
 }
@@ -97,13 +97,13 @@ scoreText.classList.add("glowing");
 
 ---
 
-## title: Show the user a message if they get full marks
+## title: Afficher un message à l'utilisateur s'il obtient la note maximale
 
-### Update the HTML
+### Mettre à jour le code HTML
 
-- Add a `<div>` element below the result div.
-- Include a congratulatory message.
-- Give it a `class` attribute that can be used to show/hide the message using JavaScript. The example uses the class `fullMarks`.
+- Ajoute un élément `<div>` en dessous du div de résultat.
+- Inclus un message de félicitation.
+- Donne-lui un attribut `class` qui peut être utilisé pour afficher/cacher le message en utilisant JavaScript. L'exemple utilise la classe `fullMarks`.
 
 ## --- code ---
 
@@ -115,15 +115,15 @@ line_highlights: 2
 
 ```
     <div class="result" id="result3"></div>  
-    <div class="fullMarks">Well done! All correct!</div>
-    <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
+    <div class="fullMarks">Bien joué !</div>
+    <button id="q3" onclick="checkAnswer('q3', '#result3')">Vérifier la réponse</button>
 ```
 
 \--- /code ---
 
-### Update the JavaScript
+### Mettre à jour le JavaScript
 
-Add a const to get the element.
+Ajoute un const pour obtenir l'élément.
 
 ## --- code ---
 
@@ -137,18 +137,18 @@ line_highlights: 8
 var score = 0;
 var currentQ = 0;
 
-// Constants
-const scoreText = document.querySelector("#scoreText");
+// Constantes
+const scoreTexte = document.querySelector("#scoreTexte");
 const questions = document.querySelectorAll(".q-container");
 const fullMarks = document.querySelector(".fullMarks");
 
 \--- /code ---
 
-Add an `if` statement to check if the final score matches the number of questions.
+Ajoute une instruction `if` pour vérifier si le score final correspond au nombre de questions.
 
-The example awards one point for each correct answer.
+L'exemple attribue un point pour chaque réponse correcte.
 
-If you award more than one point for each correct answer, then you need to divide the score by the number of points awarded.
+Si tu attribues plus d'un point pour chaque réponse correcte, tu dois diviser le score par le nombre de points attribués.
 
 ## --- code ---
 
@@ -158,7 +158,7 @@ line_numbers: false
 line_highlights: 13-15
 -----------------------------------------------------------
 
-// Next question function
+// Fonction de la question suivante
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -168,8 +168,8 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;
-scoreText.classList.add("glowing");
+scoreTexte.innerText = `Score final : ${score}`;
+scoreTexte.classList.add("glowing");
 if (score === questions.length) {
 fullMarks.style.display = "block";
 }
@@ -185,13 +185,13 @@ fullMarks.style.display = "block";
 
 ---
 
-## title: Let the user retake the quiz if they don't get full marks
+## title: Permettre à l'utilisateur de refaire le quiz s'il n'obtient pas la note maximale
 
-### Update the HTML
+### Mettre à jour le code HTML
 
-- Add an `<a>` element below the result div.
-- Include a link to `index.html` using the `href` attribute.
-- Give it a `class` attribute that can be used to show/hide the link using JavaScript. The example uses the class `retry` (the CSS styling is already provided in `style.css`).
+- Ajoute un élément `<a>` en dessous du div de résultat.
+- Inclus un lien vers `index.html` en utilisant l'attribut `href`.
+- Donne-lui un attribut `class` qui peut être utilisé pour afficher/cacher le lien en utilisant JavaScript. L'exemple utilise la classe `retry` (le style CSS est déjà fourni dans `style.css`).
 
 ## --- code ---
 
@@ -203,16 +203,16 @@ line_highlights: 3
 
 ```
     <div class="result" id="result3"></div>  
-    <div class="fullMarks">Well done! All correct!</div>
-    <a class="retry" href="index.html">Have another go!</a>
-    <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
+    <div class="fullMarks">Bien joué ! Tout est correct !</div>
+    <a class="retry" href="index.html">Réessaie !</a>
+    <button id="q3" onclick="checkAnswer('q3', '#result3')">Vérifier la réponse</button>
 ```
 
 \--- /code ---
 
-### Update the JavaScript
+### Mettre à jour le JavaScript
 
-Add a const to get the element.
+Ajoute un const pour obtenir l'élément.
 
 ## --- code ---
 
@@ -226,15 +226,15 @@ line_highlights: 9
 var score = 0;
 var currentQ = 0;
 
-// Constants
-const scoreText = document.querySelector("#scoreText");
+// Constantes
+const scoreTexte = document.querySelector("#scoreTexte");
 const questions = document.querySelectorAll(".q-container");
 const fullMarks = document.querySelector(".fullMarks");
 const retry = document.querySelector(".retry");
 
 \--- /code ---
 
-Add an `else` statement to the `if` added in the last upgrade to show the retry `<a>` link if the condition is **not** met (if the user has not got full marks).
+Ajoute une instruction `else` à `if` ajouté lors de la dernière mise à jour pour afficher le lien de nouvelle tentative `<a>` si la condition n'est **pas** remplie (si l'utilisateur n'a pas obtenu la note maximale).
 
 ## --- code ---
 
@@ -244,7 +244,7 @@ line_numbers: false
 line_highlights: 15-17
 -----------------------------------------------------------
 
-// Next question function
+// Fonction de la question suivante
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -254,8 +254,8 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;
-scoreText.classList.add("glowing");
+scoreTexte.innerText = `Score final : ${score}`;
+scoreTexte.classList.add("glowing");
 if (score === questions.length) {
 fullMarks.style.display = "block";
 } else {
@@ -267,8 +267,8 @@ retry.style.display = "block";
 
 \--- /code ---
 
-**Tip:** If you have already added the fullMarks element, then add an `else` statement to the `if` added in the last upgrade as shown above.
+**Astuce :** si tu as déjà ajouté l'élément fullMarks, ajoute une instruction `else` à la dernière mise à jour comme indiqué ci-dessus.
 
-If you haven't, then add this as an `if`, rather than an `else` statement.
+Si tu ne l'as pas fait, ajoute-le en tant que `if`, plutôt qu'une instruction `else`.
 
 \--- /collapse ---
