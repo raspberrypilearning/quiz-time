@@ -22,7 +22,7 @@ steps:
   - 
     title: Toon er één tegelijk
   - 
-    title: Volgende vraag, alstublieft!
+    title: Volgende vraag, alsjeblieft!
     completion:
       - internal
   - 
