@@ -4,7 +4,7 @@
 
 ## legend: Vraag 3 van 3
 
-Toen je de volgende vraagfunctie hebt gemaakt, je moest controleren of de index van de **huidige** vraag (`currentQ`) één minder was dan het aantal vragen in de `vragen` lijst.
+Toen je de volgende vraagfunctie hebt gemaakt, moest je controleren of de index van de **huidige** vraag (`currentQ`) één minder was dan het aantal vragen in de `vragen` lijst.
 
 Welke van deze antwoorden is gebruikt om de lijst te maken?
 
