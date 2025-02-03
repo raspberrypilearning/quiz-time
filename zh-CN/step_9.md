@@ -1,32 +1,32 @@
-## Upgrade your project
+## 升级你的项目
 
-In this step, you can upgrade your project by:
+在此步骤中，你可以通过以下方式升级您的项目：
 
-- Adding more questions
-- Updating the text in the header to show the final score
-- Showing the user a message if they get full marks
-- Letting the user retake the quiz if they don't get full marks
-- Adding more animations
+- 添加更多问题
+- 更新标题中的文本以显示最终得分
+- 如果用户获得满分，则向用户显示一条消息
+- 如果用户没有获得满分，则允许他们重新参加测验
+- 添加更多动画
 
-You don't have to do all these things. Choose whichever appeals to you and fits the time you have.
+你不必去做所有的事情。 选择你感兴趣并且时间允许的去做。
 
 \--- collapse ---
 
 ---
 
-## title: Add more questions
+## title: 添加更多问题
 
-You can go through the same process you used in an earlier step to add more questions.
+你可以按照之前步骤，使用的相同流程来添加更多问题。
 
-Copy and paste the question container again and change the values to create your extra questions.
+再次复制并粘贴问题容器并更改值以创建额外的问题。
 
-You need to:
+你需要：
 
-- Change the question number and question text
-- Change the answer labels to match the question
-- Change the attributes for the input elements
-- Change the attributes for the result div and button
-- Change the arguments passed to the function
+- 更改问题编号和问题文本
+- 更改答案标签以匹配问题
+- 更改 input 元素的属性
+- 更改结果 div 和按钮的属性
+- 更改传递给函数的参数
 
 \--- /collapse ---
 
@@ -34,9 +34,9 @@ You need to:
 
 ---
 
-## title: Update the final score ... and make it glow!
+## title: 更新最后得分 ... 并让它发光！
 
-### Change the nextQ function.
+### 更改 nextQ 函数。
 
 ## --- code ---
 
@@ -46,7 +46,7 @@ line_numbers: false
 line_highlights: 10-11
 -----------------------------------------------------------
 
-// Next question function
+// 下一个问题函数
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -56,14 +56,14 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;\
+scoreText.innerText = `最终分数: ${score}`;\
 }
 }, "2000");
 }
 
 \--- /code ---
 
-### Make it glow!
+### 让它发光！
 
 ## --- code ---
 
@@ -73,7 +73,7 @@ line_numbers: false
 line_highlights: 12
 --------------------------------------------------------
 
-// Next question function
+// 下一个问题函数
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -83,7 +83,7 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;
+scoreText.innerText = `最终分数: ${score}`;
 scoreText.classList.add("glowing");
 }
 }, "2000");
@@ -97,13 +97,13 @@ scoreText.classList.add("glowing");
 
 ---
 
-## title: Show the user a message if they get full marks
+## title: 如果用户获得满分，则向用户显示一条消息
 
-### Update the HTML
+### 更新 HTML
 
-- Add a `<div>` element below the result div.
-- Include a congratulatory message.
-- Give it a `class` attribute that can be used to show/hide the message using JavaScript. The example uses the class `fullMarks`.
+- 在结果 div 下方添加一个 `<div>` 元素。
+- 包含一个祝贺信息。
+- 赋予它一个`class`属性，可以使用 JavaScript 显示/隐藏消息。 该示例使用类`fullMarks`。
 
 ## --- code ---
 
@@ -114,16 +114,16 @@ line_highlights: 2
 -------------------------------------------------------
 
 ```
-    <div class="result" id="result3"></div>  
-    <div class="fullMarks">Well done! All correct!</div>
-    <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
+    <0></0>  
+    <1>做的好！全部正确！</1>
+    <2>查看答案</2>
 ```
 
 \--- /code ---
 
-### Update the JavaScript
+### 更新 JavaScript
 
-Add a const to get the element.
+添加一个常量来获取元素。
 
 ## --- code ---
 
@@ -133,22 +133,22 @@ line_numbers: false
 line_highlights: 8
 -------------------------------------------------------
 
-// Variables
+// 变量
 var score = 0;
 var currentQ = 0;
 
-// Constants
+// 常量
 const scoreText = document.querySelector("#scoreText");
 const questions = document.querySelectorAll(".q-container");
 const fullMarks = document.querySelector(".fullMarks");
 
 \--- /code ---
 
-Add an `if` statement to check if the final score matches the number of questions.
+添加`if`语句来检查最终分数是否与问题数量相符。
 
-The example awards one point for each correct answer.
+本例中，每答对一个问题就奖励一分。
 
-If you award more than one point for each correct answer, then you need to divide the score by the number of points awarded.
+如果每个正确答案授予超过一分，那么你需要将分数除以授予的分数。
 
 ## --- code ---
 
@@ -158,7 +158,7 @@ line_numbers: false
 line_highlights: 13-15
 -----------------------------------------------------------
 
-// Next question function
+// 下一个问题函数
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -168,7 +168,7 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;
+scoreText.innerText = `最终分数: ${score}`;
 scoreText.classList.add("glowing");
 if (score === questions.length) {
 fullMarks.style.display = "block";
@@ -185,13 +185,13 @@ fullMarks.style.display = "block";
 
 ---
 
-## title: Let the user retake the quiz if they don't get full marks
+## title: 如果用户没有获得满分，则允许他们重新参加测验
 
-### Update the HTML
+### 更新 HTML
 
-- Add an `<a>` element below the result div.
-- Include a link to `index.html` using the `href` attribute.
-- Give it a `class` attribute that can be used to show/hide the link using JavaScript. The example uses the class `retry` (the CSS styling is already provided in `style.css`).
+- 在结果 div 下方添加一个 `<a>` 元素。
+- 使用`href`属性包含指向`index.html`的链接。
+- 赋予它一个`class`属性，可以使用 JavaScript 显示/隐藏链接。 该示例使用`retry`类（CSS 样式已在`style.css`中提供）。
 
 ## --- code ---
 
@@ -203,16 +203,16 @@ line_highlights: 3
 
 ```
     <div class="result" id="result3"></div>  
-    <div class="fullMarks">Well done! All correct!</div>
-    <a class="retry" href="index.html">Have another go!</a>
-    <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
+    <div class="fullMarks">做得好！全部正确！</div>
+    <a class="retry" href="index.html">再试一次！</a>
+    <button id="q3" onclick="checkAnswer('q3', '#result3')">查看答案</button>
 ```
 
 \--- /code ---
 
-### Update the JavaScript
+### 更新 JavaScript
 
-Add a const to get the element.
+添加一个常量来获取元素。
 
 ## --- code ---
 
@@ -222,11 +222,11 @@ line_numbers: false
 line_highlights: 9
 -------------------------------------------------------
 
-// Variables
+// 变量
 var score = 0;
 var currentQ = 0;
 
-// Constants
+// 常量
 const scoreText = document.querySelector("#scoreText");
 const questions = document.querySelectorAll(".q-container");
 const fullMarks = document.querySelector(".fullMarks");
@@ -234,7 +234,7 @@ const retry = document.querySelector(".retry");
 
 \--- /code ---
 
-Add an `else` statement to the `if` added in the last upgrade to show the retry `<a>` link if the condition is **not** met (if the user has not got full marks).
+在上次升级中添加的 `if` 中再添加一个 `else` 语句，当条件**不**满足时（如果用户没有获得满分），显示重试 `<0>` 链接。
 
 ## --- code ---
 
@@ -244,7 +244,7 @@ line_numbers: false
 line_highlights: 15-17
 -----------------------------------------------------------
 
-// Next question function
+// 下一个问题函数
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -254,7 +254,7 @@ currentQ++;
 questions[currentQ].classList.add("slide-left");
 questions[currentQ].style.display = "block";
 } else {
-scoreText.innerText = `Final score: ${score}`;
+scoreText.innerText = `最终分数: ${score}`;
 scoreText.classList.add("glowing");
 if (score === questions.length) {
 fullMarks.style.display = "block";
@@ -267,8 +267,8 @@ retry.style.display = "block";
 
 \--- /code ---
 
-**Tip:** If you have already added the fullMarks element, then add an `else` statement to the `if` added in the last upgrade as shown above.
+**提示：** 如果您已经添加了 fullMarks 元素，则在上次升级中添加的 `if` 中添加一个 `else` 语句，如上所示。
 
-If you haven't, then add this as an `if`, rather than an `else` statement.
+如果还没有，请将其添加为`if`，而不是`else`语句。
 
 \--- /collapse ---
