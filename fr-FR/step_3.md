@@ -1,22 +1,22 @@
 ## Vérifier la réponse
 
-In this step, you will create a function to check the user's answer and let them know if they were right!
+Dans cette étape, tu vas créer une fonction pour vérifier la réponse de l'utilisateur et lui faire savoir s'il a eu raison !
 
-The starter project already has a `scripts.js` file that contains constants.
+Le projet de démarrage a déjà un fichier `scripts.js` qui contient des constantes.
 
-### Create the checkAnswer function
+### Créer la fonction VerifierReponse
 
-Next, you need to create a function that will handle the button's `onclick` event.
+Ensuite, tu dois créer une fonction qui gérera l'événement `onclick` du bouton.
 
 \--- task ---
 
 Ouvre `scripts.js`.
 
-Find the `// Check answer function` comment.
+Trouve le commentaire `// Vérifier la fonction de réponse`.
 
-Create a function called `checkAnswer`.
+Crée une fonction appelée `VerifierReponse`.
 
-It should have two parameters `question` and `result`.
+Elle doit avoir deux paramètres `question` et `resultat`.
 
 ## --- code ---
 
@@ -26,8 +26,8 @@ line_numbers: false
 line_highlights: 2-4
 ---------------------------------------------------------
 
-// Check answer function
-function checkAnswer(question, result) {
+// Vérifier la fonction de réponse
+function VerifierReponse(question, resultat) {
 
 }
 
@@ -37,41 +37,41 @@ function checkAnswer(question, result) {
 
 ---
 
-## title: What is a parameter?
+## title: Qu'est-ce qu'un paramètre ?
 
-### Here is the HTML for the button:
+### Voici le code HTML pour le bouton :
 
-- `<button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>`
+- `<button id="q1" onclick="checkAnswer('q1', '#result1')">Vérifier la réponse</button>`
 
-It contains this function call:
+Il contient cet appel de fonction :
 
 - `checkAnswer('q1', '#result1')`
 
-The function call contains two arguments that it passes to the `checkAnswer` function.
+L'appel de fonction contient deux arguments qu'il transmet à la fonction `VerifierReponse`.
 
-### Here is the checkAnswer function
+### Voici la fonction VerifierReponse
 
 - `function checkAnswer(question, result)`
 
-It has two parameters `question` and `result`.
+Elle a deux paramètres `question` et `resultat`.
 
-When the function runs, it uses the word `question` to refer to the first value passed to it as an argument (in this case `q1`) and the word `result` to refer to the second value passed to it as an argument (in this case `#result`).
+Lors de l'exécution de la fonction, le mot `question` est utilisé pour désigner la première valeur passée en argument (ici, `q1`), tandis que le mot `resultat` fait référence à la seconde valeur passée en argument (ici, `#resultat`).
 
-In this way, the function can be called with different values as arguments and use them in its code.
+De cette façon, la fonction peut être appelée avec des valeurs différentes comme arguments et les utiliser dans son code.
 
 \---/collapse ---
 
 \--- /task ---
 
-### Find the selected option
+### Trouver l'option sélectionnée
 
-You need to know which radio button option the user has selected, to check if it is correct.
+Tu dois savoir quelle option de bouton radio l'utilisateur a sélectionné pour vérifier si c'est correct.
 
-You can get the selected option using the `:checked` pseudo-class in a querySelector.
+Tu peux obtenir l'option sélectionnée en utilisant la pseudo-classe `:checked` dans un querySelector.
 
 \--- task ---
 
-Create the variable `answer` and set it to the selected radio button in the `name` group that has the same value as that passed to the `question` parameter (in this case: `q1`):
+Crée la variable `reponse` et définis-la sur le bouton radio sélectionné dans le groupe `nom` qui a la même valeur que celle passée au paramètre `question` (ici : `q1`) :
 
 `onclick="checkAnswer('q1', '#result1')`
 
@@ -83,9 +83,9 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Check answer function
-function checkAnswer(question, result) {
-let answer = document.querySelector(`input[name="${question}"]:checked`);
+// Vérifier la fonction de réponse
+function VerifierReponse(question, resultat) {
+let reponse = document.querySelector(`input[name="${question}"]:checked`);
 
 }
 
@@ -93,17 +93,17 @@ let answer = document.querySelector(`input[name="${question}"]:checked`);
 
 \--- /task ---
 
-### The result div
+### Le div de résultat
 
-You can update the text in this question's result `<div>` because it has an `id` attribute that is unique to this question (in this case: `#result1`).
+Tu peux mettre à jour le texte dans le `<div>` de résultat de cette question parce qu'elle possède un attribut `id` qui est unique à cette question (ici : `#resultat1`).
 
-This unique value is the second argument passed to the function by the button's `onclick` event.
+Cette valeur unique est le deuxième argument passé à la fonction par l'événement `onclick` du bouton.
 
 `onclick="checkAnswer('q1', '#result1')`
 
 \--- task ---
 
-Set the variable `qResult` to be this question's result `<div>`.
+Définis la variable `qResultat` comme étant le `<div>` de résultat de cette question.
 
 ## --- code ---
 
@@ -113,10 +113,10 @@ line_numbers: false
 line_highlights: 4
 -------------------------------------------------------
 
-// Check answer function
-function checkAnswer(question, result) {
-let answer = document.querySelector(`input[name="${question}"]:checked`);
-let qResult = document.querySelector(result);
+// Vérifier la fonction de réponse
+function VerifierReponse(question, resultat) {
+let reponse = document.querySelector(`input[name="${question}"]:checked`);
+let qResultat = document.querySelector(resultat);
 
 }
 
@@ -124,13 +124,13 @@ let qResult = document.querySelector(result);
 
 \--- /task ---
 
-The styling for the result div means it is hidden.
+Le style pour le div de résultat signifie qu'il est caché.
 
 \--- collapse ---
 
 ---
 
-## title: Show me the styling of the 'result' div
+## title: Montre-moi le style du div 'resultat'
 
 ## --- code ---
 
@@ -158,7 +158,7 @@ display: none;
 
 \--- task ---
 
-Show the result `<div>`.
+Affiche le `<div>` de résultat.
 
 ## --- code ---
 
@@ -168,10 +168,10 @@ line_numbers: false
 line_highlights: 6
 -------------------------------------------------------
 
-// Check answer function
-function checkAnswer(question, result) {
-let answer = document.querySelector(`input[name="${question}"]:checked`);
-let qResult = document.querySelector(result);
+// Vérifier la fonction de réponse
+function VerifierReponse(question, resultat) {
+let reponse = document.querySelector(`input[name="${question}"]:checked`);
+let qResultat = document.querySelector(resultat);
 
 qResult.style.display = "block";
 
@@ -181,16 +181,16 @@ qResult.style.display = "block";
 
 \--- /task ---
 
-### Show the user if the selected answer is correct
+### Afficher l'utilisateur si la réponse sélectionnée est correcte
 
 \--- task ---
 
-Check if the selected answer is correct.
+Vérifie si la réponse sélectionnée est correcte.
 
-If it **is** correct, update the result div text to show 'Correct'.
-If it **is not** correct, update the result div text to show 'Incorrect'.
+Si elle **est** correcte, mets à jour le texte du div de résultat pour afficher 'Correct'.
+Si elle **n'est pas** correcte, mets à jour le texte du div de résultat pour afficher 'Incorrect'.
 
-You can **choose** other messages for correct and incorrect answers.
+Tu peux **choisir** d'autres messages pour des réponses correctes et incorrectes.
 
 ## --- code ---
 
@@ -200,10 +200,10 @@ line_numbers: false
 line_highlights: 8-12
 ----------------------------------------------------------
 
-// Check answer function
-function checkAnswer(question, result) {
-let answer = document.querySelector(`input[name="${question}"]:checked`);
-let qResult = document.querySelector(result);
+// Vérifier la fonction de réponse
+function VerifierReponse(question, resultat) {
+let reponse = document.querySelector(`input[name="${question}"]:checked`);
+let qResultat = document.querySelector(resultat);
 
 qResult.style.display = "block";
 
@@ -223,34 +223,34 @@ qResult.innerText = "Incorrect";
 
 **Clique sur Run**
 
-- Select the correct answer and click the 'Check Answer' button
-- You should see the result div display 'Correct'
+- Sélectionne la bonne réponse et clique sur le bouton 'Vérifier la réponse'
+- Tu devrais voir l'affichage du div de résultat 'Correct'
 
 **Clique sur Run**
 
-- Select a different answer and click the 'Check Answer' button
-- You should see the result div display 'Incorrect'
+- Sélectionne une réponse différente et clique sur le bouton 'Vérifier la réponse'
+- Tu devrais voir l'affichage du div de résultat 'Incorrect'
 
 **Clique sur Run**
 
-- Select the other incorrect answer and click the 'Check Answer' button
-- You should see the result div display 'Incorrect'
+- Sélectionne l'autre réponse incorrecte et clique sur le bouton 'Vérifier la réponse'
+- Tu devrais voir l'affichage du div de résultat 'Incorrect'
 
 \--- /task ---
 
-### What if the user does not select an answer?
+### Que se passe-t-il si l'utilisateur ne sélectionne pas de réponse ?
 
-You only need to run the check if the user has made a selection.
+Tu dois seulement exécuter la vérification si l'utilisateur a fait une sélection.
 
-If no answer is selected, you can add a helpful reminder message!
+Si aucune réponse n'est sélectionnée, tu peux ajouter un message de rappel utile !
 
 \--- task ---
 
-Check if there is a selected answer for this question.
+Vérifie s'il y a une réponse sélectionnée pour cette question.
 
-Show a result message if there is.
+Affiche un message de résultat s'il y en a.
 
-If there isn't, **choose** a helpful message to show.
+Si ce n'est pas le cas, **choisis** un message utile à afficher.
 
 ## --- code ---
 
@@ -260,21 +260,21 @@ line_numbers: false
 line_highlights: 8, 13-15
 --------------------------------------------------------------
 
-// Check answer function
-function checkAnswer(question, result) {
-let answer = document.querySelector(`input[name="${question}"]:checked`);
-let qResult = document.querySelector(result);
+// Vérifier la fonction de réponse
+function VerifierReponse(question, resultat) {
+let reponse = document.querySelector(`input[name="${question}"]:checked`);
+let qResultat = document.querySelector(resultat);
 
 qResult.style.display = "block";
 
-if (answer) {
-if (answer.value === "correct") {
-qResult.innerText = "Correct";
+if (reponse) {
+if (reponse.value === "correct") {
+qResultat.innerText = "Correct";
 } else {
-qResult.innerText = "Incorrect";
+qResultat.innerText = "Incorrect";
 }
 } else {
-qResult.innerText = "Please select an answer";
+qResultat.innerText = "Veuillez sélectionner une réponse";
 }
 
 }
@@ -287,15 +287,15 @@ qResult.innerText = "Please select an answer";
 
 **Clique sur Run**
 
-- Do **not** select an answer
-- Click the 'Check Answer' button
-- You should see the result div display 'Please select an answer'
+- Ne sélectionne **pas** une réponse
+- Clique sur le bouton « Vérifier la réponse »
+- Tu devrais voir l'affichage du div de résultat « Veuillez sélectionner une réponse »
 
 \--- /task ---
 
-**Debug**
-Make sure you have added the `if (answer) {` on line 8 and updated lines 13-15 with the `else` statement (and indented the code to include these additions).
+**Débogage**
+Assure-toi d'avoir ajouté le `if (reponse) {` à la ligne 8 et mis à jour les lignes 13-15 avec l'instruction `else` (et indenté le code pour inclure ces ajouts).
 
-Awesome work! You have created an interactive question!
+Excellent travail ! Tu as créé une question interactive !
 
-Next, you will create some more questions!
+Ensuite, tu vas créer d’autres questions !
