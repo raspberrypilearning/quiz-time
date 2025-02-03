@@ -1,18 +1,18 @@
-## Score some points
+## Marquer des points
 
-In this step, you will let the user score points for a correct answer!
+Dans cette étape, tu laisseras l'utilisateur marquer des points pour une réponse correcte !
 
-### Add the score to the header
+### Ajouter le score à l'en-tête
 
 \--- task ---
 
 Ouvre `index.html`.
 
-Add a new span element to the header.
+Ajoute un nouvel élément span à l'en-tête.
 
-Give it the attributes `id="scoreText"` and `class="sitename"`.
+Donne-lui les attributs `id="scoreText"` et `class="sitename"`.
 
-Include the text `Score: 0`, so the user starts on a score of 0.
+Inclus le texte `Score : 0`, afin que l’utilisateur démarre avec un score de 0.
 
 ## --- code ---
 
@@ -24,8 +24,8 @@ line_highlights: 3
 
 ```
 <header class="header">
-  <span class="sitename">Wildlife quiz</span>
-  <span id="scoreText" class="sitename">Score: 0</span>
+  <span class="sitename">Quiz sur la faune</span>
+  <span id="scoreText" class="sitename">Score : 0</span>
 </header>
 ```
 
@@ -33,15 +33,15 @@ line_highlights: 3
 
 \--- /task ---
 
-### Update the score
+### Mettre à jour le score
 
-When the user selects the correct answer, your function needs to update the score in the header.
+Lorsque l'utilisateur sélectionne la bonne réponse, ta fonction doit mettre à jour le score dans l'en-tête.
 
 \--- task ---
 
 Ouvre `scripts.js`.
 
-Create a variable called `score` and set it to `0`.
+Crée une variable appelée `score` et définis-la à `0`.
 
 ## --- code ---
 
@@ -58,15 +58,15 @@ var score = 0;
 
 \--- /task ---
 
-**Choose** how many points to give for a correct answer.
+**Choisis** combien de points donner pour une réponse correcte.
 
-Increase the score if the answer is correct.
+Augmente le score si la réponse est correcte.
 
-The example adds 1 to the score.
+L'exemple ajoute 1 au score.
 
 \--- task ---
 
-Update the score variable if the answer is correct.
+Mets à jour la variable de score si la réponse est correcte.
 
 ## --- code ---
 
@@ -76,28 +76,28 @@ line_numbers: false
 line_highlights: 4
 -------------------------------------------------------
 
-if (answer) {
-if (answer.value === "correct") {
-qResult.innerText = "Correct";
+if (reponse) {
+if (reponse.value === "correct") {
+qResultat.innerText = "Correct";
 score+=1;
 } else {
-qResult.innerText = "Incorrect";
+qResultat.innerText = "Incorrect";
 }
 } else {
-qResult.innerText = "Please select an answer";
+qResultat.innerText = "Veuillez sélectionner une réponse";
 }
 
 \--- /code ---
 
 \--- /task ---
 
-### Update the score in the header
+### Mettre à jour le score dans l'en-tête
 
-You need to show the user their score.
+Tu dois montrer à l'utilisateur son score.
 
 \--- task ---
 
-Create a constant called `scoreText` and use a `querySelector` to set it to the span element in the header containing the score.
+Crée une constante appelée `scoreTexte` et utilise un `querySelector` pour la définir sur l'élément span dans l'en-tête contenant le score.
 
 ## --- code ---
 
@@ -107,20 +107,20 @@ line_numbers: false
 line_highlights: 2
 -------------------------------------------------------
 
-// Constants
-const scoreText = document.querySelector("#scoreText");
+// Constantes
+const scoreTexte = document.querySelector("#scoreTexte");
 
 \--- /code ---
 
 \--- /task ---
 
-Change the text content of the span to match the new score.
+Modifie le contenu du texte de la plage pour qu'il corresponde au nouveau score.
 
 \--- task ---
 
-Update the text content of the span.
+Mets à jour le contenu du texte de la plage.
 
-Notice: `` `Score: ${score}` `` uses backticks `` ` ` `` instead of `" "` or `' '`.
+Remarque : \`\`\` `Score : ${score}` `utilise des guillemets obliques` ` `` au lieu de `" "`ou`''\`.
 
 ## --- code ---
 
@@ -130,16 +130,16 @@ line_numbers: false
 line_highlights: 5
 -------------------------------------------------------
 
-if (answer) {
-if (answer.value === "correct") {
-qResult.innerText = "Correct";
+if (reponse) {
+if (reponse.value === "correct") {
+qResultat.innerText = "Correct";
 score+=1;
-scoreText.innerText = `Score: ${score}`;
+scoreTexte.innerText = `Score: ${score}`;
 } else {
-qResult.innerText = "Incorrect";
+qResultat.innerText = "Incorrect";
 }
 } else {
-qResult.innerText = "Please select an answer";
+qResultat.innerText = "Veuillez sélectionner une réponse";
 }
 
 \--- /code ---
@@ -150,33 +150,33 @@ qResult.innerText = "Please select an answer";
 
 **Clique sur Run**
 
-- Answer your questions, click the 'Check Answer' buttons and watch the score in the header update!
+- Réponds à tes questions, clique sur les boutons « Vérifier la réponse » et regarde le score dans l'en-tête se mettre à jour !
 
 \--- /task ---
 
-There is a problem!
+Il y a un problème !
 
-If the user selects the correct answer, they can keep clicking Check Answer and the score will increase each time.
+Si l'utilisateur sélectionne la bonne réponse, il peut continuer à cliquer sur Vérifier la réponse et le score augmentera à chaque fois.
 
 \--- task ---
 
-**Try it**
+**Essaie-le**
 
-- Select the correct answer
-- Click the Check Answer button
-- Click it a few more times and watch the score increase each time!
+- Sélectionne la bonne réponse
+- Clique sur le bouton « Vérifier la réponse »
+- Clique dessus encore quelques fois et regarde le score augmenter à chaque fois !
 
 \--- /task ---
 
-### Stop the cheating!
+### Stop à la tricherie !
 
-You need to stop the user from cheating by clicking the button more than once.
+Tu dois empêcher l'utilisateur de tricher en cliquant sur le bouton plus d'une fois.
 
-You can disable a button using the `.disabled` method.
+Tu peux désactiver un bouton en utilisant la méthode `.disabled`.
 
 \--- task ---
 
-Add a line of code that disables the button when the user selects an option and clicks a Check Answer button.
+Ajoute une ligne de code qui désactive le bouton lorsque l'utilisateur sélectionne une option et clique sur le bouton Vérifier la réponse.
 
 ## --- code ---
 
@@ -192,9 +192,9 @@ if (answer.value === "correct") {
 
 \--- /code ---
 
-**Notice:** This will not disable the button if the user has not selected an answer.
+**Remarque :** cela ne désactivera pas le bouton si l'utilisateur n'a pas sélectionné de réponse.
 
-**Notice:** The `querySelector` uses concatenation to join the character `#` to the value of `question` passed as an argument in the button's `onclick` event. This targets the specific button element.
+**Remarque :** le `querySelector` utilise la concaténation pour joindre le caractère `#` à la valeur de `question` est passé comme argument dans l'événement `onclick` du bouton. Cela cible l'élément spécifique du bouton.
 
 \--- /task ---
 
@@ -202,13 +202,13 @@ if (answer.value === "correct") {
 
 **Clique sur Run**
 
-- Select a correct answer and click the 'Check Answer' button.
-- Click the button again. It should not work.
+- Sélectionne une bonne réponse et clique sur le bouton « Vérifier la réponse ».
+- Clique à nouveau sur le bouton. Cela ne devrait pas fonctionner.
 
 \--- /task ---
 
-You may wish to style your button so that it has a different colour.
+Tu peux changer le style de ton bouton pour qu'il ait une couleur différente.
 
-You could also hide it, or change the text.
+Tu peux également le cacher ou modifier le texte.
 
-In this project, you are going to hide the whole question and have the next one appear with an animation!
+Dans ce projet, tu vas cacher toute la question et faire apparaître la suivante avec une animation !
