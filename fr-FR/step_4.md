@@ -1,20 +1,20 @@
-## Add more questions
+## Ajouter d'autres questions
 
-In this step, you will add two more questions.
+Dans cette étape, tu ajouteras encore deux questions.
 
-### Copy the question container
+### Copier le conteneur de question
 
 \--- task ---
 
 Ouvre `index.html`.
 
-Highlight and copy (<kbd>Ctrl</kbd>+<kbd>C</kbd> or <kbd>Cmd</kbd>+<kbd>C</kbd>) the `<div>` with the class `q-container` .
+Sélectionne et copie (<kbd>Ctrl</kbd>+<kbd>C</kbd> ou <kbd>Cmd</kbd>+<kbd>C</kbd>) le `<div>` avec la classe `q-container` .
 
 \--- collapse ---
 
 ---
 
-## title: Show me the question container div
+## title: Montre-moi le conteneur de questions div
 
 ## --- code ---
 
@@ -26,19 +26,19 @@ line_numbers: false
 ```
   <div class="q-container">
     <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h2>Quelle est la plus grande espèce de félin vivant ?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tigre</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Guépard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
     <label for="q1a3">Lion</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Vérifier la réponse</button>
   </div>
 ```
 
@@ -50,13 +50,13 @@ line_numbers: false
 
 \--- task ---
 
-Paste (<kbd>Ctrl</kbd>+<kbd>V</kbd> or <kbd>Cmd</kbd>+<kbd>V</kbd>) the question container underneath.
+Colle (<kbd>Ctrl</kbd>+<kbd>V</kbd> ou <kbd>Cmd</kbd>+<kbd>V</kbd>) le conteneur de question en dessous.
 
 \--- collapse ---
 
 ---
 
-## title: What should my code look like?
+## title: À quoi devrait ressembler mon code ?
 
 ## --- code ---
 
@@ -69,36 +69,36 @@ line_highlights: 18-33
 ```
   <div class="q-container">
     <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h2>Quelle est la plus grande espèce de félin vivant ?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tigre</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Guépard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
     <label for="q1a3">Lion</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Vérifier la réponse</button>
   </div>
 
   <div class="q-container">
     <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h2>Quelle est la plus grande espèce de félin vivant ?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tigre</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Guépard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
     <label for="q1a3">Lion</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Vérifier la réponse</button>
   </div>
 ```
 
@@ -108,68 +108,68 @@ line_highlights: 18-33
 
 \--- /task ---
 
-### Create a second question
+### Créer une deuxième question
 
-**Choose** a second question about your topic.
+**Choisis** une deuxième question sur ton sujet.
 
-Change the question number and question text.
+Modifie le numéro de la question et le texte de la question.
 
 \--- task ---
 
-Change:
+Modifie :
 
-- `<h1>` to Question 2
-- `<h2>`to [Choose your new question]
+- `<h1>` à la question 2
+- `<h2>`à [Choisis ta nouvelle question]
 
 \--- /task ---
 
-**Choose** answers and change the answer labels to match the question.
+**Choisis** les réponses et modifie les labels de réponse pour correspondre à la question.
 
 \--- task ---
 
-Change:
+Modifie :
 
-- The text content of each `<label>`, so you have one correct and two incorrect answers
-- The `for` attribute of each label to relate to q2, rather than q1
+- Le contenu textuel de chaque `<label>`, tu as donc une réponse correcte et deux réponses incorrectes
+- L'attribut `for` de chaque label fait référence à q2, au lieu de q1
 
 \--- /task ---
 
-Change the attributes for the input elements.
+Modifie les attributs des éléments d'entrée.
 
 \--- task ---
 
-Change:
+Modifie :
 
-- The `name` attribute of each `<input>` element to `q2`
-- The `value` attribute of each `<input>` element to `correct` (or leave it blank if it is an incorrect answer)
-- The `id` attribute of each `<input>` element to match the `for` attribute of its label
+- L'attribut `name` de chaque élément `<input>` à `q2`
+- L'attribut `value` de chaque élément `<input>` à `correct` (ou laisse-le vide s'il s'agit d'une réponse incorrecte)
+- L'attribut `id` de chaque élément `<input>` doit correspondre à l'attribut `for` de son label
 
 \--- /task ---
 
-Change the attributes for the result div and button.
+Modifie les attributs du div de résultat et du bouton.
 
 \--- task ---
 
-Change:
+Modifie :
 
-- The `id` attribute of the `result` div to `result2`
-- The `id` attribute of the button to `q2`
+- L'attribut `id` du div `result` à `result2`
+- L'attribut `id` du bouton à `q2`
 
 \--- /task ---
 
-Change the arguments passed to the function.
+Modifie les arguments passés à la fonction.
 
 \--- task ---
 
-Change:
+Modifie :
 
-- The arguments passed by the `onclick` event to the function (`q2` and `#result2`)
+- Les arguments passés par l'événement `onclick` à la fonction (`q2` et `#result2`)
 
 \--- collapse ---
 
 ---
 
-## title: What should my code look like?
+## title: À quoi devrait ressembler mon code ?
 
 ## --- code ---
 
@@ -182,36 +182,36 @@ line_highlights: 19-32
 ```
   <div class="q-container">
     <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h2>Quelle est la plus grande espèce de félin vivant ?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tigre</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Guépard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
     <label for="q1a3">Lion</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Vérifier la réponse</button>
   </div>
 
   <div class="q-container">
     <h1>Question 2</h1>
-    <h2>Which bird is known for its ability to copy human speech?</h2>
+    <h2>Quel oiseau est connu pour sa capacité à copier la parole humaine ?</h2>
 
     <input type="radio" name="q2" value="" id="q2a1">
-    <label for="q2a1">Sparrow</label><br>
+    <label for="q2a1">Moineau</label><br>
     
     <input type="radio" name="q2" value="" id="q2a2">
     <label for="q2a2">Pigeon</label><br>
     
     <input type="radio" name="q2" value="correct" id="q2a3">
-    <label for="q2a3">Parrot</label><br>
+    <label for="q2a3">Perroquet</label><br>
 
     <div class="result" id="result2"></div>  
-    <button id="q2" onclick="checkAnswer('q2', '#result2')">Check Answer</button>
+    <button id="q2" onclick="checkAnswer('q2', '#result2')">Vérifier la réponse</button>
   </div>
 ```
 
@@ -221,27 +221,27 @@ line_highlights: 19-32
 
 \--- /task ---
 
-### Create a third question
+### Créer une troisième question
 
-You can go through the same process again for the third question.
+Ty peux répéter le même processus pour la troisième question.
 
 \--- task ---
 
-Copy and paste the question container again and change the values to create your third question.
+Copie et colle à nouveau le conteneur de question et modifie les valeurs pour créer ta troisième question.
 
-You need to:
+Tu dois :
 
-- Change the question number and question text
-- Change the answer labels to match the question
-- Change the attributes for the input elements
-- Change the attributes for the result div and button
-- Change the arguments passed to the function
+- Modifier le numéro de la question et le texte de la question
+- Modifier les labels de réponse pour qu'elles correspondent à la question
+- Modifier les attributs des éléments d'entrée
+- Modifier les attributs pour le div de résultat et le bouton
+- Modifier les arguments passés à la fonction
 
 \--- collapse ---
 
 ---
 
-## title: What should my code look like?
+## title: À quoi devrait ressembler mon code ?
 
 ## --- code ---
 
@@ -254,53 +254,53 @@ line_highlights: 35-49
 ```
   <div class="q-container">
     <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h2>Quelle est la plus grande espèce de félin vivant ?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tigre</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Guépard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
     <label for="q1a3">Lion</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Vérifier la réponse</button>
   </div>
 
   <div class="q-container">
     <h1>Question 2</h1>
-    <h2>Which bird is known for its ability to copy human speech?</h2>
+    <h2>Quel oiseau est connu pour sa capacité à imiter la parole humaine ?</h2>
 
     <input type="radio" name="q2" value="" id="q2a1">
-    <label for="q2a1">Sparrow</label><br>
+    <label for="q2a1">Moineau</label><br>
     
     <input type="radio" name="q2" value="" id="q2a2">
     <label for="q2a2">Pigeon</label><br>
     
     <input type="radio" name="q2" value="correct" id="q2a3">
-    <label for="q2a3">Parrot</label><br>
+    <label for="q2a3">Perroquet</label><br>
 
     <div class="result" id="result2"></div>  
-    <button id="q2" onclick="checkAnswer('q2', '#result2')">Check Answer</button>
+    <button id="q2" onclick="checkAnswer('q2', '#result2')">Vérifier la réponse</button>
   </div>
 
   <div class="q-container">
     <h1>Question 3</h1>
-    <h2>Which animal is known for its distinctive black and white stripes?</h2>
+    <h2>Quel animal est connu pour ses rayures noires et blanches distinctives ?</h2>
 
     <input type="radio" name="q3" value="" id="q3a1">
-    <label for="q3a1">Hippopotamus</label><br>
+    <label for="q3a1">Hippopotame</label><br>
     
     <input type="radio" name="q3" value="" id="q3a2">
-    <label for="q3a2">Giraffe</label><br>
+    <label for="q3a2">Girafe</label><br>
     
     <input type="radio" name="q3" value="correct" id="q3a3">
-    <label for="q3a3">Zebra</label><br>
+    <label for="q3a3">Zèbre</label><br>
 
     <div class="result" id="result3"></div>
-    <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
+    <button id="q3" onclick="checkAnswer('q3', '#result3')">Vérifier la réponse</button>
   </div>
 ```
 
@@ -314,17 +314,17 @@ line_highlights: 35-49
 
 **Clique sur Run**
 
-- Answer your questions, click the 'Check Answer' button and watch the result update!
+- Réponds à tes questions, clique sur le bouton « Vérifier la réponse » et regarde le résultat se mettre à jour !
 
 \--- /task ---
 
 \--- task ---
 
-- Select a different answer and click the 'Check Answer' button.
-- The result will update if you change to a correct or incorrect answer!
+- Sélectionne une réponse différente et clique sur le bouton « Vérifier la réponse ».
+- Le résultat sera mis à jour si tu modifies pour une réponse correcte ou incorrecte !
 
 \--- /task ---
 
-You will stop this from happening later.
+Tu empêcheras que cela se reproduise plus tard.
 
-Next, you will let the user score points for a correct answer!
+Ensuite, tu laisseras l'utilisateur marquer des points pour une réponse correcte !
