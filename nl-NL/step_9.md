@@ -73,7 +73,7 @@ line_numbers: false
 line_highlights: 12
 --------------------------------------------------------
 
-// Next question function
+// Volgende vraag functie
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
