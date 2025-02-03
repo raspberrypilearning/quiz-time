@@ -1,60 +1,60 @@
-## Create a question
+## Créer une question
 
-In this step, you will create the first quiz question. You will also choose some colours and a quiz title!
+Dans cette étape, tu vas créer la première question du quiz. Tu pourras également choisir des couleurs et un titre de quiz !
 
-### Choose a quiz topic
+### Choisir un sujet de quiz
 
 \--- task ---
 
-What will your quiz be about?
+De quoi parlera ton quiz ?
 
-- 🐻 **Nature**: Animals, plants, or habitats?
-- 📖 **Books**: Authors, characters, or genres?
-- 🏰 **History**: Kings and queens, pre-history/modern, or important dates?
-- 🥇 **World records**: Biggest, fastest, or longest?
-- 👗 **Fashion**: Brands, trends, or influencers?
-- 🔬 **Science**: Wildlife, climate, or theories?
-- 🎥 **TV & film**: Cinematography, series, or characters?
-- 🖥️ **Coding**: Languages, devices, or software?
-- 🕹️ **Video games**: Characters, genres, or consoles?
-- 🎨 **Art**: Art works, artists, or museums?
-- 👥 **Culture**: Festivals, holidays, or languages?
+- 🐻 **Nature** : animaux, plantes ou habitats ?
+- 📖 **Livres** : auteurs, personnages ou genres ?
+- 🏰 **Histoire** : rois et reines, préhistoire/moderne, ou dates importantes ?
+- 🥇 **Records du monde** : le plus grand, le plus rapide ou le plus long ?
+- 👗 **Mode** : marques, tendances ou influenceurs ?
+- 🔬 **Sciences** : faune, climat ou théories ?
+- 🎥 **TV & cinéma** : cinématographie, série ou personnages ?
+- 🖥️ **Codage** : langages, appareils ou logiciels ?
+- 🕹️ **Jeux vidéo** : personnages, genres ou consoles ?
+- 🎨 **Art** : œuvres d’art, artistes ou musées ?
+- 👥 **Culture** : fêtes, jours fériés ou langues ?
 
-You need to pick a topic, and three questions for the user to answer.
+Tu dois choisir un sujet et trois questions auxquelles l’utilisateur devra répondre.
 
 \--- collapse ---
 
 ---
 
-## title: Some examples
+## title: Quelques exemples
 
-The example project uses **Wildlife** as its topic, and asks the user three questions.
+L'exemple de projet utilise **Faune** comme sujet et pose trois questions à l'utilisateur.
 
-The **Karate** example uses the martial art **karate** as its topic.
+L'exemple du **Karaté** utilise l'art martial **karaté** comme sujet.
 
-There are many choices of topic, and questions about those topics.
+Il existe de nombreux choix en termes de sujets et de questions sur ces sujets.
 
-Pick something you're the expert in and test your friends or family!
+Choisis quelque chose dont tu es l'expert et teste tes amis ou ta famille !
 
 \--- /collapse ---
 
-**Choose** your topic.
+**Choisis** ton sujet.
 
 \--- /task ---
 
 \--- task ---
 
-Open the [Quiz time starter project](https://editor.raspberrypi.org/en/projects/quiz-time-starter){:target="_blank"}.
+Ouvre le [projet de démarrage Quiz !](https://editor.raspberrypi.org/fr-FR/projects/quiz-time-starter){:target="_blank"}.
 
-If you are logged in, save the project to your account and change the name.
+Si tu es connecté, enregistre le projet sur ton compte et modifie le nom.
 
 \--- /task ---
 
-### Update your page title and heading
+### Mettre à jour le titre et l'en-tête de ta page
 
 \--- task ---
 
-Change the page title and header text to match your topic.
+Modifie le titre de la page et le texte de l'en-tête pour qu'il corresponde à ton sujet.
 
 ## --- code ---
 
@@ -73,11 +73,11 @@ line_highlights: 8, 12
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="default.css">
-    <title>Wildlife quiz</title>
+    <title>Quiz sur la faune</title>
   </head>
   <body>
     <header class="header">
-      <span class="sitename">Wildlife quiz</span>
+      <span class="sitename">Quiz sur la faune</span>
 
 \--- /code ---
 
@@ -87,19 +87,19 @@ line_highlights: 8, 12
 
 **Clique sur Run**
 
-- You should see your the name of your quiz in the header!
+- Tu devrais voir le nom de ton quiz dans l'en-tête !
 
 \--- /task ---
 
-### Create your first question
+### Créer ta première question
 
 \--- task ---
 
-Find the question container `<div class="q-container">`
+Trouve le conteneur de questions `<div class="q-container">`
 
-**Choose** a question about your topic.
+**Choisis** une question sur ton sujet.
 
-Change the text in the `<h2>` tag to be your first question.
+Modifie le texte dans la balise `<h2>` pour qu'il soit ta première question.
 
 ## --- code ---
 
@@ -112,24 +112,24 @@ line_highlights: 17
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>Question 1</h1>
+    <h2>Quelle est la plus grande espèce de félin vivant ?</h2>
 ```
 
 \--- /code ---
 
 \--- /task ---
 
-### Create three answers
+### Créer trois réponses
 
-**Choose** the correct and incorrect answers.
+**Choisis** les réponses correctes et incorrectes.
 
 \--- task ---
 
-Add text to the three answer labels.
+Ajoute du texte aux trois étiquettes de réponse.
 
-- One correct answer (and give it the attribute `value="correct"`)
-- Two incorrect answers
+- Une réponse correcte (et lui donner l'attribut `value="correct"`)
+- Deux réponses incorrectes
 
 ## --- code ---
 
@@ -142,14 +142,14 @@ line_highlights: 20, 23, 26
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>Question 1</h1>
+    <h2>Quelle est la plus grande espèce de félin vivant ?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tigre</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Guépard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
     <label for="q1a3">Lion</label><br>
@@ -157,13 +157,13 @@ line_highlights: 20, 23, 26
 
 \--- /code ---
 
-**Notice:**
+**Remarque :**
 
-- Each `<label>` element uses a `for` attribute that links the label to an `<input>` element's `id` attribute. This makes the webpage more accessible because the user can also select the radio button by clicking on the label.
-- Each `<input>` element is a radio button type and has three attributes:
-  - `name` (q1) allows only one radio button in the name group 'q1' to be selected at a time
-  - `value` is used later when the answer is checked
-  - `id` matches the label's `for` attribute
+- Chaque élément `<label>` utilise un attribut `for` qui lie le label à l'attribut `id` d'un élément `<input>`. Cela rend la page web plus accessible car l'utilisateur peut également sélectionner le bouton radio en cliquant sur le label.
+- Chaque élément `<input>` est un type de bouton radio et a trois attributs :
+  - `name` (q1) permet à un seul bouton radio dans le groupe de nom 'q1' d'être sélectionné à la fois
+  - `value` est utilisé plus tard lorsque la réponse est vérifiée
+  - `id` correspond à l'attribut `for` du label
 
 \--- /task ---
 
@@ -171,17 +171,17 @@ line_highlights: 20, 23, 26
 
 **Clique sur Run**
 
-- You should see your first question and three options.
+- Tu devrais voir ta première question et trois options.
 
 \--- /task ---
 
-### Display correct / incorrect
+### Affichage correct / incorrect
 
-The user will need to know if they are correct or incorrect.
+L'utilisateur doit savoir si les réponses sont correctes ou incorrectes.
 
 \--- task ---
 
-Add a `<div>` to show the result.
+Ajoute un `<div>` pour afficher le résultat.
 
 ## --- code ---
 
@@ -195,13 +195,13 @@ line_highlights: 28
 ```
   <div class="q-container">
     <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h2>Quelle est la plus grande espèce de félin vivant ?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tigre</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Guépard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
     <label for="q1a3">Lion</label><br>
@@ -211,25 +211,25 @@ line_highlights: 28
 
 \--- /code ---
 
-**Notice:** There is no text content in the `<div>`. You will add this later using JavaScript.
+**Remarque :** il n'y a pas de contenu de texte dans le `<div>`. Tu l'ajouteras plus tard en utilisant JavaScript.
 
 \--- /task ---
 
-### Add a Check Answer button
+### Ajouter un bouton Vérifier la réponse
 
-The user needs to check if their answer is correct.
+L'utilisateur doit vérifier si sa réponse est correcte.
 
 \--- task ---
 
-Add a button to the bottom of the `q-container` `<div>`.
+Ajoute un bouton en bas du `<div>` `q-container`.
 
-This button:
+Ce bouton :
 
-- Has the attribute `id="q1"`, which is used to show, hide, and disable it later
-- Has an `onclick` event that runs the `checkAnswer` function and passes it:
-  - The question to check (`q1`)
-  - The ID of the `<div>` where the result of the check will be displayed (`#result1`)
-- Shows the text `Check Answer`
+- A l'attribut `id="q1"`, qui est utilisé pour le montrer, cacher et désactiver plus tard
+- A un événement `onclick` qui exécute la fonction `checkAnswer` et le passe à :
+  - La question à vérifier (`q1`)
+  - L'ID du `<div>` où le résultat de la vérification sera affiché (`#result1`)
+- Affiche le texte `Vérifier la réponse`
 
 ## --- code ---
 
@@ -243,19 +243,19 @@ line_highlights: 29
 ```
   <div class="q-container">
     <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h2>Quelle est la plus grande espèce de félin vivant ?</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">Tigre</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">Guépard</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
     <label for="q1a3">Lion</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">Vérifier la réponse</button>
 ```
 
 \--- /code ---
@@ -264,18 +264,18 @@ line_highlights: 29
 
 \--- task ---
 
-Check that the correct option has the attribute `value="correct"`.
-In the example, the correct answer is the first answer (`Tiger`).
+Vérifie que l'option correcte a l'attribut `value="correct"`.
+Dans l’exemple, la bonne réponse est la première réponse (`Tigre`).
 
 \--- /task ---
 
-### Make the page your own
+### Personnaliser ta page
 
-The page looks very functional and basic at the moment. It's time for you to make it look awesome!
+La page est très fonctionnelle et basique pour le moment. Il est temps pour toi de la rendre géniale !
 
 \--- task ---
 
-Add an appropriate font for your webpage from Google Fonts.
+Ajoute une police appropriée pour ta page web à partir de Google Fonts.
 
 [[[google-fonts]]]
 
@@ -287,7 +287,7 @@ Add an appropriate font for your webpage from Google Fonts.
 
 Ouvre `default.css`.
 
-**Choose** your colours and change the colour variables.
+**Choisis** tes couleurs et modifie les variables de couleurs.
 
 ## --- code ---
 
@@ -298,7 +298,7 @@ line_number_start:
 line_highlights:
 -----------------------------------------------------
 
-/\* Base Colours \*/
+/\* Couleurs de base \*/
 \--body-background: #000000;
 \--background: #ffffff;
 \--header-font-colour: #000000;
@@ -318,8 +318,8 @@ line_highlights:
 
 **Clique sur Run**
 
-- Change the colours if you want to.
+- Modifie les couleurs si tu le souhaites.
 
 \--- /task ---
 
-Next, you will create the function to check if the user's answer is correct!
+Ensuite, tu vas créer la fonction pour vérifier si la réponse de l'utilisateur est correcte !
