@@ -1,20 +1,20 @@
-## What next?
+## 接下来还有什么？
 
-If you are following the [More web](https://projects.raspberrypi.org/en/raspberrypi/more-web) path, you can move on to the [Share your world](https://projects.raspberrypi.org/en/projects/share-your-world) project. In this project, you will use your HTML, CSS, and JavaScript skills to make an interactive website that invites the user to experience something they cannot otherwise!
+如果你正在遵循[More web](https://projects.raspberrypi.org/en/raspberrypi/more-web)路径，你可以转到 [Share your world](https://projects.raspberrypi.org/en/projects/share-your-world)项目。 在这个项目中，你将使用 HTML，CSS 和 JavaScript 技能来制作一个交互式网站，让用户获得独一无二的体验！
 
 \--- print-only ---
 
-![Share your world project](images/share-your-world-project.png)
+![[Share your world 项目](images/share-your-world-project.png)
 
 \--- /print-only ---
 
 \--- no-print ---
 
-**Coding Journey**:
+**编码之旅**：
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/share-your-world-coding" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
 </iframe>
 
 \--- /no-print ---
 
-If you want to have more fun exploring HTML, CSS, and JavaScript, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=html-css-javascript).
+如果你想在探索 HTML，CSS 和 JavaScript 中获得更多乐趣，那么你可以尝试[这些项目](https://projects.raspberrypi.org/en/projects?software%5B%5D=html-css-javascript)中的任何一个。
