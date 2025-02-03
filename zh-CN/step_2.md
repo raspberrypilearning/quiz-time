@@ -1,60 +1,60 @@
-## Create a question
+## 创建一个问题
 
-In this step, you will create the first quiz question. You will also choose some colours and a quiz title!
+在这个步骤中，你将创建第一个测验问题。 你还将选择一些颜色和一个测验标题！
 
-### Choose a quiz topic
+### 选择测验主题
 
 \--- task ---
 
-What will your quiz be about?
+你的测验内容是什么？
 
-- 🐻 **Nature**: Animals, plants, or habitats?
-- 📖 **Books**: Authors, characters, or genres?
-- 🏰 **History**: Kings and queens, pre-history/modern, or important dates?
-- 🥇 **World records**: Biggest, fastest, or longest?
-- 👗 **Fashion**: Brands, trends, or influencers?
-- 🔬 **Science**: Wildlife, climate, or theories?
-- 🎥 **TV & film**: Cinematography, series, or characters?
-- 🖥️ **Coding**: Languages, devices, or software?
-- 🕹️ **Video games**: Characters, genres, or consoles?
-- 🎨 **Art**: Art works, artists, or museums?
-- 👥 **Culture**: Festivals, holidays, or languages?
+- 🐻 **自然**：动物、植物还是栖息地？
+- 📖 **书籍**：作者、人物还是流派？
+- 🏰 **历史**：国王和王后、史前/现代，还是重要日期？
+- 🥇 **世界纪录**：最大、最快还是最长？
+- 👗 **时尚**：品牌、趋势还是影响者？
+- 🔬 **科学**：野生动物、气候还是理论？
+- 🎥 **电视和电影**：电影摄影、连续剧还是角色？
+- 🖥️ **编码**：语言、设备还是软件？
+- 🕹️ **电子游戏**：角色、类型还是游戏机？
+- 🎨 **艺术**：艺术作品、艺术家还是博物馆？
+- 👥 **文化**：节日、假期还是语言？
 
-You need to pick a topic, and three questions for the user to answer.
+你需要选择一个主题和三个问题让用户回答。
 
 \--- collapse ---
 
 ---
 
-## title: Some examples
+## title: 一些例子
 
-The example project uses **Wildlife** as its topic, and asks the user three questions.
+示例项目以**野生动物**为主题，并向用户提出三个问题。
 
-The **Karate** example uses the martial art **karate** as its topic.
+**空手道**示例以武术**空手道**为主题。
 
-There are many choices of topic, and questions about those topics.
+有许多主题可供选择，每个主题都有相关的问题。
 
-Pick something you're the expert in and test your friends or family!
+选择你擅长的主题，测试你的朋友或家人吧！
 
 \--- /collapse ---
 
-**Choose** your topic.
+**选择** 你的主题。
 
 \--- /task ---
 
 \--- task ---
 
-Open the [Quiz time starter project](https://editor.raspberrypi.org/en/projects/quiz-time-starter){:target="_blank"}.
+打开 [Quiz time starter 项目](https://editor.raspberrypi.org/en/projects/quiz-time-starter){:target="_blank"}。
 
-If you are logged in, save the project to your account and change the name.
+如果你已经登录，请将项目保存到你的帐户并更改名称。
 
 \--- /task ---
 
-### Update your page title and heading
+### 更新你的页面标题和标题文字
 
 \--- task ---
 
-Change the page title and header text to match your topic.
+将页面标题和标题文字更改为与你的主题相符的内容。
 
 ## --- code ---
 
@@ -77,7 +77,7 @@ line_highlights: 8, 12
   </head>
   <body>
     <header class="header">
-      <span class="sitename">Wildlife quiz</span>
+<span class="sitename">野生动物测验</span>
 
 \--- /code ---
 
@@ -85,21 +85,21 @@ line_highlights: 8, 12
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- You should see your the name of your quiz in the header!
+- 你应该会在标题中看到你的测验名称！
 
 \--- /task ---
 
-### Create your first question
+### 创建你的第一个问题
 
 \--- task ---
 
-Find the question container `<div class="q-container">`
+找到问题容器 `<div class="q-container">`
 
-**Choose** a question about your topic.
+**选择**和你主题相关的问题。
 
-Change the text in the `<h2>` tag to be your first question.
+将 `<h2>` 标签中的文本更改为你的第一个问题。
 
 ## --- code ---
 
@@ -112,24 +112,24 @@ line_highlights: 17
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>问题 1</h1>
+    <h2>现存最大的猫科动物是什么？</h2>
 ```
 
 \--- /code ---
 
 \--- /task ---
 
-### Create three answers
+### 创建三个答案
 
-**Choose** the correct and incorrect answers.
+**选择**正确和错误的答案。
 
 \--- task ---
 
-Add text to the three answer labels.
+给这三个答案标签添加文本
 
-- One correct answer (and give it the attribute `value="correct"`)
-- Two incorrect answers
+- 一个正确的答案 (并给它属性 `value="correct"`)
+- 两个错误的答案
 
 ## --- code ---
 
@@ -142,46 +142,46 @@ line_highlights: 20, 23, 26
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>问题 1</h1>
+    <h2>现存最大的猫科动物是什么？</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">老虎</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">猎豹</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
-    <label for="q1a3">Lion</label><br>
+    <label for="q1a3">狮子</label><br>
 ```
 
 \--- /code ---
 
-**Notice:**
+**注意：**
 
-- Each `<label>` element uses a `for` attribute that links the label to an `<input>` element's `id` attribute. This makes the webpage more accessible because the user can also select the radio button by clicking on the label.
-- Each `<input>` element is a radio button type and has three attributes:
-  - `name` (q1) allows only one radio button in the name group 'q1' to be selected at a time
-  - `value` is used later when the answer is checked
-  - `id` matches the label's `for` attribute
+- 每个 `<label>` 元素使用一个 `for` 属性将标签链接到 `<input>` 元素的 `id` 属性。 这使网页更容易访问，因为用户也可以点击标签来选择单选按钮。
+- 每个 `<input>` 元素都是单选按钮类型，具有三个属性：
+  - `name` (q1) 仅允许一次选择名称组 'q1' 中的一个单选按钮
+  - `value` 稍后在检查答案时使用
+  - `id` 与标签的 `for` 属性匹配
 
 \--- /task ---
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- You should see your first question and three options.
+- 你应该看到你的第一个问题和三个选项。
 
 \--- /task ---
 
-### Display correct / incorrect
+### 显示正确/不正确
 
-The user will need to know if they are correct or incorrect.
+用户需要知道它们是否正确。
 
 \--- task ---
 
-Add a `<div>` to show the result.
+添加一个 `<div>` 来显示结果。
 
 ## --- code ---
 
@@ -194,42 +194,42 @@ line_highlights: 28
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>问题 1</h1>
+    <h2>现存最大的猫科动物是什么？</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">老虎</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">猎豹</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
-    <label for="q1a3">Lion</label><br>
+    <label for="q1a3">狮子</label><br>
 
     <div class="result" id="result1"></div>
 ```
 
 \--- /code ---
 
-**Notice:** There is no text content in the `<div>`. You will add this later using JavaScript.
+**注意：** `<div>` 中没有文本内容。 稍后你将使用 JavaScript 添加它。
 
 \--- /task ---
 
-### Add a Check Answer button
+### 添加检查答案按钮
 
-The user needs to check if their answer is correct.
+用户需要检查他们的答案是否正确。
 
 \--- task ---
 
-Add a button to the bottom of the `q-container` `<div>`.
+在 `q-container` `<div>` 的底部添加一个按钮。
 
-This button:
+此按钮：
 
-- Has the attribute `id="q1"`, which is used to show, hide, and disable it later
-- Has an `onclick` event that runs the `checkAnswer` function and passes it:
-  - The question to check (`q1`)
-  - The ID of the `<div>` where the result of the check will be displayed (`#result1`)
-- Shows the text `Check Answer`
+- 具有属性`id="q1"`，用于以后显示、隐藏和禁用
+- 有一个 `onclick` 事件，它运行 `checkAnswer` 函数并传递它：
+  - 要检查的问题 (`q1`)
+  - 检查结果将显示在 ID为（`#result1`）的 `<div>` 中
+- 显示文本 `检查答案`
 
 ## --- code ---
 
@@ -242,20 +242,20 @@ line_highlights: 29
 
 ```
   <div class="q-container">
-    <h1>Question 1</h1>
-    <h2>What is the largest living cat species?</h2>
+    <h1>问题 1</h1>
+    <h2>现存最大的猫科动物是什么？</h2>
 
     <input type="radio" name="q1" value="correct" id="q1a1">
-    <label for="q1a1">Tiger</label><br>
+    <label for="q1a1">老虎</label><br>
     
     <input type="radio" name="q1" value="" id="q1a2">
-    <label for="q1a2">Cheetah</label><br>
+    <label for="q1a2">猎豹</label><br>
     
     <input type="radio" name="q1" value="" id="q1a3">
-    <label for="q1a3">Lion</label><br>
+    <label for="q1a3">狮子</label><br>
 
     <div class="result" id="result1"></div>
-    <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+    <button id="q1" onclick="checkAnswer('q1', '#result1')">检查答案</button>
 ```
 
 \--- /code ---
@@ -264,18 +264,18 @@ line_highlights: 29
 
 \--- task ---
 
-Check that the correct option has the attribute `value="correct"`.
-In the example, the correct answer is the first answer (`Tiger`).
+检查正确的选项是否具有属性`value="correct"`。
+在这个例子中，正确答案是第一个答案（`Tiger`）。
 
 \--- /task ---
 
-### Make the page your own
+### 打造你自己的页面
 
-The page looks very functional and basic at the moment. It's time for you to make it look awesome!
+这个页面现在看起来非常实用，也很基础。 是时候让它看起来更棒了！
 
 \--- task ---
 
-Add an appropriate font for your webpage from Google Fonts.
+从 Google Fonts 中为你的网页添加合适的字体。
 
 [[[google-fonts]]]
 
@@ -285,9 +285,9 @@ Add an appropriate font for your webpage from Google Fonts.
 
 \--- task ---
 
-Open `default.css`.
+Open `default.css`。
 
-**Choose** your colours and change the colour variables.
+**选择** 你的颜色并更改颜色变量。
 
 ## --- code ---
 
@@ -298,14 +298,14 @@ line_number_start:
 line_highlights:
 -----------------------------------------------------
 
-/\* Base Colours \*/
-\--body-background: #000000;
-\--background: #ffffff;
-\--header-font-colour: #000000;
-\--h1-colour: #000000;
+/\* 基本颜色 \*/
+\--body-background： #0000;
+\--background： #ffffff;
+\--header-font-colour： #0000;
+\--h1-colour： #000000;
 \--h2-colour: #000000;
-\--button-background-colour: #000000;
-\--button-font-colour: #ffffff;
+\--buton-background-colour: #000000;
+\--buton-font-colour: #ffffff;
 }
 
 \--- /code ---
@@ -316,10 +316,10 @@ line_highlights:
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- Change the colours if you want to.
+- 如果你需要的话，请更改颜色
 
 \--- /task ---
 
-Next, you will create the function to check if the user's answer is correct!
+接下来，你将创建函数来检查用户的答案是否正确！
