@@ -1,16 +1,16 @@
-## Next question, please!
+## Question suivante, s'il vous plaît !
 
-In this step, you will hide the answered question and show the next one with an animation!
+Dans cette étape, tu cacheras la question répondue et montreras la prochaine avec une animation !
 
-### Which is the current question?
+### Quelle est la question actuelle ?
 
-You need to know which is the current question from the `questions` list.
+Tu dois savoir quelle est la question actuelle de la liste `questions`.
 
-Create a variable to hold the index of the current question.
+Crée une variable pour contenir l'index de la question actuelle.
 
 \--- task ---
 
-Create a variable called `currentQ` and set it to `0`.
+Crée une variable appelée `currentQ` et définis-la à `0`.
 
 ## --- code ---
 
@@ -28,15 +28,15 @@ var currentQ = 0;
 
 \--- /task ---
 
-### Create the next question function
+### Créer la fonction de question suivante
 
-You need to create a function that will hide the current question and show the next one.
+Tu dois créer une fonction qui cachera la question actuelle et montrera la suivante.
 
 \--- task ---
 
-Find the `// Check answer function` comment.
+Trouve le commentaire `// Vérifier la fonction de réponse`.
 
-Create a function called `nextQ`.
+Crée une fonction appelée `nextQ`.
 
 ## --- code ---
 
@@ -46,7 +46,7 @@ line_numbers: false
 line_highlights: 2-4
 ---------------------------------------------------------
 
-// Next question function
+// Fonction de la question suivante
 function nextQ() {
 
 }
@@ -55,11 +55,11 @@ function nextQ() {
 
 \--- /task ---
 
-You only need the function's code to run if there are still questions in the list.
+Tu n'as besoin que du code de la fonction à exécuter s'il y a encore des questions dans la liste.
 
 \--- task ---
 
-Create an `if` statement that checks if the index of the **current** question (`currentQ`) is one fewer than the number of questions in the `questions` list.
+Crée une instruction `if` qui vérifie si l'index de la question **actuelle** (`currentQ`) est inférieur au nombre de questions dans la liste `questions`.
 
 ## --- code ---
 
@@ -69,7 +69,7 @@ line_numbers: false
 line_highlights: 3-5
 ---------------------------------------------------------
 
-// Next question function
+// Fonction de la question suivante
 function nextQ() {
 if (currentQ < questions.length - 1) {
 
@@ -81,13 +81,13 @@ if (currentQ < questions.length - 1) {
 
 \--- /task ---
 
-### Hide the current question
+### Cacher la question actuelle
 
-If there are still questions left in the list, then you need to hide the current question.
+S'il reste encore des questions dans la liste, alors tu dois cacher la question actuelle.
 
 \--- task ---
 
-Style the current question element so it is hidden.
+Style l'élément de question actuelle afin qu'il soit caché.
 
 ## --- code ---
 
@@ -97,7 +97,7 @@ line_numbers: false
 line_highlights: 4
 -------------------------------------------------------
 
-// Next question function
+// Fonction de la question suivante
 function nextQ() {
 if (currentQ < questions.length - 1) {
 questions[currentQ].style.display = "none";
@@ -110,13 +110,13 @@ questions[currentQ].style.display = "none";
 
 \--- /task ---
 
-### Show the next question
+### Afficher la question suivante
 
 \--- task ---
 
-Increase the `currentQ` variable.
+Augmente la variable `currentQ`.
 
-Show the (new) current question.
+Affiche la (nouvelle) question actuelle.
 
 ## --- code ---
 
@@ -126,7 +126,7 @@ line_numbers: false
 line_highlights: 5-6
 ---------------------------------------------------------
 
-// Next question function
+// Fonction de la question actuelle
 function nextQ() {
 if (currentQ < questions.length - 1) {
 questions[currentQ].style.display = "none";
@@ -144,20 +144,20 @@ questions[currentQ].style.display = "block";
 
 **Clique sur Run**
 
-- Answer the first question
-- The question does not change!
+- Réponds à la première question
+- La question ne change pas !
 
-You need to call the `nextQ` function in your code.
+Tu dois appeler la fonction `nextQ` dans ton code.
 
 \--- /task ---
 
-### Call the next question function
+### Appeler la fonction de la question suivante
 
-Call the `nextQ` function if an answer is correct or incorrect (only if an answer is selected).
+Appele la fonction `nextQ` si une réponse est correcte ou incorrecte (seulement si une réponse est sélectionnée).
 
 \--- task ---
 
-Add the `nextQ()` call to your `checkAnswer` function.
+Ajoute l'appel `nextQ()` à ta fonction `checkAnswer`.
 
 ## --- code ---
 
@@ -167,26 +167,26 @@ line_numbers: false
 line_highlights: 14, 17
 ------------------------------------------------------------
 
-// Check answer function
-function checkAnswer(question, result) {
-let answer = document.querySelector(`input[name="${question}"]:checked`);
-let qResult = document.querySelector(result);
+// Vérifier la fonction de réponse
+function VerifierReponse(question, resultat) {
+let reponse = document.querySelector(`input[name="${question}"]:checked`);
+let qResultat = document.querySelector(resultat);
 
 qResult.style.display = "block";
 
-if (answer) {
+if (reponse) {
 document.querySelector("#" + question).disabled = true;
-if (answer.value === "correct") {
-qResult.innerText = "Correct";
+if (reponse.value === "correct") {
+qResultat.innerText = "Correct";
 score+=1;
-scoreText.innerText = `Score: ${score}`;
+scoreTexte.innerText = `Score: ${score}`;
 nextQ();
 } else {
-qResult.innerText = "Incorrect";
+qResultat.innerText = "Incorrect";
 nextQ();
 }
 } else {
-qResult.innerText = "Please select an answer";
+qResultat.innerText = "Veuillez sélectionner une réponse";
 }
 
 }
@@ -199,19 +199,19 @@ qResult.innerText = "Please select an answer";
 
 **Clique sur Run**
 
-- Answer the questions.
-- The current question will hide and the next question will show.
-- You will notice that you only see the `result` div on the last question. The result div for the other questions is also showing, but too fast for you to see.
+- Réponds aux questions.
+- La question actuelle sera cachée et la question suivante s'affichera.
+- Tu remarqueras que tu ne vois que le div `result` sur la dernière question. Le div de résultat pour les autres questions est également montré, mais trop vite pour que tu puisses le voir.
 
 \--- /task ---
 
-### Slow it down
+### Ralentir
 
-You need to add a time delay before the current question hides, so that the user can see the `result` div.
+Tu dois ajouter un délai avant que la question actuelle ne se cache, afin que l'utilisateur puisse voir le div `result`.
 
 \--- task ---
 
-Add a `setTimeout`.
+Ajoute un `setTimeout`.
 
 ## --- code ---
 
@@ -221,7 +221,7 @@ line_numbers: false
 line_highlights: 3, 9
 ----------------------------------------------------------
 
-// Next question function
+// Fonction de la question suivante
 function nextQ() {
 setTimeout(() => {
 if (currentQ < questions.length - 1) {
@@ -240,21 +240,21 @@ questions[currentQ].style.display = "block";
 
 **Clique sur Run**
 
-- Answer the questions
-- There should now be a delay before the current question hides and the next question shows
-- You will notice that you can now see the `result` div for all questions!
+- Réponds aux questions
+- Il devrait y avoir un délai avant que la question actuelle ne se cache et que la question suivante apparaisse
+- Tu remarqueras que tu peux maintenant voir le div `result` pour toutes les questions !
 
 \--- /task ---
 
-### Animate the questions before they hide!
+### Animer les questions avant qu'elles ne se cachent !
 
-You can make your quiz more interesting by animating the questions before they are hidden.
+Tu peux rendre ton quiz plus intéressant en animant les questions avant qu'elles ne soient cachées.
 
-There is a `fade-out` animation in `style.css` you can use.
+Il y a une animation `fade-out` dans `style.css` que tu peux utiliser.
 
 \--- task ---
 
-Add a fade out animation to the `nextQ` function to make the current question disappear.
+Ajoute une animation de fondu à la fonction `nextQ` pour faire disparaître la question actuelle.
 
 ## --- code ---
 
@@ -264,7 +264,7 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Next question function
+// Fonction de la question suivante
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -284,26 +284,26 @@ questions[currentQ].style.display = "block";
 
 **Clique sur Run**
 
-- Answer the questions
-- The questions will fade out!
+- Réponds aux questions
+- Les questions disparaîtront !
 
 \--- /task ---
 
-### Animate the questions as they appear!
+### Animer les questions telles qu'elles apparaissent !
 
-**Choose** which animation you would like to use.
+**Choisis** l'animation que tu souhaites utiliser.
 
-There are five animations in `style.css` you could use:
+Il y a cinq animations dans `style.css` que tu peux utiliser :
 
-1. `fade-in`
-2. `grow-in`
-3. `rise-in`
-4. `slide-left`
-5. `slide-right`
+1. `fade-in` (fondu enchaîné)
+2. `grow-in` (apparition progressive)
+3. `rise-in` (montée progressive)
+4. `slide-left` (glissement vers la gauche)
+5. `slide-right` (glissement vers la droite)
 
 \--- task ---
 
-Add an animation to the `nextQ` function to make the questions appear in style!
+Ajoute une animation à la fonction `nextQ` pour faire apparaître les questions dans le style !
 
 ## --- code ---
 
@@ -313,7 +313,7 @@ line_numbers: false
 line_highlights: 8
 -------------------------------------------------------
 
-// Next question function
+// Fonction de la question suivante
 function nextQ() {
 questions[currentQ].classList.add("fade-out");
 setTimeout(() => {
@@ -334,22 +334,22 @@ questions[currentQ].style.display = "block";
 
 **Clique sur Run**
 
-- Answer the questions
-- The questions will animate as they appear!
+- Réponds aux questions
+- Les questions s'animeront au fur et à mesure qu'elles apparaîtront !
 
 \--- /task ---
 
-### Avoid the glitch
+### Éviter les problèmes
 
-You might notice that a question flickers before it animates in.
+Tu remarqueras peut-être qu'une question scintille avant qu'elle ne s'anime.
 
-You can smooth this out.
+Tu peux arranger ça.
 
 \--- task ---
 
 Ouvre `style.css`.
 
-Set the `opacity` property of the `q-container` selector to `0`.
+Définis la propriété `opacity` du sélecteur `q-container` à `0`.
 
 ## --- code ---
 
@@ -378,7 +378,7 @@ opacity: 0;
 
 Ouvre `scripts.js`.
 
-Set the `opacity` property of the the first question to `1`.
+Définis la propriété `opacity` de la première question à `1`.
 
 ## --- code ---
 
@@ -388,7 +388,7 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Display first question
+// Afficher la première question
 questions[0].style.display = "block";
 questions[0].style.opacity = 1;
 
@@ -396,4 +396,4 @@ questions[0].style.opacity = 1;
 
 \--- /task ---
 
-Bien joué ! You have made an awesome interactive quiz — it looks amazing!
+Bien joué ! Tu as créé un quiz interactif génial, il a l’air incroyable !
