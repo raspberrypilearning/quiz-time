@@ -14,7 +14,7 @@ Amuse-toi bien !
 
 ## legend: Question 1 sur 3
 
-Which of these attributes allows the user to click on a label to select a radio option?
+Lequel de ces attributs permet à l'utilisateur de cliquer sur un label pour sélectionner une option radio ?
 
 \--- choices ---
 
@@ -22,7 +22,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   \--- feedback ---
 
-  Correct ! The `for` attribute links the label to an `<input>` element's `id` attribute.
+  Correct ! L'attribut `for` lie le label à l'attribut `id` d'un élément `<input>`.
 
   \--- /feedback ---
 
@@ -30,7 +30,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   \--- feedback ---
 
-  Pas tout à fait ! Using `name` allows only one radio button in the name group to be selected at a time.
+  Pas tout à fait ! L'utilisation de `name` permet de sélectionner un seul bouton radio à la fois dans le groupe de noms.
 
   \--- /feedback ---
 
@@ -38,7 +38,7 @@ Which of these attributes allows the user to click on a label to select a radio 
 
   \--- feedback ---
 
-  `label` is a type of element, not an element attribute.
+  `label` est un type d'élément, pas un attribut d'élément.
 
   \--- /feedback ---
 
