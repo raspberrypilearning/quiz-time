@@ -5,33 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="default.css">
-    <title>Martial Arts quiz</title>
+    <title>Quiz sur les arts martiaux</title>
   </head>
   <body>
     <header class="header">
-      <span class="sitename">KARATE QUIZ</span>
-      <span id="scoreText" class="sitename">Score: 0</span>
+      <span class="sitename">QUIZ SUR LE KARATÉ</span>
+      <span id="scoreText" class="sitename">Score : 0</span>
     </header>
     <main>
       <div class="q-container">
         <h1>Question 1</h1>
-        <h2>From which country does Karate originate</h2>
+        <h2>De quel pays est originaire le karaté ?</h2>
 
         <input type="radio" name="q1" value="" id="q1a1">
-        <label for="q1a1">Korea</label><br>
+        <label for="q1a1">Corée</label><br>
 
         <input type="radio" name="q1" value="" id="q1a2">
-        <label for="q1a2">China</label><br>
+        <label for="q1a2">Chine</label><br>
 
         <input type="radio" name="q1" value="correct" id="q1a3">
-        <label for="q1a3">Japan</label><br>
+        <label for="q1a3">Japon</label><br>
     
         <div class="result" id="result1"></div>
-        <button id="q1" onclick="checkAnswer('q1', '#result1')">Check Answer</button>
+        <button id="q1" onclick="checkAnswer('q1', '#result1')">Vérifier la réponse</button>
       </div>
       <div class="q-container">
         <h1>Question 2</h1>
-        <h2>What is the term used to describe a Karate school?</h2>
+        <h2>Quel est le terme utilisé pour décrire une école de karaté ?</h2>
 
         <input type="radio" name="q2" value="correct" id="q2a1">
         <label for="q2a1">Dojo</label><br>
@@ -43,23 +43,23 @@
         <label for="q2a3">Kwan</label><br>
     
         <div class="result" id="result2"></div>
-        <button id="q2" onclick="checkAnswer('q2', '#result2')">Check Answer</button>
+        <button id="q2" onclick="checkAnswer('q2', '#result2')">Vérifier la réponse</button>
       </div>
       <div class="q-container">
         <h1>Question 3</h1>
-        <h2>What does the word Karate mean?</h2>
+        <h2>Que signifie le mot Karaté ?</h2>
 
         <input type="radio" name="q3" value="" id="q3a1">
-        <label for="q3a1">Strike</label><br>
+        <label for="q3a1">Frappe</label><br>
 
         <input type="radio" name="q3" value="correct" id="q3a2">
-        <label for="q3a2">Open hand</label><br>
+        <label for="q3a2">Main vide</label><br>
 
         <input type="radio" name="q3" value="" id="q3a3">
-        <label for="q3a3">The art of hand and foot</label><br>
+        <label for="q3a3">L'art des mains et des pieds</label><br>
     
         <div class="result" id="result3"></div>
-        <button id="q3" onclick="checkAnswer('q3', '#result3')">Check Answer</button>
+        <button id="q3" onclick="checkAnswer('q3', '#result3')">Vérifier la réponse</button>
       </div>
     </main>
   </body>
