@@ -1,18 +1,18 @@
-## Show one at a time
+## Afficher une à la fois
 
-In this step, you will hide all questions so that they are only shown when they are needed.
+Dans cette étape, tu cacheras toutes les questions afin qu'elles ne soient affichées que quand elles sont nécessaires.
 
-### Hide all questions
+### Cacher toutes les questions
 
-You need to make each question appear when it is needed.
+Tu dois faire apparaître chaque question quand elle est nécessaire.
 
-First, you need to hide all of them.
+Premièrement, tu dois toutes les cacher.
 
 \--- task ---
 
 Ouvre `style.css`.
 
-Alter the style for the selector `.q-container` to hide all the question containers.
+Modifie le style du sélecteur `.q-container` pour cacher tous les conteneurs de question.
 
 ## --- code ---
 
@@ -41,21 +41,21 @@ opacity: 1;
 
 **Clique sur Run**
 
-- All your questions should have vanished!
+- Toutes tes questions auraient dû disparaître !
 
-Don't worry, you're going to make them appear again!
+Ne t'inquiète pas, tu vas les faire réapparaître !
 
 \--- /task ---
 
-### Get a list of all questions
+### Obtenir une liste de toutes les questions
 
-You need to be able to access each question.
+Tu dois pouvoir accéder à chaque question.
 
 \--- task ---
 
 Ouvre `scripts.js`.
 
-Create a constant to hold a list of all question containers.
+Créer une constante pour contenir une liste de tous les conteneurs de questions.
 
 ## --- code ---
 
@@ -65,23 +65,23 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Constants
-const scoreText = document.querySelector("#scoreText");
+// Constantes
+const scoreTexte = document.querySelector("#scoreTexte");
 const questions = document.querySelectorAll(".q-container");
 
 \--- /code ---
 
 \--- /task ---
 
-### Show the first question
+### Afficher la première question
 
-The first item in your list is at index `0`.
+Le premier élément de ta liste est à l'index `0`.
 
 \--- task ---
 
-Find the `// Display first question` comment.
+Trouve le commentaire `// Afficher la première question`.
 
-Show the first question.
+Affiche la première question.
 
 ## --- code ---
 
@@ -91,7 +91,7 @@ line_numbers: false
 line_highlights: 2
 -------------------------------------------------------
 
-// Display first question
+// Afficher la première question
 questions[0].style.display = "block";
 
 \--- /code ---
@@ -102,10 +102,10 @@ questions[0].style.display = "block";
 
 **Clique sur Run**
 
-- Your first question should be back!
-- Select an answer and click the Check Answer button
-- Try this a few times with other answers
+- Ta première question devrait réapparaître !
+- Sélectionne une réponse et clique sur le bouton Vérifier la réponse
+- Essaie ceci plusieurs fois avec d'autres réponses
 
 \--- /task ---
 
-Next, you need to hide this question and show the next one!
+Ensuite, tu dois cacher cette question et montrer la suivante !
