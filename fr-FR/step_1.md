@@ -1,26 +1,26 @@
 ## Introduction
 
-In this project, you will create a web app that lets the user show what they know about a topic of your choosing! You could make a quiz about history, nature, world records, science, sports, fashion, TV, movies...or anything else you're an expert in!
+Dans ce projet, tu vas créer une application web qui permet à l'utilisateur de montrer ce qu'il sait sur un sujet de ton choix ! Tu pourrais créer un quiz sur des sujets variés tels que l’histoire, la nature, les records du monde, la science, les sports, la mode, la télévision, le cinéma, ou tout autre domaine dans lequel tu es un(e) expert(e) !
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The internet has helped us <span style="color: #0faeb0">**share knowledge**</span> and ideas with people around the globe. Sharing knowledge helps us understand other communities and cultures and reminds us that we can all learn from each other.
+Internet nous a aidé à <span style="color: #0faeb0">**partager des connaissances**</span> et des idées avec des gens du monde entier. Le partage des connaissances nous aide à comprendre les autres communautés et cultures et nous rappelle que nous pouvons tous apprendre les uns des autres.
 </p>
 
 Tu vas :
 
-- Choose a topic and create questions
-- Use buttons, CSS, and JavaScript to animate, show, and hide questions
-- Use JavaScript to check the user's answers, keep track of their score, and display a final message
+- Choisir un sujet et créer des questions
+- Utiliser des boutons, CSS et JavaScript pour animer, afficher et cacher les questions
+- Utiliser JavaScript pour vérifier les réponses de l'utilisateur, suivre son score et afficher un message final
 
 \--- no-print ---
 
 \--- task ---
 
-### Essaye !
+### Essaie !
 
-Answer the questions and watch the animations!
+Réponds aux questions et regarde les animations !
 
-[See inside](https://editor.raspberrypi.org/en/projects/quiz-time-animals){:target="_blank"}
+[Voir à l'intérieur](https://editor.raspberrypi.org/fr-FR/projects/quiz-time-animals){:target="_blank"}
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/quiz-time-animals" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
 </iframe>
@@ -29,19 +29,19 @@ Answer the questions and watch the animations!
 
 ### Trouve l'inspiration
 
-You are going to make some design decisions to create your quiz!
+Tu vas prendre des décisions de conception pour créer ton quiz !
 
-- What will your quiz be about?
-- How many questions will you include?
-- How many options will you give for each question?
-- How many points will the user score for the correct answer?
-- What animations will you apply to each question?
+- De quoi parlera ton quiz ?
+- Combien de questions vas-tu inclure ?
+- Combien d'options donneras-tu pour chaque question ?
+- Combien de points l'utilisateur obtiendra-t-il pour la bonne réponse ?
+- Quelles animations appliqueras-tu à chaque question ?
 
 \--- task ---
 
-Explore this example project to get more ideas:
+Explore cet exemple de projet pour avoir plus d’idées :
 
-**Karate quiz**: [See inside](https://editor.raspberrypi.org/en/projects/quiz-time-karate){:target="_blank"}
+**Quiz sur le karaté** : [voir à l'intérieur](https://editor.raspberrypi.org/fr-FR/projects/quiz-time-karate){:target="_blank"}
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/quiz-time-karate" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> 
 </iframe>
@@ -54,7 +54,7 @@ Explore this example project to get more ideas:
 
 ### Trouve l'inspiration
 
-**Karate quiz**
+**Quiz sur le karaté**
 
 ![](images/karate-quiz.png)
 
