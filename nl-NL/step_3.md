@@ -83,7 +83,7 @@ line_numbers: false
 line_highlights: 3
 -------------------------------------------------------
 
-// Check answer function
+// Controleer Antwoordfunctie
 function checkAnswer(question, result) {
 let answer = document.querySelector(`input[name="${question}"]:checked`);
 
