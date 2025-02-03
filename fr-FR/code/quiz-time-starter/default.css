@@ -1,8 +1,8 @@
 :root {
-  /* Font variable */
+  /* Variable de police */
   --font: 16px/1.25 'Raleway', sans-serif;
   
-  /* Base Colours */
+  /* Couleurs de base */
   --body-background: #000000;
   --background: #ffffff;
   --header-font-colour: #000000;
