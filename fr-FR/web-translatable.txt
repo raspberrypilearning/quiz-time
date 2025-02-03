@@ -1,9 +1,9 @@
 // Variables
 
-// Constants
+// Constantes
 
-// Check answer function
+// Vérifier la fonction de réponse
 
-// Next question function
+// Fonction de la question suivante
 
-// Display first question
+// Afficher la première question
