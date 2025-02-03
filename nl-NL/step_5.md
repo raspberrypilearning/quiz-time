@@ -168,7 +168,7 @@ Als de gebruiker het juiste antwoord selecteert, kunnen ze blijven klikken op An
 
 \--- /task ---
 
-### Stop het vals spelen!
+### Stop het valsspelen!
 
 Je moet voorkomen dat de gebruiker valsspeelt door meer dan één keer op de knop te klikken.
 
