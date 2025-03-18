@@ -59,3 +59,4 @@ Bekijk dit voorbeeldproject om meer ideeën op te doen:
 ![](images/karate-quiz.png)
 
 \--- /print-only ---
+
