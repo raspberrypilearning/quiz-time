@@ -44,7 +44,7 @@
 
 \--- task ---
 
-打开 [Quiz time starter 项目](https://editor.raspberrypi.org/en/projects/quiz-time-starter){:target="_blank"}。
+打开 [测验时间 入门项目](https://editor.raspberrypi.org/en/projects/quiz-time-starter){:target="_blank"}。
 
 如果你已经登录，请将项目保存到你的帐户并更改名称。
 
