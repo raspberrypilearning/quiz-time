@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="default.css">
+    <title>Quiz sur la faune</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="sitename">Quiz sur la faune</span>
+      <span id="scoreText" class="sitename">Score : 0</span>
+    </header>
+    <main>
+
+      <div class="q-container">
+        <h1>Question 1</h1>
+        <h2>Quelle est la plus grande espèce de félin vivant ?</h2>
+
+        <input type="radio" name="q1" value="correct" id="q1a1">
+        <label for="q1a1">Tigre</label><br>
+        
+        <input type="radio" name="q1" value="" id="q1a2">
+        <label for="q1a2">Guépard</label><br>
+        
+        <input type="radio" name="q1" value="" id="q1a3">
+        <label for="q1a3">Lion</label><br>
+    
+        <div class="result" id="result1"></div>
+        <button id="q1" onclick="checkAnswer('q1', '#result1')">Vérifier la réponse</button>
+      </div>
+
+      <div class="q-container">
+        <h1>Question 2</h1>
+        <h2>Quel oiseau est connu pour sa capacité à imiter la parole humaine ?</h2>
+
+        <input type="radio" name="q2" value="" id="q2a1">
+        <label for="q2a1">Moineau</label><br>
+        
+        <input type="radio" name="q2" value="" id="q2a2">
+        <label for="q2a2">Pigeon</label><br>
+        
+        <input type="radio" name="q2" value="correct" id="q2a3">
+        <label for="q2a3">Perroquet</label><br>
+
+        <div class="result" id="result2"></div>  
+        <button id="q2" onclick="checkAnswer('q2', '#result2')">Vérifier la réponse</button>
+      </div>
+
+      <div class="q-container">
+        <h1>Question 3</h1>
+        <h2>Quel animal est connu pour ses rayures noires et blanches distinctives ?</h2>
+
+        <input type="radio" name="q3" value="" id="q3a1">
+        <label for="q3a1">Hippopotame</label><br>
+        
+        <input type="radio" name="q3" value="" id="q3a2">
+        <label for="q3a2">Girafe</label><br>
+        
+        <input type="radio" name="q3" value="correct" id="q3a3">
+        <label for="q3a3">Zèbre</label><br>
+
+        <div class="result" id="result3"></div>  
+        <div class="fullMarks">Bien joué ! Tout est correct !</div>
+        <a class="retry" href="index.html">Essaie encore !</a>
+        <button id="q3" onclick="checkAnswer('q3', '#result3')">Vérifier la réponse</button>
+      </div>
+
+    </main>
+  </body>
+  <script src="scripts.js"></script>
+</html>
+

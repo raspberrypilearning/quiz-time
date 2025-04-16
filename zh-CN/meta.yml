@@ -1,0 +1,30 @@
+---
+title: 测验时间！
+hero_image: images/banner.png
+description: 创建一个交互式测验应用程序！
+version: 4
+listed: true
+copyedit: false
+last_tested: '2021-03-26'
+steps:
+  - title: 介绍
+  - title: 创建一个问题
+  - title: 检查答案
+    completion:
+      - engaged
+  - title: 添加更多问题
+  - title: 获得分数
+  - title: 每次显示一个
+  - title: 请回答下一个问题！
+    completion:
+      - internal
+  - title: 回顾与思考
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: 升级你的项目
+  - title: 接下来还有什么？
