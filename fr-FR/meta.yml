@@ -1,0 +1,30 @@
+---
+title: C'est l'heure du quiz !
+hero_image: images/banner.png
+description: Crée un quiz interactif !
+version: 4
+listed: true
+copyedit: false
+last_tested: '2021-03-26'
+steps:
+  - title: Introduction
+  - title: Créer une question
+  - title: Vérifier la réponse
+    completion:
+      - engaged
+  - title: Ajouter d'autres questions
+  - title: Marquer des points
+  - title: Afficher une à la fois
+  - title: Question suivante, s'il vous plaît !
+    completion:
+      - internal
+  - title: Réflexion
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Améliorer ton projet
+  - title: Et ensuite ?
