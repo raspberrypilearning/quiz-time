@@ -208,9 +208,9 @@ function checkAnswer(question, result) {
   qResult.style.display = "block";
   
   if (answer.value === "correct") {
-    qResult.innerText = "Correct";
+    qResult.innerText = "正确";
   } else {
-    qResult.innerText = "Incorrect";
+    qResult.innerText = "不正确";
   }
 
 }

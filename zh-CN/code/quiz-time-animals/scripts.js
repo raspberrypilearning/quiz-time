@@ -1,14 +1,14 @@
-// Variables
+// 变量
 var score = 0;
 var currentQ = 0;
 
-// Constants
+// 常量
 const scoreText = document.querySelector('#scoreText');
 const questions = document.querySelectorAll('.q-container');
 const fullMarks = document.querySelector('.fullMarks');
 const retry = document.querySelector('.retry');
 
-// Check answer function
+// 检查答案的函数
 function checkAnswer(question, result) {
   let answer = document.querySelector(`input[name="${question}"]:checked`);
   let qResult = document.querySelector(result);
@@ -16,20 +16,20 @@ function checkAnswer(question, result) {
   if (answer) {
     document.querySelector('#' + question).disabled = true;
     if (answer.value === 'correct') {
-      qResult.innerText = 'Correct';
+      qResult.innerText = '正确';
       score += 1;
-      scoreText.innerText = `Score: ${score}`;
+      scoreText.innerText = `分数：${score}`;
       nextQ();
     } else {
-      qResult.innerText = 'Incorrect';
+      qResult.innerText = '不正确';
       nextQ();
     }
   } else {
-    qResult.innerText = 'Please select an answer';
+    qResult.innerText = '请选择一个答案';
   }
 }
 
-// Next question function
+// 下一个问题的函数
 function nextQ() {
   questions[currentQ].classList.add('fade-out');
   setTimeout(() => {
@@ -39,7 +39,7 @@ function nextQ() {
       questions[currentQ].classList.add('slide-left');
       questions[currentQ].style.display = 'block';
     } else {
-      scoreText.innerText = `Final score: ${score}/${questions.length}`;
+      scoreText.innerText = `最终分数：${score}/${questions.length}`;
       scoreText.classList.add('glowing');
       if (score === questions.length) {
         fullMarks.style.display = 'block';
@@ -50,6 +50,6 @@ function nextQ() {
   }, '2000');
 }
 
-// Display first question
+// 显示第一个问题
 questions[0].style.display = 'block';
 questions[0].style.opacity = 1;
