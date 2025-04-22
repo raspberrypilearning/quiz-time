@@ -1,9 +1,9 @@
-// Variables
+// 变量
 
-// Constants
+// 常量
 
-// Check answer function
+// 检查答案的函数
 
-// Display first question
+// 显示第一个问题
 
-// Next question function
+// 下一个问题的函数
